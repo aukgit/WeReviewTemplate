@@ -1,10 +1,10 @@
 html {
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 body {
   background-color: rgb(255, 255, 255);
-  font-family: Cabin;
+  font-family: 'FontAwesome Regular';
   font-weight: normal;
   line-height: 1.38;
   color: rgb(0, 0, 0);
@@ -14,25 +14,24 @@ body {
   position: absolute;
   top: 0;
   left: -0.0390625%;
-  z-index: 16;
-  font: 1.25em/1.38 'FontAwesome Regular';
+  font-size: 1.25em;
+  line-height: 1.38;
   color: rgb(106, 106, 106);
 }
 
 .app-category-name-front-page {
   float: left;
-  margin-top: 0.5rem;
-  font: 1.188em/1.38 'Ubuntu Medium';
-  color: rgb(249, 12, 12);
+  font: 1.583em/1.38 'Ubuntu Medium';
+  color: rgb(255, 69, 0);
 }
 
 .app-details-container {
   position: absolute;
-  top: 1.75rem;
+  top: 2.333rem;
   left: 1.6098980125%;
   z-index: 8;
   width: 35.460251046%;
-  height: 15.25rem;
+  height: 20.333rem;
 }
 
 .app-details-container .app-ratting {
@@ -41,71 +40,56 @@ body {
   clear: both;
   z-index: 7;
   margin-left: 0.28577%;
-  font-size: 1.25em;
+  font-size: 1.667em;
   color: rgb(240, 232, 38);
-}
-
-.app-display-container {
-  position: absolute;
-  top: 4rem;
-  left: 0;
-  z-index: 12;
-  width: 100%;
-  height: 13.188rem;
-  background-color: rgb(245, 244, 244);
 }
 
 .app-icon {
   float: left;
-  margin: 0.063rem 0 0 0.29586%;
-  font: 1.25em/1.38 'FontAwesome Regular';
+  margin: 0.083rem 0 0 0.29586%;
+  font-size: 1.667em;
+  line-height: 1.38;
   color: rgb(106, 106, 106);
 }
 
 .app-name-in-appbox {
   position: absolute;
   top: 0.25rem;
-  left: 13.0529765155%;
-  z-index: 15;
-  font: 0.813em/1.38 'Ubuntu Medium';
+  left: 12.510554461%;
+  font: 0.833em/1.38 'Ubuntu Medium';
   color: rgb(0, 0, 0);
 }
 
 .app-rating-div {
   position: absolute;
-  top: 1.5rem;
+  top: 1.417rem;
   left: 0.6875%;
-  z-index: 14;
   width: 98.6145833333%;
-  height: 1.063rem;
+  height: 1.417rem;
 }
 
 .app-rating-div .app-ratting {
   position: absolute;
   top: 0;
   left: -0.0211260167%;
-  z-index: 13;
-  font-size: 0.813em;
-  color: rgb(240, 232, 38);
+  font-size: 1em;
+  color: rgb(240, 38, 38);
 }
 
 .app-ratting {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
-  font-family: 'FontAwesome Regular';
   line-height: 1.38;
 }
 
 .app-small-details {
   position: absolute;
-  top: 3.938rem;
+  top: 5.25rem;
   left: -0.1152286136%;
   z-index: 3;
   width: 106.7846607669%;
-  min-height: 1.875rem;
+  min-height: 2.5rem;
   max-height: 153px;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.38;
+  font: 400 1.333em/1.38 Cabin;
   text-align: justify;
   color: rgb(0, 0, 0);
 }
@@ -113,48 +97,72 @@ body {
 .app-title-front-page {
   float: left;
   margin-left: 0.91069%;
-  font: 1.25em/1.38 'Ubuntu Medium';
+  font: 1.667em/1.38 'Ubuntu Medium';
   color: rgb(255, 0, 0);
 }
 
 .app-title-in-appbox {
   position: relative;
   float: left;
-  z-index: 17;
-  width: 99.3210475266%;
-  height: 1.688rem;
+  width: 99.28721174%;
+  height: 1.5rem;
+  margin-left: 0.72545%;
 }
 
 .appbox-app-header {
   position: absolute;
-  top: 8.25rem;
-  left: 3.115295031%;
-  z-index: 18;
-  width: 93.1677018633%;
-  height: 2.563rem;
+  top: 8.667rem;
+  left: 3.3463541666%;
+  width: 93.3333333333%;
+  height: 3.333rem;
 }
 
 .appbox-app-icon {
   display: block;
   position: absolute;
-  top: 1.188rem;
+  top: 1.583rem;
   left: 0;
   right: 0;
-  z-index: 19;
   width: 80.1242236024%;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
 }
 
+.appbox-list-parent {
+  position: absolute;
+  top: 2.583rem;
+  left: 0;
+  width: 715px;
+  height: 13.417rem;
+}
+
+.apps-list-child-grp {
+  float: left;
+  width: 100%;
+  height: 13.167rem;
+}
+
+.apps-text {
+  float: left;
+  font: 1.583em/1.38 'Ubuntu Medium';
+  color: rgb(0, 0, 0);
+}
+
 .container-grp {
   position: absolute;
-  top: 27.875rem;
+  top: 37.167rem;
   left: 10%;
-  z-index: 22;
+  z-index: 113;
   width: 80%;
-  height: 20.375rem;
-  background-color: rgb(250, 250, 250);
+  height: 45.583rem;
+}
+
+.front-page-list-title {
+  display: block;
+  float: left;
+  width: 23.5416666666%;
+  height: 2.167rem;
 }
 
 .gallery-container {
@@ -162,10 +170,10 @@ body {
   float: left;
   clear: both;
   width: 80%;
-  height: 23.563rem;
+  height: 31.417rem;
   margin-left: 10%;
-  border: 0.125rem solid rgb(185, 185, 185);
-  border-radius: 0.125rem;
+  border: 0.167rem solid rgb(185, 185, 185);
+  border-radius: 0.167rem;
   background-color: rgb(255, 255, 255);
 }
 
@@ -176,29 +184,33 @@ body {
   z-index: 0;
   width: 99.1631799163%;
   height: auto;
-  margin: 0.25rem 0 0 0.41678%;
+  margin: 0.333rem 0 0 0.41678%;
   overflow: hidden;
 }
 
-.small-app-display {
-  display: block;
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 21;
-  width: 17.1875%;
-  height: 12.375rem;
-  margin: 1.875rem 0 0 2.08171%;
-}
-
-.small-app-display-bg {
+.latest-apps-listh {
   position: relative;
   float: left;
   width: 100%;
-  height: 12.375rem;
+  height: 16.083rem;
+}
+
+.small-app-display {
+  float: left;
+  width: 124px;
+  height: 13.167rem;
+}
+
+.small-app-display-bg {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 13.167rem;
   max-height: 198px;
-  border: 0.125rem solid rgb(130, 128, 128);
-  background-color: rgb(213, 213, 213);
+  border: 0.167rem solid rgb(166, 166, 166);
+  background-color: rgb(226, 226, 226);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .title-link {
@@ -207,16 +219,15 @@ body {
   float: left;
   z-index: 6;
   width: 99.7050147492%;
-  height: 1.688rem;
+  height: 2.25rem;
   margin-left: 0.2949899999%;
 }
 
 .top-nvigation {
   float: left;
   width: 80%;
-  height: 3.375rem;
+  height: 4.5rem;
   margin-left: 10%;
-  background-color: rgb(222, 222, 222);
 }
 
 .visit-app-btn {
@@ -226,12 +237,12 @@ body {
   clear: both;
   z-index: 2;
   width: 22.1238938053%;
-  height: 1.313rem;
-  margin: 10.438rem 0 0 0.28577%;
-  border-radius: 0.188rem;
+  height: 1.75rem;
+  margin: 13.917rem 0 0 0.28577%;
+  border-radius: 0.25rem;
   background-color: rgb(77, 174, 254);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  font: 400 1em/1.38 Helvetica;
+  font: 400 1.333em/1.38 Helvetica;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -252,111 +263,361 @@ body {
 
 .white-box {
   position: absolute;
-  top: -1.5rem;
+  top: -2rem;
   left: -3.3646755163%;
   z-index: 1;
   width: 115.634218289%;
-  height: 22.75rem;
+  height: 30.333rem;
   background-color: rgb(255, 255, 255);
 }
 
-@media(max-width: 970px) {
-  .app-details-container .app-ratting {
-    position: relative;
-    z-index: 7;
-    margin-left: 0.28539%;
-  }
+.app-category-icon-1 {
+  z-index: 14;
+}
 
-  .app-details-container .app-small-details {
-    font-size: 0.875em;
-  }
+.app-category-icon-10 {
+  z-index: 101;
+}
 
-  .app-details-container .title-link {
-    position: relative;
-    z-index: 6;
-    margin-left: 0.2911%;
-  }
+.app-category-icon-2 {
+  z-index: 23;
+}
 
-  .app-details-container .visit-app-btn {
-    position: relative;
-    z-index: 2;
-    width: 29.9543378995%;
-    margin-top: 8.25rem;
-    margin-left: 0.21119%;
-  }
+.app-category-icon-3 {
+  z-index: 32;
+}
 
-  .app-details-container .white-box {
-    left: -3.3675799087%;
-    width: 115.6335616438%;
-  }
+.app-category-icon-4 {
+  z-index: 41;
+}
 
-  .app-title-in-appbox .app-category-icon {
-    left: -0.0200320513%;
-  }
+.app-category-icon-5 {
+  z-index: 50;
+}
 
-  .app-title-in-appbox .app-name-in-appbox {
-    top: 0.313rem;
-    left: 20.7287449392%;
-  }
+.app-category-icon-6 {
+  z-index: 65;
+}
 
-  .appbox-app-header .app-rating-div {
-    top: 1.688rem;
-    left: 0;
-    width: 98.3606557377%;
-  }
+.app-category-icon-7 {
+  z-index: 74;
+}
 
-  .appbox-app-header .app-title-in-appbox {
-    position: absolute;
-    float: none;
-    left: -0.3486120078%;
-    width: 98.3344092963%;
-  }
+.app-category-icon-8 {
+  z-index: 83;
+}
 
-  .container-grp .small-app-display {
-    position: relative;
-    z-index: 21;
-    width: 19.5614529639%;
-    margin-left: 2.18871%;
-  }
+.app-category-icon-9 {
+  z-index: 92;
+}
 
-  .gallery-container .gallery-image {
-    position: relative;
-    z-index: 0;
-    width: 99.2227979274%;
-    height: auto;
-    margin-left: 0.38658%;
-  }
+.app-name-in-appbox-1 {
+  z-index: 13;
+}
 
-  .small-app-display .small-app-display-bg {
-    position: absolute;
-    float: none;
-    left: 0.0102933607%;
-    width: 100.1338136901%;
-    height: 10.188rem;
-  }
+.app-name-in-appbox-10 {
+  z-index: 100;
+}
 
-  .small-app-display-bg .appbox-app-header {
-    top: 7.063rem;
-    left: 4.0751689189%;
-    width: 93.6744073536%;
-  }
+.app-name-in-appbox-2 {
+  z-index: 22;
+}
 
-  .small-app-display-bg .appbox-app-icon {
-    top: 0.438rem;
-    left: 0;
-    right: 0;
-    width: 91.8601838413%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.app-name-in-appbox-3 {
+  z-index: 31;
+}
 
-  .title-link .app-icon {
-    margin-left: 0.28624%;
-  }
+.app-name-in-appbox-4 {
+  z-index: 40;
+}
 
-  .title-link .app-title-front-page {
-    margin-left: 0.53813%;
-    font-size: 1.125em;
-  }
+.app-name-in-appbox-5 {
+  z-index: 49;
+}
+
+.app-name-in-appbox-6 {
+  z-index: 64;
+}
+
+.app-name-in-appbox-7 {
+  z-index: 73;
+}
+
+.app-name-in-appbox-8 {
+  z-index: 82;
+}
+
+.app-name-in-appbox-9 {
+  z-index: 91;
+}
+
+.app-rating-div-1 {
+  z-index: 12;
+}
+
+.app-rating-div-10 {
+  z-index: 99;
+}
+
+.app-rating-div-2 {
+  z-index: 21;
+}
+
+.app-rating-div-3 {
+  z-index: 30;
+}
+
+.app-rating-div-4 {
+  z-index: 39;
+}
+
+.app-rating-div-5 {
+  z-index: 48;
+}
+
+.app-rating-div-6 {
+  z-index: 63;
+}
+
+.app-rating-div-7 {
+  z-index: 72;
+}
+
+.app-rating-div-8 {
+  z-index: 81;
+}
+
+.app-rating-div-9 {
+  z-index: 90;
+}
+
+.app-ratting-10 {
+  z-index: 89;
+}
+
+.app-ratting-11 {
+  z-index: 98;
+}
+
+.app-ratting-2 {
+  z-index: 11;
+}
+
+.app-ratting-3 {
+  z-index: 20;
+}
+
+.app-ratting-4 {
+  z-index: 29;
+}
+
+.app-ratting-5 {
+  z-index: 38;
+}
+
+.app-ratting-6 {
+  z-index: 47;
+}
+
+.app-ratting-7 {
+  z-index: 62;
+}
+
+.app-ratting-8 {
+  z-index: 71;
+}
+
+.app-ratting-9 {
+  z-index: 80;
+}
+
+.app-title-in-appbox-1 {
+  z-index: 15;
+}
+
+.app-title-in-appbox-10 {
+  z-index: 102;
+}
+
+.app-title-in-appbox-2 {
+  z-index: 24;
+}
+
+.app-title-in-appbox-3 {
+  z-index: 33;
+}
+
+.app-title-in-appbox-4 {
+  z-index: 42;
+}
+
+.app-title-in-appbox-5 {
+  z-index: 51;
+}
+
+.app-title-in-appbox-6 {
+  z-index: 66;
+}
+
+.app-title-in-appbox-7 {
+  z-index: 75;
+}
+
+.app-title-in-appbox-8 {
+  z-index: 84;
+}
+
+.app-title-in-appbox-9 {
+  z-index: 93;
+}
+
+.appbox-app-header-1 {
+  z-index: 16;
+}
+
+.appbox-app-header-10 {
+  z-index: 103;
+}
+
+.appbox-app-header-2 {
+  z-index: 25;
+}
+
+.appbox-app-header-3 {
+  z-index: 34;
+}
+
+.appbox-app-header-4 {
+  z-index: 43;
+}
+
+.appbox-app-header-5 {
+  z-index: 52;
+}
+
+.appbox-app-header-6 {
+  z-index: 67;
+}
+
+.appbox-app-header-7 {
+  z-index: 76;
+}
+
+.appbox-app-header-8 {
+  z-index: 85;
+}
+
+.appbox-app-header-9 {
+  z-index: 94;
+}
+
+.appbox-app-icon-1 {
+  z-index: 17;
+}
+
+.appbox-app-icon-10 {
+  z-index: 104;
+}
+
+.appbox-app-icon-2 {
+  z-index: 26;
+}
+
+.appbox-app-icon-3 {
+  z-index: 35;
+}
+
+.appbox-app-icon-4 {
+  z-index: 44;
+}
+
+.appbox-app-icon-5 {
+  z-index: 53;
+}
+
+.appbox-app-icon-6 {
+  z-index: 68;
+}
+
+.appbox-app-icon-7 {
+  z-index: 77;
+}
+
+.appbox-app-icon-8 {
+  z-index: 86;
+}
+
+.appbox-app-icon-9 {
+  z-index: 95;
+}
+
+.appbox-list-parent-1 {
+  z-index: 57;
+}
+
+.appbox-list-parent-2 {
+  z-index: 108;
+}
+
+.apps-text-1 {
+  margin-left: 0.4286499999%;
+}
+
+.apps-text-2 {
+  width: 31.481274455%;
+  margin-left: 1.2652101769%;
+}
+
+.latest-apps-listh-2 {
+  clear: both;
+  margin-top: 2.083rem;
+}
+
+.small-app-display-10,
+.small-app-display-2,
+.small-app-display-5,
+.small-app-display-7 {
+  margin-left: 2.34831%;
+}
+
+.small-app-display-1,
+.small-app-display-6 {
+  margin-left: -0.00228%;
+}
+
+.small-app-display-3,
+.small-app-display-8 {
+  margin-left: 2.35286%;
+}
+
+.small-app-display-4,
+.small-app-display-9 {
+  margin-left: 2.54191%;
+}
+
+.apps-text strong {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
 }
