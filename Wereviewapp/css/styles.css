@@ -133,14 +133,8 @@ body {
   position: absolute;
   top: 2.583rem;
   left: 0;
-  width: 715px;
+  width: 960px;
   height: 13.417rem;
-}
-
-.apps-list-child-grp {
-  float: left;
-  width: 100%;
-  height: 13.167rem;
 }
 
 .apps-text {
@@ -153,15 +147,15 @@ body {
   position: absolute;
   top: 37.167rem;
   left: 10%;
-  z-index: 113;
+  z-index: 147;
   width: 80%;
-  height: 45.583rem;
+  height: 36.083rem;
 }
 
 .front-page-list-title {
   display: block;
   float: left;
-  width: 23.5416666666%;
+  width: 163px;
   height: 2.167rem;
 }
 
@@ -169,7 +163,7 @@ body {
   position: relative;
   float: left;
   clear: both;
-  width: 80%;
+  width: 960px;
   height: 31.417rem;
   margin-left: 10%;
   border: 0.167rem solid rgb(185, 185, 185);
@@ -276,7 +270,23 @@ body {
 }
 
 .app-category-icon-10 {
-  z-index: 101;
+  z-index: 100;
+}
+
+.app-category-icon-11 {
+  z-index: 109;
+}
+
+.app-category-icon-12 {
+  z-index: 118;
+}
+
+.app-category-icon-13 {
+  z-index: 127;
+}
+
+.app-category-icon-14 {
+  z-index: 136;
 }
 
 .app-category-icon-2 {
@@ -296,19 +306,19 @@ body {
 }
 
 .app-category-icon-6 {
-  z-index: 65;
+  z-index: 59;
 }
 
 .app-category-icon-7 {
-  z-index: 74;
+  z-index: 68;
 }
 
 .app-category-icon-8 {
-  z-index: 83;
+  z-index: 82;
 }
 
 .app-category-icon-9 {
-  z-index: 92;
+  z-index: 91;
 }
 
 .app-name-in-appbox-1 {
@@ -316,7 +326,23 @@ body {
 }
 
 .app-name-in-appbox-10 {
-  z-index: 100;
+  z-index: 99;
+}
+
+.app-name-in-appbox-11 {
+  z-index: 108;
+}
+
+.app-name-in-appbox-12 {
+  z-index: 117;
+}
+
+.app-name-in-appbox-13 {
+  z-index: 126;
+}
+
+.app-name-in-appbox-14 {
+  z-index: 135;
 }
 
 .app-name-in-appbox-2 {
@@ -336,19 +362,19 @@ body {
 }
 
 .app-name-in-appbox-6 {
-  z-index: 64;
+  z-index: 58;
 }
 
 .app-name-in-appbox-7 {
-  z-index: 73;
+  z-index: 67;
 }
 
 .app-name-in-appbox-8 {
-  z-index: 82;
+  z-index: 81;
 }
 
 .app-name-in-appbox-9 {
-  z-index: 91;
+  z-index: 90;
 }
 
 .app-rating-div-1 {
@@ -356,7 +382,23 @@ body {
 }
 
 .app-rating-div-10 {
-  z-index: 99;
+  z-index: 98;
+}
+
+.app-rating-div-11 {
+  z-index: 107;
+}
+
+.app-rating-div-12 {
+  z-index: 116;
+}
+
+.app-rating-div-13 {
+  z-index: 125;
+}
+
+.app-rating-div-14 {
+  z-index: 134;
 }
 
 .app-rating-div-2 {
@@ -376,27 +418,43 @@ body {
 }
 
 .app-rating-div-6 {
-  z-index: 63;
+  z-index: 57;
 }
 
 .app-rating-div-7 {
-  z-index: 72;
+  z-index: 66;
 }
 
 .app-rating-div-8 {
-  z-index: 81;
+  z-index: 80;
 }
 
 .app-rating-div-9 {
-  z-index: 90;
-}
-
-.app-ratting-10 {
   z-index: 89;
 }
 
+.app-ratting-10 {
+  z-index: 88;
+}
+
 .app-ratting-11 {
-  z-index: 98;
+  z-index: 97;
+}
+
+.app-ratting-12 {
+  z-index: 106;
+}
+
+.app-ratting-13 {
+  z-index: 115;
+}
+
+.app-ratting-14 {
+  z-index: 124;
+}
+
+.app-ratting-15 {
+  z-index: 133;
 }
 
 .app-ratting-2 {
@@ -420,15 +478,15 @@ body {
 }
 
 .app-ratting-7 {
-  z-index: 62;
+  z-index: 56;
 }
 
 .app-ratting-8 {
-  z-index: 71;
+  z-index: 65;
 }
 
 .app-ratting-9 {
-  z-index: 80;
+  z-index: 79;
 }
 
 .app-title-in-appbox-1 {
@@ -436,7 +494,23 @@ body {
 }
 
 .app-title-in-appbox-10 {
-  z-index: 102;
+  z-index: 101;
+}
+
+.app-title-in-appbox-11 {
+  z-index: 110;
+}
+
+.app-title-in-appbox-12 {
+  z-index: 119;
+}
+
+.app-title-in-appbox-13 {
+  z-index: 128;
+}
+
+.app-title-in-appbox-14 {
+  z-index: 137;
 }
 
 .app-title-in-appbox-2 {
@@ -456,19 +530,19 @@ body {
 }
 
 .app-title-in-appbox-6 {
-  z-index: 66;
+  z-index: 60;
 }
 
 .app-title-in-appbox-7 {
-  z-index: 75;
+  z-index: 69;
 }
 
 .app-title-in-appbox-8 {
-  z-index: 84;
+  z-index: 83;
 }
 
 .app-title-in-appbox-9 {
-  z-index: 93;
+  z-index: 92;
 }
 
 .appbox-app-header-1 {
@@ -476,7 +550,23 @@ body {
 }
 
 .appbox-app-header-10 {
-  z-index: 103;
+  z-index: 102;
+}
+
+.appbox-app-header-11 {
+  z-index: 111;
+}
+
+.appbox-app-header-12 {
+  z-index: 120;
+}
+
+.appbox-app-header-13 {
+  z-index: 129;
+}
+
+.appbox-app-header-14 {
+  z-index: 138;
 }
 
 .appbox-app-header-2 {
@@ -496,19 +586,19 @@ body {
 }
 
 .appbox-app-header-6 {
-  z-index: 67;
+  z-index: 61;
 }
 
 .appbox-app-header-7 {
-  z-index: 76;
+  z-index: 70;
 }
 
 .appbox-app-header-8 {
-  z-index: 85;
+  z-index: 84;
 }
 
 .appbox-app-header-9 {
-  z-index: 94;
+  z-index: 93;
 }
 
 .appbox-app-icon-1 {
@@ -516,7 +606,23 @@ body {
 }
 
 .appbox-app-icon-10 {
-  z-index: 104;
+  z-index: 103;
+}
+
+.appbox-app-icon-11 {
+  z-index: 112;
+}
+
+.appbox-app-icon-12 {
+  z-index: 121;
+}
+
+.appbox-app-icon-13 {
+  z-index: 130;
+}
+
+.appbox-app-icon-14 {
+  z-index: 139;
 }
 
 .appbox-app-icon-2 {
@@ -536,63 +642,50 @@ body {
 }
 
 .appbox-app-icon-6 {
-  z-index: 68;
+  z-index: 62;
 }
 
 .appbox-app-icon-7 {
-  z-index: 77;
+  z-index: 71;
 }
 
 .appbox-app-icon-8 {
-  z-index: 86;
+  z-index: 85;
 }
 
 .appbox-app-icon-9 {
-  z-index: 95;
+  z-index: 94;
 }
 
 .appbox-list-parent-1 {
-  z-index: 57;
+  z-index: 74;
 }
 
 .appbox-list-parent-2 {
-  z-index: 108;
-}
-
-.apps-text-1 {
-  margin-left: 0.4286499999%;
-}
-
-.apps-text-2 {
-  width: 31.481274455%;
-  margin-left: 1.2652101769%;
+  z-index: 142;
 }
 
 .latest-apps-listh-2 {
   clear: both;
-  margin-top: 2.083rem;
+  margin-top: 2.917rem;
+}
+
+.small-app-display-11,
+.small-app-display-13,
+.small-app-display-2,
+.small-app-display-4,
+.small-app-display-6,
+.small-app-display-9 {
+  margin-left: 1.35417%;
 }
 
 .small-app-display-10,
-.small-app-display-2,
+.small-app-display-12,
+.small-app-display-14,
+.small-app-display-3,
 .small-app-display-5,
 .small-app-display-7 {
-  margin-left: 2.34831%;
-}
-
-.small-app-display-1,
-.small-app-display-6 {
-  margin-left: -0.00228%;
-}
-
-.small-app-display-3,
-.small-app-display-8 {
-  margin-left: 2.35286%;
-}
-
-.small-app-display-4,
-.small-app-display-9 {
-  margin-left: 2.54191%;
+  margin-left: 1.4583299999%;
 }
 
 .apps-text strong {
