@@ -1,0 +1,362 @@
+html {
+  font-size: 1em;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Cabin;
+  font-weight: normal;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}
+
+.app-category-icon {
+  position: absolute;
+  top: 0;
+  left: -0.0390625%;
+  z-index: 16;
+  font: 1.25em/1.38 'FontAwesome Regular';
+  color: rgb(106, 106, 106);
+}
+
+.app-category-name-front-page {
+  float: left;
+  margin-top: 0.5rem;
+  font: 1.188em/1.38 'Ubuntu Medium';
+  color: rgb(249, 12, 12);
+}
+
+.app-details-container {
+  position: absolute;
+  top: 1.75rem;
+  left: 1.6098980125%;
+  z-index: 8;
+  width: 35.460251046%;
+  height: 15.25rem;
+}
+
+.app-details-container .app-ratting {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 7;
+  margin-left: 0.28577%;
+  font-size: 1.25em;
+  color: rgb(240, 232, 38);
+}
+
+.app-display-container {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: 13.188rem;
+  background-color: rgb(245, 244, 244);
+}
+
+.app-icon {
+  float: left;
+  margin: 0.063rem 0 0 0.29586%;
+  font: 1.25em/1.38 'FontAwesome Regular';
+  color: rgb(106, 106, 106);
+}
+
+.app-name-in-appbox {
+  position: absolute;
+  top: 0.25rem;
+  left: 13.0529765155%;
+  z-index: 15;
+  font: 0.813em/1.38 'Ubuntu Medium';
+  color: rgb(0, 0, 0);
+}
+
+.app-rating-div {
+  position: absolute;
+  top: 1.5rem;
+  left: 0.6875%;
+  z-index: 14;
+  width: 98.6145833333%;
+  height: 1.063rem;
+}
+
+.app-rating-div .app-ratting {
+  position: absolute;
+  top: 0;
+  left: -0.0211260167%;
+  z-index: 13;
+  font-size: 0.813em;
+  color: rgb(240, 232, 38);
+}
+
+.app-ratting {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-family: 'FontAwesome Regular';
+  line-height: 1.38;
+}
+
+.app-small-details {
+  position: absolute;
+  top: 3.938rem;
+  left: -0.1152286136%;
+  z-index: 3;
+  width: 106.7846607669%;
+  min-height: 1.875rem;
+  max-height: 153px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+
+.app-title-front-page {
+  float: left;
+  margin-left: 0.91069%;
+  font: 1.25em/1.38 'Ubuntu Medium';
+  color: rgb(255, 0, 0);
+}
+
+.app-title-in-appbox {
+  position: relative;
+  float: left;
+  z-index: 17;
+  width: 99.3210475266%;
+  height: 1.688rem;
+}
+
+.appbox-app-header {
+  position: absolute;
+  top: 8.25rem;
+  left: 3.115295031%;
+  z-index: 18;
+  width: 93.1677018633%;
+  height: 2.563rem;
+}
+
+.appbox-app-icon {
+  display: block;
+  position: absolute;
+  top: 1.188rem;
+  left: 0;
+  right: 0;
+  z-index: 19;
+  width: 80.1242236024%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-grp {
+  position: absolute;
+  top: 27.875rem;
+  left: 10%;
+  z-index: 22;
+  width: 80%;
+  height: 20.375rem;
+  background-color: rgb(250, 250, 250);
+}
+
+.gallery-container {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 80%;
+  height: 23.563rem;
+  margin-left: 10%;
+  border: 0.125rem solid rgb(185, 185, 185);
+  border-radius: 0.125rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.gallery-image {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 0;
+  width: 99.1631799163%;
+  height: auto;
+  margin: 0.25rem 0 0 0.41678%;
+  overflow: hidden;
+}
+
+.small-app-display {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 21;
+  width: 17.1875%;
+  height: 12.375rem;
+  margin: 1.875rem 0 0 2.08171%;
+}
+
+.small-app-display-bg {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 12.375rem;
+  max-height: 198px;
+  border: 0.125rem solid rgb(130, 128, 128);
+  background-color: rgb(213, 213, 213);
+}
+
+.title-link {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 6;
+  width: 99.7050147492%;
+  height: 1.688rem;
+  margin-left: 0.2949899999%;
+}
+
+.top-nvigation {
+  float: left;
+  width: 80%;
+  height: 3.375rem;
+  margin-left: 10%;
+  background-color: rgb(222, 222, 222);
+}
+
+.visit-app-btn {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 2;
+  width: 22.1238938053%;
+  height: 1.313rem;
+  margin: 10.438rem 0 0 0.28577%;
+  border-radius: 0.188rem;
+  background-color: rgb(77, 174, 254);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font: 400 1em/1.38 Helvetica;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.visit-app-btn:hover {
+  background-color: rgb(18, 81, 133);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+  color: rgb(246, 246, 246);
+}
+
+.visit-app-btn:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .5) inset, 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.visit-app-btn:focus {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.white-box {
+  position: absolute;
+  top: -1.5rem;
+  left: -3.3646755163%;
+  z-index: 1;
+  width: 115.634218289%;
+  height: 22.75rem;
+  background-color: rgb(255, 255, 255);
+}
+
+@media(max-width: 970px) {
+  .app-details-container .app-ratting {
+    position: relative;
+    z-index: 7;
+    margin-left: 0.28539%;
+  }
+
+  .app-details-container .app-small-details {
+    font-size: 0.875em;
+  }
+
+  .app-details-container .title-link {
+    position: relative;
+    z-index: 6;
+    margin-left: 0.2911%;
+  }
+
+  .app-details-container .visit-app-btn {
+    position: relative;
+    z-index: 2;
+    width: 29.9543378995%;
+    margin-top: 8.25rem;
+    margin-left: 0.21119%;
+  }
+
+  .app-details-container .white-box {
+    left: -3.3675799087%;
+    width: 115.6335616438%;
+  }
+
+  .app-title-in-appbox .app-category-icon {
+    left: -0.0200320513%;
+  }
+
+  .app-title-in-appbox .app-name-in-appbox {
+    top: 0.313rem;
+    left: 20.7287449392%;
+  }
+
+  .appbox-app-header .app-rating-div {
+    top: 1.688rem;
+    left: 0;
+    width: 98.3606557377%;
+  }
+
+  .appbox-app-header .app-title-in-appbox {
+    position: absolute;
+    float: none;
+    left: -0.3486120078%;
+    width: 98.3344092963%;
+  }
+
+  .container-grp .small-app-display {
+    position: relative;
+    z-index: 21;
+    width: 19.5614529639%;
+    margin-left: 2.18871%;
+  }
+
+  .gallery-container .gallery-image {
+    position: relative;
+    z-index: 0;
+    width: 99.2227979274%;
+    height: auto;
+    margin-left: 0.38658%;
+  }
+
+  .small-app-display .small-app-display-bg {
+    position: absolute;
+    float: none;
+    left: 0.0102933607%;
+    width: 100.1338136901%;
+    height: 10.188rem;
+  }
+
+  .small-app-display-bg .appbox-app-header {
+    top: 7.063rem;
+    left: 4.0751689189%;
+    width: 93.6744073536%;
+  }
+
+  .small-app-display-bg .appbox-app-icon {
+    top: 0.438rem;
+    left: 0;
+    right: 0;
+    width: 91.8601838413%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .title-link .app-icon {
+    margin-left: 0.28624%;
+  }
+
+  .title-link .app-title-front-page {
+    margin-left: 0.53813%;
+    font-size: 1.125em;
+  }
+}
