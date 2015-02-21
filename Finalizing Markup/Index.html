@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="@AppConfig.Setting.GoogleMetaTag" />
+        <title>@ViewBag.Title</title>
+
+        <link href="Content/css/bootstrap.theme.unitied.css" rel="stylesheet" />
+        <link href="Content/css/Site.css" rel="stylesheet" />
+        <link href="Content/css/color-fonts.css" rel="stylesheet" />
+        <link href="Content/css/miscellaneous.css" rel="stylesheet" />
+        <link href="Content/css/front-developer.css" rel="stylesheet" /> <!-- Custom CSS should be written-->
+        <link href="Content/css/OverrideCss.css" rel="stylesheet" />
+        <script src="Content/Scripts/modernizr-2.6.2.js"></script>
+
+        <meta name="description" content="@ViewBag.Meta" />
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="@AppVar.Url" class="navbar-brand" title="@AppVar.Name - @AppVar.Subtitle"><span class="glyphicon glyphicon-home"></span> @AppVar.Name</a></li>
+                        <li>Admin Link</li>
+                        <li>Contact Link</li>
+                    </ul>
+                    <!-- @Html.Partial("_LoginPartial") start-->
+                    <!-- Logged In-->
+                    <!--<ul class="nav navbar-nav navbar-right">
+                        <li>
+                            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Manage", "Account", routeValues: new { area="" }, htmlAttributes: new { title = "Manage" })
+                        </li>
+                        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+                    </ul>-->
+                    <!-- As guest In-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>Register Link</li>
+                        <li>Log in link</li>
+                    </ul>
+                    <!-- Render Partial End-->
+                </div>
+            </div>
+        </div>
+        <!--@RenderSection("featured", required: false)-->
+
+    
+        <div class="container body-content">
+            <!--@RenderBody() Body Start-->
+            <div class="jumbotron">
+                <h1>@AppVar.Name</h1>
+                <p class="lead">@AppVar.Subtitle</p>
+                <p>URL: @AppVar.Url</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="h2">Getting started</h1>
+                    <p>
+                        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                        enables a clean separation of concerns and gives you full control over markup
+                        for enjoyable, agile development.
+                    </p>
+                    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="h2">Get more libraries</h1>
+                    <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+                    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="h2">Web Hosting</h1>
+                    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+                    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+                </div>
+            </div>
+            <!-- Body End-->
+            <!--@Html.Partial("_Footer") Footer started-->
+            <hr />
+            <footer class="text-center">
+                <p>&copy; @DateTime.Now.Year <a href="@AppVar.Url" title="@AppVar.Name - @AppVar.Subtitle">@AppVar.Name</a> </p>
+            </footer>
+            <!-- Footer End-->
+        </div>
+        <!--Scripts-->
+        <script src="Content/Scripts/respond.min.js"></script>
+        <script src="Content/Scripts/bootstrap.js"></script>
+        <script src="Content/Scripts/jquery.validate.min.js"></script>
+        <script src="Scripts/CustomScripts/EnterToNext.js"></script>
+        <script src="Scripts/CustomScripts/RealtimeValidate.js"></script>
+        <script src="Scripts/CustomScripts/RegistrationStepsSlide.js"></script>
+        <script src="Scripts/CustomScripts/CustomJS.js"></script> <!--To run anything in document ready push it here.-->
+    </body>
+</html>

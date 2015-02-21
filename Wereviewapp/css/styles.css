@@ -143,11 +143,31 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.btn-white {
+  display: block;
+  position: absolute;
+  top: 16.5rem;
+  right: 11px;
+  z-index: 78;
+  width: 84px;
+  height: 2.333rem;
+  border: 0.167rem solid rgb(180, 179, 179);
+  border-radius: 0.25rem;
+  background-color: rgb(255, 255, 255);
+  font: 400 1.333em/1.38 'Trebuchet MS';
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.btn-white:hover {
+  background-color: rgb(223, 221, 221);
+}
+
 .container-grp {
   position: absolute;
   top: 37.167rem;
   left: 10%;
-  z-index: 147;
+  z-index: 148;
   width: 80%;
   height: 36.083rem;
 }
@@ -270,23 +290,23 @@ body {
 }
 
 .app-category-icon-10 {
-  z-index: 100;
+  z-index: 101;
 }
 
 .app-category-icon-11 {
-  z-index: 109;
+  z-index: 110;
 }
 
 .app-category-icon-12 {
-  z-index: 118;
+  z-index: 119;
 }
 
 .app-category-icon-13 {
-  z-index: 127;
+  z-index: 128;
 }
 
 .app-category-icon-14 {
-  z-index: 136;
+  z-index: 137;
 }
 
 .app-category-icon-2 {
@@ -314,11 +334,11 @@ body {
 }
 
 .app-category-icon-8 {
-  z-index: 82;
+  z-index: 83;
 }
 
 .app-category-icon-9 {
-  z-index: 91;
+  z-index: 92;
 }
 
 .app-name-in-appbox-1 {
@@ -326,23 +346,23 @@ body {
 }
 
 .app-name-in-appbox-10 {
-  z-index: 99;
+  z-index: 100;
 }
 
 .app-name-in-appbox-11 {
-  z-index: 108;
+  z-index: 109;
 }
 
 .app-name-in-appbox-12 {
-  z-index: 117;
+  z-index: 118;
 }
 
 .app-name-in-appbox-13 {
-  z-index: 126;
+  z-index: 127;
 }
 
 .app-name-in-appbox-14 {
-  z-index: 135;
+  z-index: 136;
 }
 
 .app-name-in-appbox-2 {
@@ -370,11 +390,11 @@ body {
 }
 
 .app-name-in-appbox-8 {
-  z-index: 81;
+  z-index: 82;
 }
 
 .app-name-in-appbox-9 {
-  z-index: 90;
+  z-index: 91;
 }
 
 .app-rating-div-1 {
@@ -382,23 +402,23 @@ body {
 }
 
 .app-rating-div-10 {
-  z-index: 98;
+  z-index: 99;
 }
 
 .app-rating-div-11 {
-  z-index: 107;
+  z-index: 108;
 }
 
 .app-rating-div-12 {
-  z-index: 116;
+  z-index: 117;
 }
 
 .app-rating-div-13 {
-  z-index: 125;
+  z-index: 126;
 }
 
 .app-rating-div-14 {
-  z-index: 134;
+  z-index: 135;
 }
 
 .app-rating-div-2 {
@@ -426,35 +446,35 @@ body {
 }
 
 .app-rating-div-8 {
-  z-index: 80;
+  z-index: 81;
 }
 
 .app-rating-div-9 {
-  z-index: 89;
+  z-index: 90;
 }
 
 .app-ratting-10 {
-  z-index: 88;
+  z-index: 89;
 }
 
 .app-ratting-11 {
-  z-index: 97;
+  z-index: 98;
 }
 
 .app-ratting-12 {
-  z-index: 106;
+  z-index: 107;
 }
 
 .app-ratting-13 {
-  z-index: 115;
+  z-index: 116;
 }
 
 .app-ratting-14 {
-  z-index: 124;
+  z-index: 125;
 }
 
 .app-ratting-15 {
-  z-index: 133;
+  z-index: 134;
 }
 
 .app-ratting-2 {
@@ -486,7 +506,7 @@ body {
 }
 
 .app-ratting-9 {
-  z-index: 79;
+  z-index: 80;
 }
 
 .app-title-in-appbox-1 {
@@ -494,23 +514,23 @@ body {
 }
 
 .app-title-in-appbox-10 {
-  z-index: 101;
+  z-index: 102;
 }
 
 .app-title-in-appbox-11 {
-  z-index: 110;
+  z-index: 111;
 }
 
 .app-title-in-appbox-12 {
-  z-index: 119;
+  z-index: 120;
 }
 
 .app-title-in-appbox-13 {
-  z-index: 128;
+  z-index: 129;
 }
 
 .app-title-in-appbox-14 {
-  z-index: 137;
+  z-index: 138;
 }
 
 .app-title-in-appbox-2 {
@@ -538,11 +558,11 @@ body {
 }
 
 .app-title-in-appbox-8 {
-  z-index: 83;
+  z-index: 84;
 }
 
 .app-title-in-appbox-9 {
-  z-index: 92;
+  z-index: 93;
 }
 
 .appbox-app-header-1 {
@@ -550,23 +570,23 @@ body {
 }
 
 .appbox-app-header-10 {
-  z-index: 102;
+  z-index: 103;
 }
 
 .appbox-app-header-11 {
-  z-index: 111;
+  z-index: 112;
 }
 
 .appbox-app-header-12 {
-  z-index: 120;
+  z-index: 121;
 }
 
 .appbox-app-header-13 {
-  z-index: 129;
+  z-index: 130;
 }
 
 .appbox-app-header-14 {
-  z-index: 138;
+  z-index: 139;
 }
 
 .appbox-app-header-2 {
@@ -594,11 +614,11 @@ body {
 }
 
 .appbox-app-header-8 {
-  z-index: 84;
+  z-index: 85;
 }
 
 .appbox-app-header-9 {
-  z-index: 93;
+  z-index: 94;
 }
 
 .appbox-app-icon-1 {
@@ -606,23 +626,23 @@ body {
 }
 
 .appbox-app-icon-10 {
-  z-index: 103;
+  z-index: 104;
 }
 
 .appbox-app-icon-11 {
-  z-index: 112;
+  z-index: 113;
 }
 
 .appbox-app-icon-12 {
-  z-index: 121;
+  z-index: 122;
 }
 
 .appbox-app-icon-13 {
-  z-index: 130;
+  z-index: 131;
 }
 
 .appbox-app-icon-14 {
-  z-index: 139;
+  z-index: 140;
 }
 
 .appbox-app-icon-2 {
@@ -650,11 +670,11 @@ body {
 }
 
 .appbox-app-icon-8 {
-  z-index: 85;
+  z-index: 86;
 }
 
 .appbox-app-icon-9 {
-  z-index: 94;
+  z-index: 95;
 }
 
 .appbox-list-parent-1 {
@@ -662,12 +682,12 @@ body {
 }
 
 .appbox-list-parent-2 {
-  z-index: 142;
+  z-index: 143;
 }
 
 .latest-apps-listh-2 {
   clear: both;
-  margin-top: 2.917rem;
+  margin-top: 4.583rem;
 }
 
 .small-app-display-11,
@@ -685,7 +705,7 @@ body {
 .small-app-display-3,
 .small-app-display-5,
 .small-app-display-7 {
-  margin-left: 1.4583299999%;
+  margin-left: 1.45671%;
 }
 
 .apps-text strong {
