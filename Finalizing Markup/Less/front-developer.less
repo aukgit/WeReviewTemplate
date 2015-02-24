@@ -65,9 +65,9 @@ header {
     background-color: #ECECEC;
     //.rounded(3px);
     text-align: center;
-    .height(163px);
+    .height(175px);
     border: 2px solid @app-box-background-color;
-
+    /*position:relative;*/
     .app-icon {
         .height(115px);
         .width(122px);
@@ -76,6 +76,19 @@ header {
     .app-title-container {
         .padding(5px,0px,7px,12px);
         text-align: left;
+        .star-rating{
+            font-size:1em;
+            position:absolute;
+            .top(152px);
+            .left(16px);
+
+            .rating-container{
+                color: #909090;
+                .rating-stars{
+                    color: #FF000A;
+                }
+            }
+        }
     }
 
     .app-title {

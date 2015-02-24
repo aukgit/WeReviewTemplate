@@ -60,9 +60,8 @@ $(function () {
 
     });
 
-    $(".rating").rating({
-        filled: 'fa fa-star',
-        empty: 'fa fa-star-o',
-        showClear: false
+    $(".rating-5-front").rating({
+        showClear: false,
+        showCaption: false
     });
 });

@@ -28,59 +28,7 @@ $.extend( settings, options );
 			});
 		}
 			
-		screenSize();
 		
-		$(window).resize(function() {
-			if(lastScreenWidth <= 768 && windowWidth() > 768){
-				unbindEvents();
-				hideCollapse();
-				bindHover();
-				if(settings.align == "right" && bigScreen == false){
-					rightAlignMenu();
-					bigScreen = true;
-				}
-			}
-			if(lastScreenWidth > 768 && windowWidth() <= 768){
-				unbindEvents();
-				showCollapse();
-				bindClick();
-				if(bigScreen == true){
-					rightAlignMenu();
-					bigScreen = false;
-				}
-			}
-			if(settings.align == "right"){
-				if(lastScreenWidth > 768 && windowWidth() > 768)
-					fixSubmenuRight();
-			}
-			else{
-				if(lastScreenWidth > 768 && windowWidth() > 768)
-					fixSubmenuLeft();
-			}
-			lastScreenWidth = windowWidth();
-		});
-		
-		function screenSize(){
-			if(windowWidth() <= 768){
-				showCollapse();
-				bindClick();
-				if(bigScreen == true){
-					rightAlignMenu();
-					bigScreen = false;
-				}
-			}
-			else{
-				hideCollapse();
-				bindHover();
-				if(settings.align == "right"){
-					rightAlignMenu();
-					bigScreen = true;
-				}
-				else{
-					fixSubmenuLeft();
-				}
-			}
-		}
 		
 		function bindHover(){
 			if (navigator.userAgent.match(/Mobi/i) || window.navigator.msMaxTouchPoints > 0 || settings.submenuTrigger == "click"){						
@@ -207,6 +155,61 @@ $.extend( settings, options );
 		function windowWidth(){
 			return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 		}
+
+
+		$(window).resize(function () {
+		    if (lastScreenWidth <= 768 && windowWidth() > 768) {
+		        unbindEvents();
+		        hideCollapse();
+		        bindHover();
+		        if (settings.align == "right" && bigScreen == false) {
+		            rightAlignMenu();
+		            bigScreen = true;
+		        }
+		    }
+		    if (lastScreenWidth > 768 && windowWidth() <= 768) {
+		        unbindEvents();
+		        showCollapse();
+		        bindClick();
+		        if (bigScreen == true) {
+		            rightAlignMenu();
+		            bigScreen = false;
+		        }
+		    }
+		    if (settings.align == "right") {
+		        if (lastScreenWidth > 768 && windowWidth() > 768)
+		            fixSubmenuRight();
+		    }
+		    else {
+		        if (lastScreenWidth > 768 && windowWidth() > 768)
+		            fixSubmenuLeft();
+		    }
+		    lastScreenWidth = windowWidth();
+		});
+
+		function screenSize() {
+		    if (windowWidth() <= 768) {
+		        showCollapse();
+		        bindClick();
+		        if (bigScreen == true) {
+		            rightAlignMenu();
+		            bigScreen = false;
+		        }
+		    }
+		    else {
+		        hideCollapse();
+		        bindHover();
+		        if (settings.align == "right") {
+		            rightAlignMenu();
+		            bigScreen = true;
+		        }
+		        else {
+		            fixSubmenuLeft();
+		        }
+		    }
+		}
+		screenSize();
+
 	}
 
 }(jQuery));
