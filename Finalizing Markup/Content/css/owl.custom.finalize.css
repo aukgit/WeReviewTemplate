@@ -24,16 +24,16 @@
   position: absolute;
 }
 .owl-theme .owl-controls .owl-buttons .owl-prev {
-  top: 25px;
-  top: 2.5rem;
-  left: -3px;
-  left: -0.3rem;
+  top: 50px;
+  top: 5rem;
+  left: 6px;
+  left: 0.6rem;
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
-  top: 25px;
-  top: 2.5rem;
-  right: -3px;
-  right: -0.3rem;
+  top: 50px;
+  top: 5rem;
+  right: 6px;
+  right: 0.6rem;
 }
 .owl-theme .owl-controls .owl-buttons div {
   background: none;

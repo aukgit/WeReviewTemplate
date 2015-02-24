@@ -56,7 +56,15 @@ header {
     color: orange;
 }
 
-
+.latest-apps{
+    color:red;
+    h1{
+        .margin(10px,0px,10px,5px);
+        color:#FF9000;
+        .font-size(23px);
+        font-weight:bold;
+    }
+}
 
 .app-box {
     display: block;
@@ -75,6 +83,7 @@ header {
 
     .app-title-container {
         .padding(5px,0px,7px,12px);
+        cursor: default;
         text-align: left;
         .star-rating{
             font-size:1em;
@@ -100,4 +109,8 @@ header {
         display: inline-block;
         -webkit-font-smoothing: antialiased;
     }
+}
+
+.app-box:hover{
+    background-color: #bcbcbc;
 }

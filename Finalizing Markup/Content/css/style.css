@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300&amp;subset=latin,cyrillic-ext);
-@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300&amp;subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);*/
 /*----- CSS FONTS LAYOUT---------*/
 /*----- ionicons Fonts Icons ---------*/
 @import "font-awesome.min.css";
@@ -48,7 +48,7 @@ body {
 ========================================================*/
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	font-family: 'Dosis', sans-serif;
+	/*font-family: 'Dosis', sans-serif;*/ /* commented by Alim Ul Karim*/
 }
 h1 {
 	font-size: 50px;

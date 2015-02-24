@@ -1,4 +1,5 @@
-﻿/// <reference path="jquery-1.10.2.js" />
+﻿/// <reference path="jquery-2.1.1.js" />
+
 /// <reference path="jetmenu.js" />
 /// <reference path="modernizr-2.6.2.js" />
 /// <reference path="owl.carousel.min.js" />
@@ -42,8 +43,12 @@ $(function () {
         fullWidth: "off",
         forceFullWidth: "off"
     });
-
-    $("#owl-demo").owlCarousel({
+    var $appboxHtml = $(".owl-list").html();
+    for (var i = 0; i < 20; i++) {
+        $(".owl-list").append($appboxHtml);
+    }
+    
+    $(".owl-list").owlCarousel({
         navigation: true,
         navigationText: [
           "<i class='fa fa-chevron-circle-left'></i>",
@@ -53,10 +58,6 @@ $(function () {
         itemsDesktop: [1000, 5], //5 items between 1000px and 901px
         itemsDesktopSmall: [900, 3], // betweem 900px and 601px
         itemsTablet: [600, 2] //2 items between 600 and 0
-        //beforeInit : function(elem){
-        //    //Parameter elem pointing to $("#owl-demo")
-        //    //random(elem);
-        //}
 
     });
 
