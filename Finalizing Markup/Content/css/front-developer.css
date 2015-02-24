@@ -1,5 +1,14 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+/*---------------------------------------------------
+    Developers Organism
+  ---------------------------------------------------
+    Written by Alim Ul Karim
+  ---------------------------------------------------*/
 body {
   font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ubuntu-font {
+  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .header-2 header nav li a {
   padding: 10px;
@@ -39,4 +48,36 @@ header {
 .orange-color {
   color: orange;
 }
-/*# sourceMappingURL=front-developer.css.map */
+.app-box {
+  display: block;
+  padding-top: 10px;
+  padding-top: 1rem;
+  margin: 5px;
+  margin: 0.5rem;
+  background-color: #ECECEC;
+  text-align: center;
+  height: 163px;
+  height: 16.3rem;
+  border: 2px solid #d0d0d0;
+}
+.app-box .app-icon {
+  height: 115px;
+  height: 11.5rem;
+  width: 122px;
+  width: 12.2rem;
+}
+.app-box .app-title-container {
+  padding: 5px 0px 7px 12px;
+  padding: 0.5rem 0 0.7rem 1.2rem;
+  text-align: left;
+}
+.app-box .app-title {
+  color: black;
+  font-size: 12px;
+  font-size: 0.75em;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}

@@ -42,5 +42,20 @@ $(function () {
         forceFullWidth: "off"
     });
 
-    $("#owl-example").owlCarousel();
+    $("#owl-demo").owlCarousel({
+        navigation: true,
+        navigationText: [
+          "<i class='fa fa-chevron-circle-left'></i>",
+          "<i class='fa fa-chevron-circle-right'></i>"
+        ],
+        items: 6, //10 items above 1000px browser width
+        itemsDesktop: [1000, 5], //5 items between 1000px and 901px
+        itemsDesktopSmall: [900, 3], // betweem 900px and 601px
+        itemsTablet: [600, 2] //2 items between 600 and 0
+        //beforeInit : function(elem){
+        //    //Parameter elem pointing to $("#owl-demo")
+        //    //random(elem);
+        //}
+
+    });
 });

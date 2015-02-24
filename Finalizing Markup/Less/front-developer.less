@@ -1,8 +1,16 @@
 ﻿@import "lesshat.less";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@app-box-background-color: #d0d0d0;
 
-body{
+body {
     font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.ubuntu-font {
+    font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+
 .header-2 header nav li a {
     .padding(10px);
 }
@@ -11,8 +19,8 @@ header {
     .height(47px);
 }
 
-.almost-black{
-    color:rgb(73, 70, 70);
+.almost-black {
+    color: rgb(73, 70, 70);
 }
 
 .header-2 .logo {
@@ -44,6 +52,39 @@ header {
 }
 
 
-.orange-color{
-    color:orange;
+.orange-color {
+    color: orange;
+}
+
+
+
+.app-box {
+    display: block;
+    .padding-top(10px);
+    .margin(5px);
+    background-color: #ECECEC;
+    //.rounded(3px);
+    text-align: center;
+    .height(163px);
+    border: 2px solid @app-box-background-color;
+
+    .app-icon {
+        .height(115px);
+        .width(122px);
+    }
+
+    .app-title-container {
+        .padding(5px,0px,7px,12px);
+        text-align: left;
+    }
+
+    .app-title {
+        color: black;
+        .font-size(12px);
+        margin: 0;
+        font-weight: bold;
+        text-align: left;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+    }
 }
