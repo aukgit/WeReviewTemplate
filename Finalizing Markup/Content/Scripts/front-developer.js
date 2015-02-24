@@ -8,6 +8,7 @@
 /// <reference path="pei-chart.js" />
 /// <reference path="jquery.lightSlider.min.js" />
 /// <reference path="../../rs-plugin/js/jquery.themepunch.revolution.min.js" />
+/// <reference path="bootstrap-rating.min.js" />
 
 $(function () {
 
@@ -57,5 +58,11 @@ $(function () {
         //    //random(elem);
         //}
 
+    });
+
+    $(".rating").rating({
+        filled: 'fa fa-star',
+        empty: 'fa fa-star-o',
+        showClear: false
     });
 });
