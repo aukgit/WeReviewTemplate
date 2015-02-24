@@ -65,7 +65,7 @@ header {
   padding-top: 1rem;
   margin: 5px;
   margin: 0.5rem;
-  background-color: #ECECEC;
+  background-color: #FFFFFF;
   text-align: center;
   height: 175px;
   height: 17.5rem;
@@ -81,7 +81,6 @@ header {
 .app-box .app-title-container {
   padding: 5px 0px 7px 12px;
   padding: 0.5rem 0 0.7rem 1.2rem;
-  cursor: default;
   text-align: left;
 }
 .app-box .app-title-container .star-rating {
@@ -94,6 +93,7 @@ header {
 }
 .app-box .app-title-container .star-rating .rating-container {
   color: #909090;
+  cursor: default;
 }
 .app-box .app-title-container .star-rating .rating-container .rating-stars {
   color: #FF000A;

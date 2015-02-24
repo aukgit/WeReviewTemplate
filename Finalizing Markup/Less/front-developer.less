@@ -56,13 +56,14 @@ header {
     color: orange;
 }
 
-.latest-apps{
-    color:red;
-    h1{
+.latest-apps {
+    color: red;
+
+    h1 {
         .margin(10px,0px,10px,5px);
-        color:#FF9000;
+        color: #FF9000;
         .font-size(23px);
-        font-weight:bold;
+        font-weight: bold;
     }
 }
 
@@ -70,7 +71,7 @@ header {
     display: block;
     .padding-top(10px);
     .margin(5px);
-    background-color: #ECECEC;
+    background-color: #FFFFFF;
     //.rounded(3px);
     text-align: center;
     .height(175px);
@@ -83,17 +84,19 @@ header {
 
     .app-title-container {
         .padding(5px,0px,7px,12px);
-        cursor: default;
         text-align: left;
-        .star-rating{
-            font-size:1em;
-            position:absolute;
+
+        .star-rating {
+            font-size: 1em;
+            position: absolute;
             .top(152px);
             .left(16px);
 
-            .rating-container{
+            .rating-container {
                 color: #909090;
-                .rating-stars{
+                cursor: default;
+
+                .rating-stars {
                     color: #FF000A;
                 }
             }
@@ -111,6 +114,6 @@ header {
     }
 }
 
-.app-box:hover{
+.app-box:hover {
     background-color: #bcbcbc;
 }
