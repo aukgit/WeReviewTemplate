@@ -14,23 +14,23 @@
 $(function () {
 
     var sampleItemsCreate = {
-        appList: function () {
+        appList: function (numberOfItems) {
             var $singleItemhtml = $(".owl-list").html();
-            for (var i = 0; i < 20; i++) {
+            for (var i = 0; i < numberOfItems; i++) {
                 $(".owl-list").append($singleItemhtml);
             }
         },
-        gallerySlides: function () {
+        gallerySlides: function (numberOfItems) {
             var listOfAnimations = ["zoomout","fade"];
             var $singleItemhtml = $(".tp-banner ul").html();
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < numberOfItems; i++) {
                 $(".tp-banner ul").append($singleItemhtml);
             }
         }
     }
 
-    sampleItemsCreate.appList();
-    sampleItemsCreate.gallerySlides();
+    sampleItemsCreate.appList(20);
+    sampleItemsCreate.gallerySlides(5);
 
 
 });
