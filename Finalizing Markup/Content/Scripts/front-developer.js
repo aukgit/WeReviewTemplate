@@ -43,10 +43,7 @@ $(function () {
         fullWidth: "off",
         forceFullWidth: "off"
     });
-    var $appboxHtml = $(".owl-list").html();
-    for (var i = 0; i < 20; i++) {
-        $(".owl-list").append($appboxHtml);
-    }
+    
     
     $(".owl-list").owlCarousel({
         navigation: true,

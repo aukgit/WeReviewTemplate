@@ -144,12 +144,19 @@ header {
 
 
 .tp-banner {
+    .height(385px);
     .app-title {
         left: 38.333333px;
         top: 5px;
         font-size: 26px;
         .ubuntu-font;
-
+        h1{
+            display:inline;
+            margin:0;
+            font-size: 24px;
+            font-size: 1em;
+            color: gray;
+        }
     }
     .platform-icon {
         .font-size(43px);
@@ -162,11 +169,19 @@ header {
     .app-description {
         text-align: justify;
         color: @app-description-color;
-        width: 357px;
+    }
+    .app-description-wrapper{
+        width: 400px;
+
     }
 
     .app-category {
         color: red;
-        font-size: 15px;
+        .font-size(15px);
     }
+}
+
+
+.rating-disabled{
+    cursor:default;
 }

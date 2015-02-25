@@ -126,11 +126,22 @@ header {
 .tp-caption .large_bold_grey {
   font-size: 31px;
 }
+.tp-banner {
+  height: 385px;
+  height: 38.5rem;
+}
 .tp-banner .app-title {
   left: 38.333333px;
   top: 5px;
   font-size: 26px;
   font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.tp-banner .app-title h1 {
+  display: inline;
+  margin: 0;
+  font-size: 24px;
+  font-size: 1em;
+  color: gray;
 }
 .tp-banner .platform-icon {
   font-size: 43px;
@@ -144,9 +155,15 @@ header {
 .tp-banner .app-description {
   text-align: justify;
   color: #626262;
-  width: 357px;
+}
+.tp-banner .app-description-wrapper {
+  width: 400px;
 }
 .tp-banner .app-category {
   color: red;
   font-size: 15px;
+  font-size: 0.9375em;
+}
+.rating-disabled {
+  cursor: default;
 }
