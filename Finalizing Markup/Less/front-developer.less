@@ -1,6 +1,7 @@
 ﻿@import "lesshat.less";
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 @app-box-background-color: #d0d0d0;
+@app-description-color: #626262;
 
 body {
     font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -121,6 +122,8 @@ header {
     }
 
     .rating-container {
+        color: #B2B2B2;
+        cursor: default;
     }
 
     .rating-stars {
@@ -133,11 +136,37 @@ header {
 }
 
 
-.tp-caption.large_bold_grey {
-    font-size: 31px;
+.tp-caption {
+    .large_bold_grey {
+        font-size: 31px;
+    }
 }
 
-.app-title-1-gallery {
-    left: 38.333333px;
-    top: 5px;
+
+.tp-banner {
+    .app-title {
+        left: 38.333333px;
+        top: 5px;
+        font-size: 26px;
+        .ubuntu-font;
+
+    }
+    .platform-icon {
+        .font-size(43px);
+        color: #4b1786;
+    }
+    .rating-value-display {
+        .font-size(20px);
+    }
+
+    .app-description {
+        text-align: justify;
+        color: @app-description-color;
+        width: 357px;
+    }
+
+    .app-category {
+        color: red;
+        font-size: 15px;
+    }
 }
