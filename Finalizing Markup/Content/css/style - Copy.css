@@ -126,7 +126,15 @@ section {
 ========================================================*/
 .btn {
 	background: #ff7200;
-
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 70px;
+	min-width: 150px;
+	padding: 0 40px;
+	color: #fff;
 }
 /*=======================================================
 			MARGIN 20px

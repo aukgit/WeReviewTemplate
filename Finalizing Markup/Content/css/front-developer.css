@@ -5,16 +5,32 @@
     Written by Alim Ul Karim
   ---------------------------------------------------*/
 body {
-  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .ubuntu-font {
   font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.helvetica-font {
+  font-family: Helvetica, Arial, sans-serif !important;
 }
 .rating-disabled {
   cursor: default;
 }
 .display-table {
   display: table;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.header-2 header nav li a {
+  padding: 10px;
+  padding: 1rem;
 }
 .header-2 header nav li a {
   padding: 10px;
@@ -54,16 +70,24 @@ header {
 .orange-color {
   color: orange;
 }
-.list-of-apps-home {
-  color: red;
+.apps-list {
+  margin-top: 10px;
+  margin-top: 1rem;
 }
-.list-of-apps-home h1 {
-  margin: 10px 0px 10px 5px;
-  margin: 1rem 0 1rem 0.5rem;
-  color: #FF9000;
+.apps-list-header-row {
+  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.apps-list-header-row .title h1 {
+  margin: 0px 0px 10px 5px;
+  margin: 0 0 1rem 0.5rem;
+  color: red;
   font-size: 23px;
   font-size: 1.4375em;
-  font-weight: bold;
+  float: left;
+}
+.apps-list-header-row .float-right.btn {
+  margin: 0px 5px 0px 0px;
+  margin: 0 0.5rem 0 0;
 }
 /*.owl-list {
     .owl-item {
@@ -71,6 +95,9 @@ header {
         width: 170px;
     }
 }*/
+.btn {
+  border: none;
+}
 .paragraph-end {
   height: 19px;
   width: 45px;
@@ -93,6 +120,7 @@ header {
   text-align: center;
   height: 196px;
   height: 19.6rem;
+  line-height: 1;
   border: 2px solid #d0d0d0;
   /*position:relative;*/
 }
@@ -136,7 +164,6 @@ header {
   font-size: 0.75em;
   margin: 0px 0px 0px 1px;
   margin: 0 0 0 0.1rem;
-  font-weight: bold;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   white-space: nowrap;
@@ -157,7 +184,6 @@ header {
   color: #9d9d9d;
   font-size: 13px;
   font-size: 0.8125em;
-  font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
@@ -259,4 +285,12 @@ header {
 .is-sticky .search-bar {
   position: relative;
   top: -20px;
+}
+@media screen and (max-width: 450px) {
+  .search-bar,
+  .is-sticky .search-bar {
+    position: relative;
+    top: -2px;
+    clear: both;
+  }
 }

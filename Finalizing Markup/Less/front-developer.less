@@ -7,11 +7,15 @@
 @app-title-width: 108px;
 
 body {
-    font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .ubuntu-font {
     font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.helvetica-font {
+    font-family: Helvetica, Arial, sans-serif !important;
 }
 
 .rating-disabled {
@@ -20,6 +24,22 @@ body {
 
 .display-table {
     display: table;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.header-2 header nav li a {
+    .padding(10px);
 }
 
 .header-2 header nav li a {
@@ -67,14 +87,24 @@ header {
     color: orange;
 }
 
-.list-of-apps-home {
-    color: red;
+.apps-list {
+    .margin-top(10px);
+}
 
-    h1 {
-        .margin(10px,0px,10px,5px);
-        color: #FF9000;
+.apps-list-header-row {
+    .ubuntu-font;
+
+    .title h1 {
+        .margin(0px,0px,10px,5px);
+        //margin:0;
+        color: red;
         .font-size(23px);
-        font-weight: bold;
+        //font-weight: bold;
+        float: left;
+    }
+
+    .float-right.btn {
+        .margin(0px,5px,0px,0px);
     }
 }
 
@@ -85,7 +115,9 @@ header {
     }
 }*/
 
-
+.btn {
+    border: none;
+}
 
 .paragraph-end {
     height: 19px;
@@ -108,6 +140,7 @@ header {
     //.rounded(3px);
     text-align: center;
     .height(196px);
+    line-height: 1;
     border: 2px solid @app-box-background-color;
     /*position:relative;*/
     //min-width: 157px;
@@ -159,7 +192,7 @@ header {
         color: black;
         .font-size(12px);
         .margin(0px,0px,0px,1px);
-        font-weight: bold;
+        //font-weight: bold;
         //text-align: left;
         display: inline-block;
         -webkit-font-smoothing: antialiased;
@@ -183,7 +216,6 @@ header {
         .min-width(@app-container-width);
         color: @published-by-color;
         .font-size(13px);
-        font-family: monospace;
         white-space: nowrap;
         overflow: hidden;
         position: relative;
@@ -312,4 +344,12 @@ header {
 .is-sticky .search-bar {
     position: relative;
     top: -20px;
+}
+
+@media screen and (max-width: 450px) {
+    .search-bar, .is-sticky .search-bar {
+        position: relative;
+        top: -2px;
+        clear: both;
+    }
 }
