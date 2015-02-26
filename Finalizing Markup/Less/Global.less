@@ -1,7 +1,7 @@
-﻿@base-font-size-px: 10; // root's font size. @base-font-size-px MUST BE AN INTEGER.
+﻿@base-font-size-px: 10;
 @base-font-size-px-to-em: 16;
 
-@pxtorem-js-function: ~ `pxtorem = function(px){ 
+@pxtorem-js-function: ~`pxtorem = function(px){ 
     if (typeof rmxsBaseFontSize == 'undefined')
       rmxsBaseFontSize = @{base-font-size-px}; 
       if(px == '0px' || px == '0'){
@@ -12,7 +12,7 @@
       
     }`;
 
-@pxtoem-js-function: ~ `pxtoem = function(px){ 
+@pxtoem-js-function: ~`pxtoem = function(px){ 
     if (typeof emBaseFontSize == 'undefined')
       emBaseFontSize = @{base-font-size-px-to-em};
       if(px == '0px' || px == '0'){
