@@ -300,7 +300,7 @@ header {
   position: relative;
   top: -20px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .search-bar,
   .is-sticky .search-bar {
     position: relative;
@@ -332,10 +332,6 @@ header {
   display: inherit;
   font: inherit;
 }
-.app-detail.app-title-wrapper h1 strong,
-.app-detail.app-title-wrapper h2 strong {
-  font-weight: normal;
-}
 .app-detail.app-title-wrapper h2 {
   color: #1d7ec9;
   font-size: 0.8em;
@@ -343,4 +339,7 @@ header {
 }
 .app-detail.app-title-wrapper .fa-apple {
   color: grey;
+}
+.app-detail.app-title-wrapper strong {
+  font-weight: normal;
 }
