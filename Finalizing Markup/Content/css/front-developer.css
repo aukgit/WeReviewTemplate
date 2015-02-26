@@ -124,8 +124,9 @@ header {
   color: #F39C12;
 }
 .app-box .app-title {
-  width: 108px;
-  width: 10.8rem;
+  min-width: 108px;
+  min-width: 10.8rem;
+  width: 100%;
   overflow: hidden;
   color: black;
   font-size: 12px;
