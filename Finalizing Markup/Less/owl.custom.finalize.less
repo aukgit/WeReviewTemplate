@@ -1,6 +1,6 @@
 ﻿@import "lesshat.less";
-@top-distance-left-right-button: 50px;
-@left-right-distance-prev-next-button: -36px;
+@top-distance-left-right-button: 57px;
+@left-right-distance-prev-next-button: -40px;
 @left-right-distance-prev-next-button-mobile: 5px;
 
 #owl-demo .item {
@@ -74,16 +74,16 @@
 /* Header Navigation */
 #top-nav {
     border-bottom: 1px solid #e1e6dd;
-    background: #FFF;
-    -webkit-transform: translateZ(0);
+    background: #FFF;    
+    .transform(~'translateZ(0)');
 }
 
 #top-nav.navbar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #top-nav.navbar .nav {
-    margin: 8px 0px;
+    margin: 8px 0;
 }
 
 #top-nav.navbar .nav > li > a {
@@ -112,7 +112,7 @@
 }
 
 .btn-navbar span.icon-bar {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 /* Header  */
@@ -158,21 +158,19 @@ pre.pre-show {
 }
 
 .tab-content pre.pre-show {
-    margin: 0px 0px 0px 0px;
+    margin: 0;
 }
 
 .nav-tabs {
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    -webkit-border-radius: 0px 0px 4px 4px;
-    -moz-border-radius: 0px 0px 4px 4px;
-    border-radius: 0px 0px 4px 4px;
+    .border-radius(0px, 0px, 4px, 4px);
 }
 /* Content */
 .table th, .table td {

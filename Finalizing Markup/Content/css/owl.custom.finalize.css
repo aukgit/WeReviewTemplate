@@ -26,16 +26,16 @@
 .owl-theme .owl-controls .owl-buttons .owl-prev,
 .owl-theme .owl-controls .owl-buttons .owl-next {
   color: grey;
-  top: 50px;
-  top: 5rem;
+  top: 57px;
+  top: 5.7rem;
 }
 .owl-theme .owl-controls .owl-buttons .owl-prev {
-  left: -36px;
-  left: -3.6rem;
+  left: -40px;
+  left: -4rem;
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
-  right: -36px;
-  right: -3.6rem;
+  right: -40px;
+  right: -4rem;
 }
 @media screen and (max-width: 450px) {
   .owl-theme .owl-controls .owl-buttons .owl-prev,
@@ -62,12 +62,21 @@
   border-bottom: 1px solid #e1e6dd;
   background: #FFF;
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 #top-nav.navbar {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 #top-nav.navbar .nav {
-  margin: 8px 0px;
+  margin: 8px 0;
 }
 #top-nav.navbar .nav > li > a {
   padding: 6px 12px;
@@ -109,7 +118,7 @@
   background-color: #ff7920;
 }
 .btn-navbar span.icon-bar {
-  margin-top: 0px;
+  margin-top: 0;
 }
 /* Header  */
 #header {
@@ -145,11 +154,11 @@ pre.pre-show {
   margin: 40px 0px;
 }
 .tab-content pre.pre-show {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
 }
 .nav-tabs {
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .tab-content {
   border-left: 1px solid #ddd;

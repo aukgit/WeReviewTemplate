@@ -130,6 +130,14 @@ header {
   width: 122px;
   width: 12.2rem;
 }
+.app-box .app-description-wrapper {
+  background-color: white;
+  height: 62px;
+  height: 6.2rem;
+  width: 100%;
+  margin-top: 5px;
+  margin-top: 0.5rem;
+}
 .app-box .app-title-container {
   text-align: center;
   min-width: 124px;
