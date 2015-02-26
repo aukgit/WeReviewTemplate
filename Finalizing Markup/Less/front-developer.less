@@ -3,7 +3,8 @@
 @app-box-background-color: #d0d0d0;
 @app-description-color: #626262;
 @published-by-color: #9d9d9d;
-
+@app-container-width:139px;
+@app-title-width: @app-container-width - 40;
 
 body {
     font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -59,7 +60,7 @@ header {
     color: orange;
 }
 
-.latest-apps {
+.list-of-apps-home {
     color: red;
 
     h1 {
@@ -88,8 +89,10 @@ header {
     }
 
     .app-title-container {
-        .padding(5px,0px,7px,12px);
-        text-align: left;
+        //.padding(5px,0px,7px,12px);
+        text-align: center;
+        .width(@app-container-width);
+        position:relative;
     }
 
     .star-rating {
@@ -109,6 +112,9 @@ header {
     }
 
     .app-title {
+        .width(@app-title-width);
+        //.height(12px);
+        overflow: hidden;
         color: black;
         .font-size(12px);
         margin: 0;
@@ -116,35 +122,23 @@ header {
         text-align: left;
         display: inline-block;
         -webkit-font-smoothing: antialiased;
+        white-space: nowrap;
+        position:relative;
     }
 
     .published-by {
-        position: absolute;
+        position: absolute; 
         .top(155px);
+        width:inherit;
         color: @published-by-color;
         .font-size(13px);
         font-family: monospace;
-        .width(128px);
         white-space: nowrap;
-        overflow: hidden;
+        overflow: hidden; 
+        position:relative;
     }
 }
 
-.tp-banner {
-    .star-rating {
-        font-size: 1.5em;
-        .height(21px);
-    }
-
-    .rating-container {
-        color: #B2B2B2;
-        cursor: default;
-    }
-
-    .rating-stars {
-        color: #F39C12;
-    }
-}
 
 .app-box:hover {
     background-color: #bcbcbc;
@@ -159,7 +153,8 @@ header {
 }
 
 
-.tp-banner {
+
+.gallery-home {
     .height(385px);
 
     .app-title {
@@ -182,18 +177,34 @@ header {
         color: #4b1786;
     }
 
+    .star-rating {
+        font-size: 1.5em;
+        .height(21px);
+    }
+
+    .rating-container {
+        color: #B2B2B2;
+        cursor: default;
+    }
+
+    .rating-stars {
+        color: #F39C12;
+    }
+
     .rating-value-display {
         .font-size(20px);
+        color: #F39C12;
     }
 
     .app-description {
         color: @app-description-color;
         .width(385px);
+        text-align: left;
+
         p {
             text-align: justify;
             -ms-word-wrap: break-word;
             word-wrap: break-word;
-            
         }
     }
 
@@ -210,4 +221,30 @@ header {
 
 .rating-disabled {
     cursor: default;
+}
+
+.paragraph-end {
+    height: 19px;
+    width: 45px;
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)));
+    background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+    background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ffffff',EndColorStr='#ffffff');
+    bottom: 47px;
+    max-height: 100%;
+    position: absolute;
+    right: 8px;
+}
+
+@media (max-width: 450px) {
+    .gallery-home {
+    }
+
+    .app-box {
+        //width: 378px;
+    }
+
+    .app-title-container {
+        .width(378px);
+    }
 }

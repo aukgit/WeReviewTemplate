@@ -48,10 +48,10 @@ header {
 .orange-color {
   color: orange;
 }
-.latest-apps {
+.list-of-apps-home {
   color: red;
 }
-.latest-apps h1 {
+.list-of-apps-home h1 {
   margin: 10px 0px 10px 5px;
   margin: 1rem 0 1rem 0.5rem;
   color: #FF9000;
@@ -79,9 +79,10 @@ header {
   width: 12.2rem;
 }
 .app-box .app-title-container {
-  padding: 5px 0px 7px 12px;
-  padding: 0.5rem 0 0.7rem 1.2rem;
-  text-align: left;
+  text-align: center;
+  width: 139px;
+  width: 13.9rem;
+  position: relative;
 }
 .app-box .star-rating {
   font-size: 1em;
@@ -99,6 +100,9 @@ header {
   color: #F39C12;
 }
 .app-box .app-title {
+  width: 99px;
+  width: 9.9rem;
+  overflow: hidden;
   color: black;
   font-size: 12px;
   font-size: 0.75em;
@@ -107,31 +111,21 @@ header {
   text-align: left;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
+  position: relative;
 }
 .app-box .published-by {
   position: absolute;
   top: 155px;
   top: 15.5rem;
+  width: inherit;
   color: #9d9d9d;
   font-size: 13px;
   font-size: 0.8125em;
   font-family: monospace;
-  width: 128px;
-  width: 12.8rem;
   white-space: nowrap;
   overflow: hidden;
-}
-.tp-banner .star-rating {
-  font-size: 1.5em;
-  height: 21px;
-  height: 2.1rem;
-}
-.tp-banner .rating-container {
-  color: #B2B2B2;
-  cursor: default;
-}
-.tp-banner .rating-stars {
-  color: #F39C12;
+  position: relative;
 }
 .app-box:hover {
   background-color: #bcbcbc;
@@ -140,50 +134,82 @@ header {
 .tp-caption .large_bold_grey {
   font-size: 31px;
 }
-.tp-banner {
+.gallery-home {
   height: 385px;
   height: 38.5rem;
 }
-.tp-banner .app-title {
+.gallery-home .app-title {
   left: 38.333333px;
   top: 5px;
   font-size: 26px;
   font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
-.tp-banner .app-title h1 {
+.gallery-home .app-title h1 {
   display: inline;
   margin: 0;
   font-size: 24px;
   font-size: 1em;
   color: gray;
 }
-.tp-banner .platform-icon {
+.gallery-home .platform-icon {
   font-size: 43px;
   font-size: 2.6875em;
   color: #4b1786;
 }
-.tp-banner .rating-value-display {
+.gallery-home .star-rating {
+  font-size: 1.5em;
+  height: 21px;
+  height: 2.1rem;
+}
+.gallery-home .rating-container {
+  color: #B2B2B2;
+  cursor: default;
+}
+.gallery-home .rating-stars {
+  color: #F39C12;
+}
+.gallery-home .rating-value-display {
   font-size: 20px;
   font-size: 1.25em;
+  color: #F39C12;
 }
-.tp-banner .app-description {
+.gallery-home .app-description {
   color: #626262;
   width: 385px;
   width: 38.5rem;
+  text-align: left;
 }
-.tp-banner .app-description p {
+.gallery-home .app-description p {
   text-align: justify;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-.tp-banner .app-description-wrapper {
+.gallery-home .app-description-wrapper {
   width: 400px;
 }
-.tp-banner .app-category {
+.gallery-home .app-category {
   color: red;
   font-size: 15px;
   font-size: 0.9375em;
 }
 .rating-disabled {
   cursor: default;
+}
+.paragraph-end {
+  height: 19px;
+  width: 45px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00ffffff', EndColorStr='#ffffff');
+  bottom: 47px;
+  max-height: 100%;
+  position: absolute;
+  right: 8px;
+}
+@media (max-width: 450px) {
+  .app-title-container {
+    width: 378px;
+    width: 37.8rem;
+  }
 }
