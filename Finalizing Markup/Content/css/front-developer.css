@@ -8,7 +8,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .ubuntu-font {
-  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+body #wrap .app-details-page {
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .helvetica-font {
   font-family: Helvetica, Arial, sans-serif !important;
@@ -75,7 +78,7 @@ header {
   margin-top: 1rem;
 }
 .apps-list-header-row {
-  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .apps-list-header-row .title h1 {
   margin: 0px 0px 10px 5px;
@@ -223,7 +226,7 @@ header {
   left: 38.333333px;
   top: 5px;
   font-size: 26px;
-  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .gallery-home .app-title h1 {
   display: inline;
@@ -309,4 +312,35 @@ header {
 .tp-rightarrow.preview2:after {
   top: 23px;
   top: 2.3rem;
+}
+.app-detail.app-title-wrapper {
+  margin: 7px 0px 10px 0px;
+  margin: 0.7rem 0 1rem 0;
+}
+.app-detail.app-title-wrapper .app-title-row {
+  display: inline-block;
+  font-size: 29px;
+  font-size: 1.8125em;
+  color: red;
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.app-detail.app-title-wrapper h1,
+.app-detail.app-title-wrapper h2 {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  display: inherit;
+  font: inherit;
+}
+.app-detail.app-title-wrapper h1 strong,
+.app-detail.app-title-wrapper h2 strong {
+  font-weight: normal;
+}
+.app-detail.app-title-wrapper h2 {
+  color: #1d7ec9;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.app-detail.app-title-wrapper .fa-apple {
+  color: grey;
 }

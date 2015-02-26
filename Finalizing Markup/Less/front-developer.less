@@ -10,8 +10,13 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+
 .ubuntu-font {
-    font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body #wrap .app-details-page {
+    .ubuntu-font;
 }
 
 .helvetica-font {
@@ -128,7 +133,6 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ffffff',EndColorStr='#ffffff');
     bottom: 0;
     .right(-8px);
-
     max-height: 100%;
     position: absolute;
 }
@@ -366,4 +370,41 @@ header {
 
 .tp-leftarrow.preview2:after, .tp-rightarrow.preview2:after {
     .top(23px);
+}
+
+
+// app-details page
+
+.app-detail.app-title-wrapper {
+    .margin(7px,0px,10px,0px);
+
+    .app-title-row {
+        display: inline-block;
+        .font-size(29px);
+        color: red;
+        .ubuntu-font;
+
+    }
+
+    h1, h2 {
+        margin: 0;
+        color: inherit;
+        font-size: inherit;
+        display: inherit;
+        font: inherit;
+
+        strong {
+            font-weight: normal;
+        }
+    }
+
+    h2 {
+        color: #1d7ec9;
+        .font-size(.80em);
+        font-weight: bold;
+    }
+
+    .fa-apple {
+        color: grey;
+    }
 }
