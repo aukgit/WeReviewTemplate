@@ -2,6 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 @app-box-background-color: #d0d0d0;
 @app-description-color: #626262;
+@published-by-color: #9d9d9d;
+
 
 body {
     font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -68,6 +70,8 @@ header {
     }
 }
 
+
+
 .app-box {
     display: block;
     .padding-top(10px);
@@ -75,7 +79,7 @@ header {
     background-color: #FFFFFF;
     //.rounded(3px);
     text-align: center;
-    .height(175px);
+    .height(196px);
     border: 2px solid @app-box-background-color;
     /*position:relative;*/
     .app-icon {
@@ -86,22 +90,22 @@ header {
     .app-title-container {
         .padding(5px,0px,7px,12px);
         text-align: left;
+    }
 
-        .star-rating {
-            font-size: 1em;
-            position: absolute;
-            .top(152px);
-            .left(16px);
-        }
+    .star-rating {
+        font-size: 1em;
+        position: absolute;
+        .top(172px);
+        .left(16px);
+    }
 
-        .rating-container {
-            color: #909090;
-            cursor: default;
-        }
+    .rating-container {
+        color: #909090;
+        cursor: default;
+    }
 
-        .rating-stars {
-            color: #F39C12;
-        }
+    .rating-stars {
+        color: #F39C12;
     }
 
     .app-title {
@@ -112,6 +116,17 @@ header {
         text-align: left;
         display: inline-block;
         -webkit-font-smoothing: antialiased;
+    }
+
+    .published-by {
+        position: absolute;
+        .top(155px);
+        color: @published-by-color;
+        .font-size(13px);
+        font-family: monospace;
+        .width(128px);
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
@@ -133,6 +148,7 @@ header {
 
 .app-box:hover {
     background-color: #bcbcbc;
+    background-color: #CACACA;
 }
 
 
@@ -145,34 +161,44 @@ header {
 
 .tp-banner {
     .height(385px);
+
     .app-title {
         left: 38.333333px;
         top: 5px;
         font-size: 26px;
         .ubuntu-font;
-        h1{
-            display:inline;
-            margin:0;
+
+        h1 {
+            display: inline;
+            margin: 0;
             font-size: 24px;
             font-size: 1em;
             color: gray;
         }
     }
+
     .platform-icon {
         .font-size(43px);
         color: #4b1786;
     }
+
     .rating-value-display {
         .font-size(20px);
     }
 
     .app-description {
-        text-align: justify;
         color: @app-description-color;
+        .width(385px);
+        p {
+            text-align: justify;
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+            
+        }
     }
-    .app-description-wrapper{
-        width: 400px;
 
+    .app-description-wrapper {
+        width: 400px;
     }
 
     .app-category {
@@ -182,6 +208,6 @@ header {
 }
 
 
-.rating-disabled{
-    cursor:default;
+.rating-disabled {
+    cursor: default;
 }

@@ -38,7 +38,7 @@ $(function () {
     $('.tp-banner').show().revolution({
         delay: 5000,
         startwidth: 960,
-        startheight: 450,
+        startheight: 370,
         hideThumbs: 10,
         fullWidth: "off",
         forceFullWidth: "off"

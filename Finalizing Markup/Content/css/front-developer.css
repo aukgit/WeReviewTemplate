@@ -67,8 +67,8 @@ header {
   margin: 0.5rem;
   background-color: #FFFFFF;
   text-align: center;
-  height: 175px;
-  height: 17.5rem;
+  height: 196px;
+  height: 19.6rem;
   border: 2px solid #d0d0d0;
   /*position:relative;*/
 }
@@ -83,19 +83,19 @@ header {
   padding: 0.5rem 0 0.7rem 1.2rem;
   text-align: left;
 }
-.app-box .app-title-container .star-rating {
+.app-box .star-rating {
   font-size: 1em;
   position: absolute;
-  top: 152px;
-  top: 15.2rem;
+  top: 172px;
+  top: 17.2rem;
   left: 16px;
   left: 1.6rem;
 }
-.app-box .app-title-container .rating-container {
+.app-box .rating-container {
   color: #909090;
   cursor: default;
 }
-.app-box .app-title-container .rating-stars {
+.app-box .rating-stars {
   color: #F39C12;
 }
 .app-box .app-title {
@@ -107,6 +107,19 @@ header {
   text-align: left;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
+}
+.app-box .published-by {
+  position: absolute;
+  top: 155px;
+  top: 15.5rem;
+  color: #9d9d9d;
+  font-size: 13px;
+  font-size: 0.8125em;
+  font-family: monospace;
+  width: 128px;
+  width: 12.8rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .tp-banner .star-rating {
   font-size: 1.5em;
@@ -122,6 +135,7 @@ header {
 }
 .app-box:hover {
   background-color: #bcbcbc;
+  background-color: #CACACA;
 }
 .tp-caption .large_bold_grey {
   font-size: 31px;
@@ -153,8 +167,14 @@ header {
   font-size: 1.25em;
 }
 .tp-banner .app-description {
-  text-align: justify;
   color: #626262;
+  width: 385px;
+  width: 38.5rem;
+}
+.tp-banner .app-description p {
+  text-align: justify;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 .tp-banner .app-description-wrapper {
   width: 400px;

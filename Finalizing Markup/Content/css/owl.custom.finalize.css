@@ -26,14 +26,14 @@
 .owl-theme .owl-controls .owl-buttons .owl-prev {
   top: 50px;
   top: 5rem;
-  left: 6px;
-  left: 0.6rem;
+  left: 25px;
+  left: 2.5rem;
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
   top: 50px;
   top: 5rem;
-  right: 6px;
-  right: 0.6rem;
+  right: 25px;
+  right: 2.5rem;
 }
 .owl-theme .owl-controls .owl-buttons div {
   background: none;
