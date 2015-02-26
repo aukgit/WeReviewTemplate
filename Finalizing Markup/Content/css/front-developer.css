@@ -10,6 +10,9 @@ body {
 .ubuntu-font {
   font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+.rating-disabled {
+  cursor: default;
+}
 .header-2 header nav li a {
   padding: 10px;
   padding: 1rem;
@@ -59,6 +62,18 @@ header {
   font-size: 1.4375em;
   font-weight: bold;
 }
+.paragraph-end {
+  height: 19px;
+  width: 45px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00ffffff', EndColorStr='#ffffff');
+  bottom: 0;
+  max-height: 100%;
+  position: absolute;
+  right: 0;
+}
 .app-box {
   display: block;
   padding-top: 10px;
@@ -80,44 +95,41 @@ header {
 }
 .app-box .app-title-container {
   text-align: center;
-  width: 139px;
-  width: 13.9rem;
+  width: 124px;
+  width: 12.4rem;
   position: relative;
+  margin: 0 auto;
 }
 .app-box .star-rating {
   font-size: 1em;
-  position: absolute;
-  top: 172px;
-  top: 17.2rem;
-  left: 16px;
-  left: 1.6rem;
+  text-align: left;
+  cursor: pointer;
 }
 .app-box .rating-container {
   color: #909090;
-  cursor: default;
 }
 .app-box .rating-stars {
   color: #F39C12;
 }
 .app-box .app-title {
-  width: 99px;
-  width: 9.9rem;
+  width: 108px;
+  width: 10.8rem;
   overflow: hidden;
   color: black;
   font-size: 12px;
   font-size: 0.75em;
-  margin: 0;
+  margin: 0px 0px 0px 1px;
+  margin: 0 0 0 0.1rem;
   font-weight: bold;
   text-align: left;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   white-space: nowrap;
   position: relative;
+  height: 12px;
+  height: 1.2rem;
 }
 .app-box .published-by {
-  position: absolute;
-  top: 155px;
-  top: 15.5rem;
   width: inherit;
   color: #9d9d9d;
   font-size: 13px;
@@ -126,10 +138,20 @@ header {
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  text-align: left;
 }
 .app-box:hover {
   background-color: #bcbcbc;
   background-color: #CACACA;
+}
+.app-box:hover .app-title {
+  color: red;
+}
+.app-box:hover .paragraph-end {
+  background: none;
+}
+.app-box:hover .published-by {
+  color: darkblue;
 }
 .tp-caption .large_bold_grey {
   font-size: 31px;
@@ -191,21 +213,6 @@ header {
   color: red;
   font-size: 15px;
   font-size: 0.9375em;
-}
-.rating-disabled {
-  cursor: default;
-}
-.paragraph-end {
-  height: 19px;
-  width: 45px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ffffff);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00ffffff', EndColorStr='#ffffff');
-  bottom: 47px;
-  max-height: 100%;
-  position: absolute;
-  right: 8px;
 }
 @media (max-width: 450px) {
   .app-title-container {

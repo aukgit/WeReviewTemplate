@@ -3,8 +3,8 @@
 @app-box-background-color: #d0d0d0;
 @app-description-color: #626262;
 @published-by-color: #9d9d9d;
-@app-container-width:139px;
-@app-title-width: @app-container-width - 40;
+@app-container-width: 124px;
+@app-title-width: 108px;
 
 body {
     font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12,6 +12,10 @@ body {
 
 .ubuntu-font {
     font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.rating-disabled {
+    cursor: default;
 }
 
 
@@ -73,6 +77,19 @@ header {
 
 
 
+.paragraph-end {
+    height: 19px;
+    width: 45px;
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)));
+    background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+    background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ffffff',EndColorStr='#ffffff');
+    bottom: 0;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+}
+
 .app-box {
     display: block;
     .padding-top(10px);
@@ -83,6 +100,8 @@ header {
     .height(196px);
     border: 2px solid @app-box-background-color;
     /*position:relative;*/
+  
+
     .app-icon {
         .height(115px);
         .width(122px);
@@ -92,20 +111,24 @@ header {
         //.padding(5px,0px,7px,12px);
         text-align: center;
         .width(@app-container-width);
-        position:relative;
+        position: relative;
+        margin: 0 auto;
     }
 
     .star-rating {
         font-size: 1em;
-        position: absolute;
-        .top(172px);
-        .left(16px);
+        //position: absolute;
+        //.top(172px);
+        //.left(16px);
+        text-align: left;
+        cursor: pointer;
     }
 
     .rating-container {
         color: #909090;
-        cursor: default;
     }
+
+
 
     .rating-stars {
         color: #F39C12;
@@ -117,25 +140,27 @@ header {
         overflow: hidden;
         color: black;
         .font-size(12px);
-        margin: 0;
+        .margin(0px,0px,0px,1px);
         font-weight: bold;
         text-align: left;
         display: inline-block;
         -webkit-font-smoothing: antialiased;
         white-space: nowrap;
-        position:relative;
+        position: relative;
+        .height(12px);
     }
 
     .published-by {
-        position: absolute; 
-        .top(155px);
-        width:inherit;
+        //position: absolute;
+        //.top(155px);
+        width: inherit;
         color: @published-by-color;
         .font-size(13px);
         font-family: monospace;
         white-space: nowrap;
-        overflow: hidden; 
-        position:relative;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
     }
 }
 
@@ -143,7 +168,21 @@ header {
 .app-box:hover {
     background-color: #bcbcbc;
     background-color: #CACACA;
+
+    .app-title {
+        color: red;
+    }
+
+    .paragraph-end {
+        background: none;
+    }
+
+    .published-by {
+        color: darkblue;
+    }
 }
+
+
 
 
 .tp-caption {
@@ -151,7 +190,6 @@ header {
         font-size: 31px;
     }
 }
-
 
 
 .gallery-home {
@@ -219,22 +257,9 @@ header {
 }
 
 
-.rating-disabled {
-    cursor: default;
-}
 
-.paragraph-end {
-    height: 19px;
-    width: 45px;
-    background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)));
-    background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
-    background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ffffff',EndColorStr='#ffffff');
-    bottom: 47px;
-    max-height: 100%;
-    position: absolute;
-    right: 8px;
-}
+
+
 
 @media (max-width: 450px) {
     .gallery-home {
