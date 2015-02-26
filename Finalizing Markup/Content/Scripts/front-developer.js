@@ -36,11 +36,13 @@ $(function () {
     //});
 
     $('.tp-banner').show().revolution({
+        dottedOverlay: "none",
         delay: 5000,
         startwidth: 960,
         startheight: 370,
         hideThumbs: 10,
         fullWidth: "off",
+        navigationType: "bullet",        navigationStyle: "preview2",
         forceFullWidth: "off"
     });
     

@@ -233,9 +233,23 @@ header {
   font-size: 15px;
   font-size: 0.9375em;
 }
-@media (max-width: 450px) {
-  .app-title-container {
-    width: 378px;
-    width: 37.8rem;
-  }
+.menu .navbar-form {
+  margin: 0;
+  padding: 0;
+}
+.menu .navbar-form .input-group {
+  display: table;
+}
+.menu .btn {
+  font-size: 14px;
+  line-height: 32.5px;
+  line-height: 3.2rem;
+  min-width: 42px;
+  min-width: 4.2rem;
+  padding: 0;
+  color: #fff;
+}
+.menu .btn:hover {
+  color: white;
+  background-color: red;
 }

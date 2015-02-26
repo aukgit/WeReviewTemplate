@@ -109,7 +109,6 @@ header {
     /*position:relative;*/
     //min-width: 157px;
     //width: 170px;
-
     .app-icon {
         .height(115px);
         .width(122px);
@@ -119,14 +118,15 @@ header {
         //.padding(5px,0px,7px,12px);
         text-align: center;
         .min-width(@app-container-width);
-        width:87%;
+        width: 87%;
         position: relative;
         margin: 0 auto;
     }
-    .app-title-row{
-        width:100%;
+
+    .app-title-row {
+        width: 100%;
         .min-width(@app-container-width);
-        position:relative;
+        position: relative;
     }
 
     .star-rating {
@@ -150,7 +150,7 @@ header {
 
     .app-title {
         .min-width(@app-title-width);
-        width:100%;
+        width: 100%;
         //.height(12px);
         overflow: hidden;
         color: black;
@@ -165,12 +165,12 @@ header {
         .height(14px);
     }
 
-    .fa{
+    .fa {
         .font-size(1.2em);
     }
 
-    .fa-apple{
-        color:gray;
+    .fa-apple {
+        color: gray;
     }
 
     .published-by {
@@ -281,19 +281,29 @@ header {
 }
 
 
+.menu {
+    .navbar-form {
+        margin: 0;
+        padding: 0;
 
-
-
-
-@media (max-width: 450px) {
-    .gallery-home {
+        .input-group {
+            display: table;
+        }
     }
 
-    .app-box {
-        //width: 378px;
+
+
+    .btn {
+        font-size: 14px;
+        .line-height(32.5px);
+        .min-width(42px);
+        padding: 0;
+        color: #fff;
+        //.line-height(3);
     }
 
-    .app-title-container {
-        .width(378px);
+    .btn:hover {
+        color: white;
+        background-color: red;
     }
 }
