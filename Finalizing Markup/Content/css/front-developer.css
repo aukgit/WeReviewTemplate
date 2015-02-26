@@ -137,6 +137,8 @@ header {
   width: 87%;
   position: relative;
   margin: 0 auto;
+  padding-top: 4px;
+  padding-top: 0.4rem;
 }
 .app-box .app-title-row {
   width: 100%;
@@ -293,4 +295,9 @@ header {
     top: -2px;
     clear: both;
   }
+}
+.tp-leftarrow.preview2:after,
+.tp-rightarrow.preview2:after {
+  top: 23px;
+  top: 2.3rem;
 }
