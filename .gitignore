@@ -13,7 +13,8 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
+*.gzip
+*.min.css
 # Windows shortcuts
 *.lnk
 
