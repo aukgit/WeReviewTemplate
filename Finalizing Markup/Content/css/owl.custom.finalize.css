@@ -8,10 +8,10 @@
   padding: 30px 0;
   margin: 5px;
   color: #FFF;
+  text-align: center;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  text-align: center;
 }
 .owl-theme .owl-controls .owl-buttons div {
   padding: 5px 9px;
@@ -83,31 +83,14 @@
   margin: 0;
   text-transform: uppercase;
   font-weight: 400;
+  -webkit-transition: all background-color 200ms ease ease-out;
+  -moz-transition: all background-color 200ms ease ease-out;
+  -o-transition: all background-color 200ms ease ease-out;
+  transition: all background-color 200ms ease ease-out;
   -webkit-transition: background-color 200ms ease;
   -moz-transition: background-color 200ms ease;
   -o-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-}
-#top-nav.navbar .nav > li > a.download {
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-background-clip: padding-box;
-  -webkit-border-radius: 3px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 3px;
-  -moz-background-clip: padding;
-  border-radius: 3px;
-  background-clip: padding-box;
 }
 #top-nav.navbar .nav > li > a.download-on {
   background-color: #ff8a3c;
@@ -164,9 +147,14 @@ pre.pre-show {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  -ms-border-radius: 0px 0px 4px 4px;
+  -ms-background-clip: padding-box;
   -webkit-border-radius: 0px 0px 4px 4px;
   -moz-border-radius: 0px 0px 4px 4px;
   border-radius: 0px 0px 4px 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 /* Content */
 .table th,
@@ -175,7 +163,7 @@ pre.pre-show {
 }
 /* Footer */
 #footer {
-  padding: 20px 0px;
+  padding: 20px 0;
   background: #f3f3f3;
   text-align: center;
 }

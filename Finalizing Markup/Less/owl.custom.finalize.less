@@ -7,11 +7,9 @@
     display: block;
     padding: 30px 0;
     margin: 5px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center; 
+    color: #FFF;    
+    text-align: center;      
+    .rounded(3px);
 }
 
 .owl-theme .owl-controls .owl-buttons div {
@@ -90,15 +88,12 @@
     padding: 6px 12px;
     margin: 0;
     text-transform: uppercase;
-    font-weight: 400;
-    -webkit-transition: background-color 200ms ease;
-    -moz-transition: background-color 200ms ease;
-    -o-transition: background-color 200ms ease;
-    transition: background-color 200ms ease;
+    font-weight: 400;    
+    .transition(~'background-color 200ms ease');
 }
 
 #top-nav.navbar .nav > li > a.download {
-    .border-radius(3px);
+    //.border-radius(3px); 
 }
 
 #top-nav.navbar .nav > li > a.download-on {
@@ -170,7 +165,7 @@ pre.pre-show {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    .border-radius(0px, 0px, 4px, 4px);
+    .border-radius (0px, 0px, 4px, 4px);
 }
 /* Content */
 .table th, .table td {
@@ -180,7 +175,7 @@ pre.pre-show {
 /* Footer */
 
 #footer {
-    padding: 20px 0px;
+    padding: 20px 0;
     background: #f3f3f3;
     text-align: center;
 }

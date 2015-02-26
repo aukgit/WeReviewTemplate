@@ -3,7 +3,7 @@
   ---------------------------------------------------
     Written by Alim Ul Karim
   ---------------------------------------------------*/
-@import "Global.less";
+//@import "Global.less";
 
 .bordered(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
     border-top: solid 1px @top-color;
@@ -25,20 +25,15 @@
 }
 
 .border-rounded(@radius: 2px) {
-    .rounded(radius);
+    .rounded(@radius);
 }
 
-.border-radius(@top, @right,@bottom,@left) when (ispixel(@top)) and (ispixel(@right)) and (ispixel(@bottom)) and (ispixel(@left)) {
-    @top-rem: ~`pxtorem('@{top}')`;
-    @right-rem: ~`pxtorem('@{right}')`;
-    @bottom-rem: ~`pxtorem('@{bottom}')`;
-    @left-rem: ~`pxtorem('@{left}')`;
+.border-radius(@top, @right,@bottom,@left){
     -webkit-border-radius: @top @right @bottom @left;
     -moz-border-radius: @top @right @bottom @left;
-    border-radius: @top @right @bottom @left;
-    -webkit-border-radius:@top-rem @right-rem @bottom-rem @left-rem;
-    -moz-border-radius: @top-rem @right-rem @bottom-rem @left-rem;
-    border-radius: @top-rem @right-rem @bottom-rem @left-rem;
+    -ms-border-radius: @top @right @bottom @left;
+    border-radius: @top @right @bottom @left; 
+    -ms-background-clip: padding-box;
 }
 
 .opacity(@opacity: 0.5) {
