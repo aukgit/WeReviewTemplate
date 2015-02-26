@@ -106,9 +106,10 @@ header {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00ffffff', EndColorStr='#ffffff');
   bottom: 0;
+  right: -8px;
+  right: -0.8rem;
   max-height: 100%;
   position: absolute;
-  right: 0;
 }
 .app-box {
   display: block;
