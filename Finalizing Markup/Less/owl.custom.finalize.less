@@ -1,9 +1,11 @@
 ﻿@import "lesshat.less";
 @top-distance-left-right-button: 50px;
-@left-right-distance-prev-next-button: 25px;
+@left-right-distance-prev-next-button: -36px;
+@left-right-distance-prev-next-button-mobile: 5px;
+
 #owl-demo .item {
     display: block;
-    padding: 30px 0px;
+    padding: 30px 0;
     margin: 5px;
     color: #FFF;
     -webkit-border-radius: 3px;
@@ -27,20 +29,41 @@
 }
 
 .owl-theme .owl-controls .owl-buttons {
-    .owl-prev {
+
+
+    .owl-prev, .owl-next {
+        color: grey;
         .top(@top-distance-left-right-button);
+    }
+
+    .owl-prev {
         .left(@left-right-distance-prev-next-button);
     }
 
     .owl-next {
-        .top(@top-distance-left-right-button);
         .right(@left-right-distance-prev-next-button);
+    }
+}
+// for mobile
+@media screen and (max-width: 450px) {
+    .owl-theme .owl-controls .owl-buttons {
+        .owl-prev, .owl-next {
+            color: white;
+        }
+
+        .owl-prev {
+            .left(@left-right-distance-prev-next-button-mobile);
+        }
+
+        .owl-next {
+            .right(@left-right-distance-prev-next-button-mobile);
+        }
     }
 }
 
 
-.owl-theme .owl-controls .owl-buttons div{
-    background:none;
+.owl-theme .owl-controls .owl-buttons div {
+    background: none;
     .font-size(31px);
 }
 

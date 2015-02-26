@@ -18,6 +18,17 @@ body {
     cursor: default;
 }
 
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+.clear{
+    clear:both;
+}
 
 .header-2 header nav li a {
     .padding(10px);
@@ -63,15 +74,18 @@ header {
 .orange-color {
     color: orange;
 }
-
-.list-of-apps-home {
-    color: red;
-
+.latest-apps{
+    position:relative;
+}
+.apps-list-title-header-row {
     h1 {
+
         .margin(10px,0px,10px,5px);
         color: #FF9000;
         .font-size(23px);
         font-weight: bold;
+        text-align: left;
+        .width(168px);
     }
 }
 
@@ -206,9 +220,6 @@ header {
     }
 }
 
-
-
-
 .tp-caption {
     .large_bold_grey {
         font-size: 31px;
@@ -285,10 +296,12 @@ header {
     .navbar-form {
         margin: 0;
         padding: 0;
+
         .input-group {
             display: table;
         }
     }
+
     .btn {
         font-size: 14px;
         .line-height(32.5px);

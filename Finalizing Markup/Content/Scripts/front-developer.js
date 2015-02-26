@@ -42,7 +42,8 @@ $(function () {
         startheight: 370,
         hideThumbs: 10,
         fullWidth: "off",
-        navigationType: "bullet",        navigationStyle: "preview2",
+        navigationType: "bullet",
+        navigationStyle: "preview2",
         forceFullWidth: "off"
     });
     

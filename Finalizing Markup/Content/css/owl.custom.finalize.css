@@ -5,7 +5,7 @@
   ---------------------------------------------------*/
 #owl-demo .item {
   display: block;
-  padding: 30px 0px;
+  padding: 30px 0;
   margin: 5px;
   color: #FFF;
   -webkit-border-radius: 3px;
@@ -23,17 +23,33 @@
 .owl-theme .owl-controls .owl-buttons div {
   position: absolute;
 }
-.owl-theme .owl-controls .owl-buttons .owl-prev {
+.owl-theme .owl-controls .owl-buttons .owl-prev,
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  color: grey;
   top: 50px;
   top: 5rem;
-  left: 25px;
-  left: 2.5rem;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: -36px;
+  left: -3.6rem;
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
-  top: 50px;
-  top: 5rem;
-  right: 25px;
-  right: 2.5rem;
+  right: -36px;
+  right: -3.6rem;
+}
+@media screen and (max-width: 450px) {
+  .owl-theme .owl-controls .owl-buttons .owl-prev,
+  .owl-theme .owl-controls .owl-buttons .owl-next {
+    color: white;
+  }
+  .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 5px;
+    left: 0.5rem;
+  }
+  .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 5px;
+    right: 0.5rem;
+  }
 }
 .owl-theme .owl-controls .owl-buttons div {
   background: none;
