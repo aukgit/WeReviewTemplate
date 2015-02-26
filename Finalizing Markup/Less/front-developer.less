@@ -18,6 +18,9 @@ body {
     cursor: default;
 }
 
+.display-table {
+    display: table;
+}
 
 .header-2 header nav li a {
     .padding(10px);
@@ -285,12 +288,14 @@ header {
     .navbar-form {
         margin: 0;
         padding: 0;
+
         .input-group {
             display: table;
         }
     }
-    .btn { 
-        font-size: 14px ;
+
+    .btn {
+        font-size: 14px;
         .line-height(32.5px);
         .min-width(42px);
         padding: 0;
@@ -302,4 +307,9 @@ header {
         color: white;
         background-color: red;
     }
+}
+
+.is-sticky .search-bar {
+    position: relative;
+    top: -20px;
 }

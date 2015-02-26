@@ -13,6 +13,9 @@ body {
 .rating-disabled {
   cursor: default;
 }
+.display-table {
+  display: table;
+}
 .header-2 header nav li a {
   padding: 10px;
   padding: 1rem;
@@ -241,7 +244,7 @@ header {
   display: table;
 }
 .menu .btn {
-  font-size: 14px ;
+  font-size: 14px;
   line-height: 32.5px;
   line-height: 3.2rem;
   min-width: 42px;
@@ -252,4 +255,8 @@ header {
 .menu .btn:hover {
   color: white;
   background-color: red;
+}
+.is-sticky .search-bar {
+  position: relative;
+  top: -20px;
 }
