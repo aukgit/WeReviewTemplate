@@ -377,11 +377,13 @@ header {
 
 .app-detail.app-title-wrapper {
     .margin(7px,0px,10px,0px);
-
-    .app-title-row {
+    .app-title-row{
+        width: 84%;
+    }
+    .app-title-row, a {
         display: inline-block;
-        .font-size(29px);
-        color: red;
+        .font-size(1.5em);
+        color: rgb(255, 77, 0);
         .ubuntu-font;
     }
 
@@ -395,7 +397,7 @@ header {
 
     h2 {
         color: #1d7ec9;
-        .font-size(.80em);
+        .font-size(0.7em);
         font-weight: bold;
     }
 
@@ -406,4 +408,23 @@ header {
     strong {
         font-weight: normal;
     }
+}
+
+.post-info {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#blog{
+    .ubuntu-font;
+}
+
+#blog.blog-pages .b-tittle {
+    .ubuntu-font;
+}
+
+#blog.blog-pages p {
+    color: #949494;
+    .font-size(1em);
+    text-align:justify;
 }

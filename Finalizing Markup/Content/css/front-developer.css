@@ -318,10 +318,13 @@ header {
   margin: 0.7rem 0 1rem 0;
 }
 .app-detail.app-title-wrapper .app-title-row {
+  width: 84%;
+}
+.app-detail.app-title-wrapper .app-title-row,
+.app-detail.app-title-wrapper a {
   display: inline-block;
-  font-size: 29px;
-  font-size: 1.8125em;
-  color: red;
+  font-size: 1.5em;
+  color: #ff4d00;
   font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .app-detail.app-title-wrapper h1,
@@ -334,7 +337,7 @@ header {
 }
 .app-detail.app-title-wrapper h2 {
   color: #1d7ec9;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: bold;
 }
 .app-detail.app-title-wrapper .fa-apple {
@@ -342,4 +345,19 @@ header {
 }
 .app-detail.app-title-wrapper strong {
   font-weight: normal;
+}
+.post-info {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+#blog {
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+#blog.blog-pages .b-tittle {
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+#blog.blog-pages p {
+  color: #949494;
+  font-size: 1em;
+  text-align: justify;
 }
