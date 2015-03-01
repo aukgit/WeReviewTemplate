@@ -10,7 +10,6 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
 .ubuntu-font {
     font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
@@ -377,14 +376,17 @@ header {
 
 .app-detail.app-title-wrapper {
     .margin(7px,0px,10px,0px);
-    .app-title-row{
+
+    .app-title-row {
         width: 84%;
     }
+
     .app-title-row, a {
         display: inline-block;
         .font-size(1.5em);
         color: rgb(255, 77, 0);
         .ubuntu-font;
+        text-align: left;
     }
 
     h1, h2 {
@@ -393,12 +395,17 @@ header {
         font-size: inherit;
         display: inherit;
         font: inherit;
+        text-align: inherit;
     }
 
     h2 {
         color: #1d7ec9;
         .font-size(0.7em);
         font-weight: bold;
+    }
+
+    .fa {
+        text-align: inherit;
     }
 
     .fa-apple {
@@ -410,13 +417,54 @@ header {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .app-detail.app-title-wrapper {
+        .app-title-row, a {
+            .margin-top(6px);
+            .font-size(1.2em);
+        }
+    }
+
+    
+}
+
+
 .post-info {
     margin-top: 0;
     padding-bottom: 0;
 }
 
-#blog{
+#blog {
     .ubuntu-font;
+
+    .owl-theme .owl-controls {
+        margin-top: 0;
+    }
+}
+
+.app-details-page {
+
+    .app-published-date .date {
+        .font-size(16px);
+        background: #ff4d00;
+        text-align: center;
+        .padding(2px, 10px, 6px,10px);
+        display: inline-block;
+        color: white;
+        float: left;
+
+        @media screen and (max-width: 768px) {
+            .margin-bottom(8px);
+        }
+
+        span {
+            .font-size(25px);
+            //margin-bottom: 3px;
+            display: block;
+            text-align: center;
+            color: inherit;
+        }
+    }
 }
 
 #blog.blog-pages .b-tittle {
@@ -426,5 +474,5 @@ header {
 #blog.blog-pages p {
     color: #949494;
     .font-size(1em);
-    text-align:justify;
+    text-align: justify;
 }
