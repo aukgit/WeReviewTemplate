@@ -39,7 +39,7 @@ $(function () {
         dottedOverlay: "none",
         delay: 5000,
         startwidth: 960,
-        startheight: 370,
+        startheight: 320,
         hideThumbs: 10,
         fullWidth: "off",
         navigationType: "bullet",

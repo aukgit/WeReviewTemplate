@@ -35,10 +35,6 @@ body #wrap .app-details-page {
   padding: 10px;
   padding: 1rem;
 }
-.header-2 header nav li a {
-  padding: 10px;
-  padding: 1rem;
-}
 header {
   height: 47px;
   height: 4.7rem;
@@ -257,6 +253,10 @@ header {
   font-size: 1.25em;
   color: #F39C12;
 }
+.gallery-home .rating-value-display,
+.gallery-home .app-description {
+  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
 .gallery-home .app-description {
   color: #626262;
   width: 385px;
@@ -291,6 +291,8 @@ header {
   min-width: 4.2rem;
   padding: 0;
   color: #fff;
+  height: 34.2px;
+  height: 3.4rem;
 }
 .menu .btn:hover {
   color: white;
