@@ -61,9 +61,10 @@ header {
 .h1-no-gap-title {
   padding: 0;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: normal;
   color: black;
   margin: 8px 0 0 0;
+  font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .orange-color {
   color: orange;
@@ -121,6 +122,8 @@ header {
   height: 19.6rem;
   line-height: 1;
   border: 2px solid #d0d0d0;
+  width: 147px;
+  width: 14.7rem;
   /*position:relative;*/
 }
 .app-box .app-icon {
@@ -488,6 +491,7 @@ footer .developers-organism a:hover h1 {
   margin-top: 0.6rem;
   height: auto;
   font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  width: auto;
 }
 .user-rating-box h4 {
   margin: 0;
@@ -503,10 +507,8 @@ footer .developers-organism a:hover h1 {
 .app-viewed-box {
   font-size: 1.5em;
   color: black;
-  padding: 31px 0px;
-  padding: 3.1rem 0px;
-  padding: 31px 0;
-  padding: 3.1rem 0;
+  padding: 31px 13px 31px 13px;
+  padding: 3.1rem 1.3rem 3.1rem 1.3rem;
   text-align: right;
   display: inline;
 }

@@ -42,9 +42,9 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="app-details-page">
     <!-- Page Wrap ===========================================-->
-    <div id="wrap" class="app-details-page">
+    <div id="wrap">
 
         <!--======= HEADER =========-->
         <div class="header-2">
@@ -192,7 +192,11 @@
                         <div id="apps-preview">
                             <div class="youtube-video">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HuLT1Z5AKuU" frameborder="0" allowfullscreen></iframe>
+                                    <a class="playable-btn" href="#playvideo">
+                                        <i class="fa fa-play-circle-o"></i>
+                                        <img class="img-responsive" src="images/f-b-img-3.jpg" alt="">
+                                    </a>
+                                    <iframe src="https://www.youtube.com/embed/zyk4jAiffRk" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             </div>
                             <div> <img class="img-responsive" src="images/f-b-img-3.jpg" alt=""> </div>
@@ -202,7 +206,7 @@
                         <!--======= BLOG INFO =========-->
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <div class="rating-box-row">
@@ -225,18 +229,55 @@
                                 </div>
                                 <ul class="post-info">
                                     <li> BY <a href="#."> Alim Ul Karim</a> <span> . </span> </li>
-                                    <li> 10 Reviews <span> . </span> </li>
+                                    <li> 10 Reviews</li>
                                 </ul>
-                                <p class="app-description">
-                                    One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head
-                                    a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His
-                                    many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper
-                                    human room although
-                                </p>
-                                <a class="read-more" href="#.">Reed More</a>
+                                <div class="app-description">
+                                    A mob of fun-loving zombies is about to invade your home, and your only defense is an arsenal of 49 zombie-zapping plants. Use Peashooters, Wall-nuts, Cherry Bombs and more to slow down, confuse, weak
+                                    <span id="example-show" style="display: none;">
+                                        <span id="elipse-dot" style="display: none;">...</span> <a class="showLink" id="app-description-see-more-btn" style="cursor: pointer;">see more</a>
+                                    </span>
+                                    <div id="example" class="more" style="display: inline;">
+                                        en and mulchify 26 types of zombies before they can reach your front door. Each zombie has its own special skills, so be careful how you use your limited supply of greens and seeds… as you battle the fun-dead, obstacles like a setting sun, creeping fog and a swimming pool add to the challenge. <a id="app-description-see-less-btn" class="hideLink" style="cursor: pointer;">less</a>
+                                        <div class="tagbox">
+                                            <i class="fa fa-tag"></i> Tags:
+                                            <h1 title="Plant - Plant VS Zombies 2"><a class="Plant tag-item">Plant</a></h1>
+                                            ,
+                                            <h1 title=" Zombies - Plant VS Zombies 2"><a class=" Zombies tag-item"> Zombies</a></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<a class="read-more" href="#.">Reed More</a>-->
                             </div>
-                            <div class="col-md-4">
-
+                            <div class="col-md-3 ">
+                                <div class="apps-list pull-right">
+                                    <div class="apps-list-header-row">
+                                        <a class="title" href="#" title="Latest Mobile Apps">
+                                            <h1 title="" class="pull-right">Suggested Apps</h1>
+                                        </a>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="app-suggested-list">
+                                        <a class="app-box" href="#">
+                                            <img class="app-icon" src="images/b-avatar-1.jpg" />
+                                            <div class="app-description-wrapper">
+                                                <div class="app-title-container">
+                                                    <div class="app-title-row">
+                                                        <h1 itemprop="name" class="app-title ubuntu-font">
+                                                            <i class="fa fa-apple"></i>
+                                                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                                                        </h1>
+                                                        <span class="paragraph-end"></span>
+                                                    </div>
+                                                    <div class="published-by">
+                                                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                                                        <span class="paragraph-end"></span>
+                                                    </div>
+                                                    <input class="rating-5-front" value="3.5" min="0" max="5" step="0.5" data-readonly="true" data-size="xs">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

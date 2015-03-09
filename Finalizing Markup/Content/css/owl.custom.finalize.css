@@ -350,7 +350,24 @@ pre.pre-show {
 NO MORE TABLES!! ;)
 */
 #apps-preview .youtube-video {
+  position: relative;
   max-height: 400px;
+}
+#apps-preview .youtube-video i.fa {
+  font-size: 10em;
+  color: white;
+  z-index: 1000;
+  position: absolute;
+  left: 411px;
+  top: 134px;
+}
+#apps-preview .youtube-video img {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 #apps-preview .embed-responsive-16by9 {
   padding-bottom: 400px;

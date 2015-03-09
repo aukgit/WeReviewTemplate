@@ -46,21 +46,31 @@ $(function () {
         navigationStyle: "preview2",
         forceFullWidth: "off"
     });
-    
-    
+
+
     $(".owl-list").owlCarousel({
         navigation: true,
         navigationText: [
           "<i class='fa fa-chevron-circle-left'></i>",
           "<i class='fa fa-chevron-circle-right'></i>"
         ],
-        items: 6, //10 items above 1000px browser width
-        itemsDesktop: [1000, 5], //5 items between 1000px and 901px
+        items: 8, //10 items above 1000px browser width
+        itemsDesktop: [1152, 6], //5 items between 1000px and 901px
         itemsDesktopSmall: [900, 4], // betweem 900px and 601px
         itemsTablet: [600, 3], //2 items between 600 and 0
-        itemsMobile:[450, 2]
+        itemsMobile: [450, 2]
 
     });
+
+    //$(".app-suggested-list").owlCarousel({
+    //    navigation: true,
+    //    navigationText: [
+    //      "<i class='fa fa-chevron-circle-left'></i>",
+    //      "<i class='fa fa-chevron-circle-right'></i>"
+    //    ],
+    //    items:1
+
+    //});
 
     $(".rating-5-front").rating({
         showClear: false,
@@ -88,4 +98,79 @@ $(function () {
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
 
+    var selectForYoutubeVideoOnDetailsPage = "body.app-details-page:first .youtube-video:first";
+    var $youtubeVideoContainer = $(selectForYoutubeVideoOnDetailsPage);
+    if ($youtubeVideoContainer.length === 1) {
+        $youtubeVideoContainer.find(".playable-btn:first").click(function () {
+            var $iframe = $youtubeVideoContainer.find("iframe:first");
+            var $this = $(this);
+            $iframe[0].src += "?rel=0&autoplay=1";
+            $this.hide("slow");
+            $this.unbind("click");//or some other way to make sure that this only happens once
+        });
+    }
+
+
+    function showHide(shID) {
+        if (document.getElementById(shID)) {
+            if (document.getElementById(shID + '-show').style.display != 'none') {
+                // already hidden
+                document.getElementById(shID + '-show').style.display = 'none';
+                document.getElementById(shID).style.display = 'inline';
+                $("span#elipse-dot").hide();
+            } else {
+                document.getElementById(shID + '-show').style.display = 'inline';
+                document.getElementById(shID).style.display = 'none';
+                $("span#elipse-dot").show();
+            }
+        }
+    }
+    function showHideForReview(i) {
+
+        if (document.getElementById('show_review' + i).style.display != 'none') {
+            document.getElementById('show_review' + i).style.display = 'none';
+            document.getElementById('less_review' + i).style.display = 'inline';
+        }
+        else {
+            document.getElementById('show_review' + i).style.display = 'inline';
+            document.getElementById('less_review' + i).style.display = 'none';
+        }
+    }
+
+    function showAppsInfoMore(i) {
+
+        if (document.getElementById('show_hide_id_more' + i).style.display != 'none') {
+            document.getElementById('show_hide_id_more' + i).style.display = 'none';
+            document.getElementById('show_hide_id_less' + i).style.display = 'inline';
+        }
+        else {
+            document.getElementById('show_hide_id_more' + i).style.display = 'inline';
+            document.getElementById('show_hide_id_less' + i).style.display = 'none';
+        }
+    }
+
+    $("#app-description-see-more-btn,#app-description-see-less-btn").click(function () {
+        showHide("example");
+    }).css({
+        'cursor': 'pointer'
+    });;
+
+    function doProcessMoreNLessBtns(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var id = $this.attr("data-sequence");
+        showHideForReview(id);
+    }
+
+    var $appDescription = $("body.app-details-page:first .app-description:first");
+
+    var $showBtns = $appDescription.find("a.hideLink");
+    var $hideBtns = $appDescription.find("a.showLink");
+    $showBtns.click(doProcessMoreNLessBtns).css({
+        'cursor': 'pointer'
+    });
+    $hideBtns.click(doProcessMoreNLessBtns).css({
+        'cursor': 'pointer'
+
+    }).trigger("click");
 });
