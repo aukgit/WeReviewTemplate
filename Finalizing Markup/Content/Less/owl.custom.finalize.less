@@ -422,8 +422,12 @@ NO MORE TABLES!! ;)
 
 
 #apps-preview {
-    iframe {
-        /*.height(400px);*/
+    .youtube-video {
+        max-height: 400px;
+    }
+
+    .embed-responsive-16by9 {
+        padding-bottom: 400px;
     }
 
     .owl-buttons {
@@ -438,7 +442,7 @@ NO MORE TABLES!! ;)
             background-color: black;
             .height(100px);
             padding: 0;
-            width: 59px;
+            .width(59px);
             .border-rounded(6px);
             .top(140px);
         }
@@ -455,8 +459,17 @@ NO MORE TABLES!! ;)
 
 @media (max-width: 600px) {
     #apps-preview {
+        .youtube-video {
+            height: auto;
+        }
+
+        .embed-responsive-16by9 {
+            padding-bottom: 56.6%;
+        }
+
         .owl-buttons {
             .font-size(1.3em);
+
             .owl-prev, .owl-next {
                 .height(50px);
                 .border-rounded(4px);
