@@ -503,8 +503,10 @@ footer .developers-organism a:hover h1 {
 .app-viewed-box {
   font-size: 1.5em;
   color: black;
-  padding: 20px;
-  padding: 2rem;
+  padding: 31px 0px;
+  padding: 3.1rem 0px;
+  padding: 31px 0;
+  padding: 3.1rem 0;
   text-align: right;
   display: inline;
 }

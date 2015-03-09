@@ -51,6 +51,7 @@
 .margin(@vertical, @horizontal) when (ispixel(@vertical)) and (ispixel(@horizontal)) {
     @rem-vvalue: ~`pxtorem('@{vertical}')`;
     @rem-hvalue: ~`pxtorem('@{horizontal}')`;
+    margin: @vertical @horizontal;
     margin: @rem-vvalue @rem-hvalue;
 }
 
@@ -130,11 +131,13 @@
 .padding(@vertical, @horizontal) when (ispixel(@vertical)) and (ispixel(@horizontal)) {
     @rem-vvalue: ~`pxtorem('@{vertical}')`;
     @rem-hvalue: ~`pxtorem('@{horizontal}')`;
+    padding: @vertical @horizontal;
     padding: @rem-vvalue @rem-hvalue;
 }
 
 .padding(@vertical, @horizontal) when (ispixel(@vertical)) {
     @rem-value: ~`pxtorem('@{vertical}')`;
+    padding: @vertical @horizontal;
     .padding(@rem-value, @horizontal);
 }
 
