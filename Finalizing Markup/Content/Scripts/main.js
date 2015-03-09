@@ -20,6 +20,7 @@ $(document).ready(function ($) {
         lineCap: 'butt',
         size: 253
     };
+    $().jetmenu();
     window.addEventListener('DOMContentLoaded', function () {
         var charts = [];
         [].forEach.call(document.querySelectorAll('.chart'), function (el) {
