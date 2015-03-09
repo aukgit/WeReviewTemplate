@@ -382,7 +382,7 @@ NO MORE TABLES!! ;)
 #apps-preview .owl-buttons .owl-next {
   right: 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   #apps-preview .youtube-video {
     height: auto;
   }
