@@ -315,6 +315,19 @@ header {
   top: 23px;
   top: 2.3rem;
 }
+.about .more-btn {
+  margin: 0;
+}
+footer {
+  padding: 16px 0;
+}
+footer .rights {
+  padding: 20px 0;
+  margin-top: 15px;
+}
+footer .copyright {
+  color: white;
+}
 .app-detail.app-title-wrapper {
   margin: 7px 0px 10px 0px;
   margin: 0.7rem 0 1rem 0;
