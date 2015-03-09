@@ -422,9 +422,10 @@ NO MORE TABLES!! ;)
 
 
 #apps-preview {
-    iframe{
+    iframe {
         /*.height(400px);*/
     }
+
     .owl-buttons {
         .font-size(2.5em);
 
@@ -435,7 +436,7 @@ NO MORE TABLES!! ;)
         .owl-prev, .owl-next {
             color: white;
             background-color: black;
-            height: 100px;
+            .height(100px);
             padding: 0;
             width: 59px;
             .border-rounded(6px);
@@ -448,6 +449,40 @@ NO MORE TABLES!! ;)
 
         .owl-next {
             right: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #apps-preview {
+        .owl-buttons {
+            .font-size(1.3em);
+            .owl-prev, .owl-next {
+                .height(50px);
+                .border-rounded(4px);
+                .top(93px);
+                .width(40px);
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #apps-preview {
+        .owl-buttons {
+            .owl-prev, .owl-next {
+                .top(67px);
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    #apps-preview {
+        .owl-buttons {
+            .owl-prev, .owl-next {
+                .top(49px);
+            }
         }
     }
 }
