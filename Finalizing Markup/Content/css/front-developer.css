@@ -1,9 +1,4 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu);
-/*---------------------------------------------------
-    Developers Organism
-  ---------------------------------------------------
-    Written by Alim Ul Karim
-  ---------------------------------------------------*/
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -361,6 +356,8 @@ footer .developers-organism a:hover h1 {
 .app-detail.app-title-wrapper {
   margin: 7px 0px 10px 0px;
   margin: 0.7rem 0 1rem 0;
+  height: 42px;
+  height: 4.2rem;
 }
 .app-detail.app-title-wrapper .app-title-row {
   width: 84%;
@@ -399,8 +396,8 @@ footer .developers-organism a:hover h1 {
 @media screen and (max-width: 768px) {
   .app-detail.app-title-wrapper .app-title-row,
   .app-detail.app-title-wrapper a {
-    margin-top: 6px;
-    margin-top: 0.6rem;
+    margin-top: 4px;
+    margin-top: 0.4rem;
     font-size: 1.2em;
   }
 }

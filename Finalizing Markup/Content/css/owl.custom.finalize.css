@@ -1,9 +1,4 @@
-﻿/*---------------------------------------------------
-    Developers Organism
-  ---------------------------------------------------
-    Written by Alim Ul Karim
-  ---------------------------------------------------*/
-#owl-demo .item {
+﻿#owl-demo .item {
   display: block;
   padding: 30px 0;
   margin: 5px;
@@ -351,105 +346,34 @@ pre.pre-show {
     position: fixed;
   }
 }
-@media (max-width: 768px) {
-  .navbar.navbar-fixed-top {
-    position: static;
-  }
-  .btn.btn-navbar {
-    margin: 9px 20px 9px 8px;
-    padding: 10px 10px;
-  }
-  .nav-collapse .nav > li {
-    border-top: 1px solid #e1e6dd;
-    text-align: center;
-  }
-  #header .logo {
-    margin-top: 40px;
-    margin: 20px auto 0px;
-    float: none;
-    height: 150px;
-  }
-  #header {
-    text-align: center;
-    padding: 60px 0px 30px;
-  }
-  #header h1 {
-    margin: 10px 0;
-  }
-  #header h3 {
-    margin-bottom: 10px;
-    width: auto;
-    padding: 0px 20px;
-  }
-  h1 {
-    font-size: 38px;
-    margin: 20px 0;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 16px;
-  }
-  h5 {
-    font-size: 13px;
-  }
-  h6 {
-    font-size: 12px;
-  }
-}
-@media (max-width: 480px) {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom {
-    position: static;
-  }
-  #header {
-    text-align: center;
-    padding: 20px 0px 20px;
-  }
-  #header .logo {
-    margin-top: 0px;
-  }
-}
 /*
 NO MORE TABLES!! ;)
 */
-@media (max-width: 767px) {
-  .hp-table table,
-  .hp-table thead,
-  .hp-table .hp-table tbody,
-  .hp-table th,
-  .hp-table td,
-  .hp-table tr {
-    display: block;
-  }
-  .hp-table thead tr {
-    display: none;
-  }
-  .hp-table tr {
-    border: 0px solid #ccc;
-    margin-bottom: 10px;
-  }
-  .hp-table td:before {
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-  .hp-table td:nth-of-type(2):before {
-    content: "Default:";
-    font-weight: bold;
-  }
-  .hp-table td:nth-of-type(3):before {
-    content: "Type:";
-    font-weight: bold;
-  }
-  .hp-table td:nth-of-type(4):before {
-    content: "Description:";
-    font-weight: bold;
-  }
+#apps-preview iframe {
+  /*.height(400px);*/
+}
+#apps-preview .owl-buttons {
+  font-size: 2.5em;
+}
+#apps-preview .owl-buttons div {
+  margin: 0;
+}
+#apps-preview .owl-buttons .owl-prev,
+#apps-preview .owl-buttons .owl-next {
+  color: white;
+  background-color: black;
+  height: 100px;
+  padding: 0;
+  width: 59px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  top: 140px;
+  top: 14rem;
+}
+#apps-preview .owl-buttons .owl-prev {
+  left: 0;
+}
+#apps-preview .owl-buttons .owl-next {
+  right: 0;
 }
