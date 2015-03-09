@@ -356,7 +356,7 @@ NO MORE TABLES!! ;)
   padding-bottom: 400px;
 }
 #apps-preview .owl-buttons {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 #apps-preview .owl-buttons div {
   margin: 0;
@@ -365,16 +365,16 @@ NO MORE TABLES!! ;)
 #apps-preview .owl-buttons .owl-next {
   color: white;
   background-color: black;
-  height: 100px;
-  height: 10rem;
+  height: 63px;
+  height: 6.3rem;
   padding: 0;
-  width: 59px;
-  width: 5.9rem;
+  width: 44px;
+  width: 4.4rem;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  top: 140px;
-  top: 14rem;
+  top: 150px;
+  top: 15rem;
 }
 #apps-preview .owl-buttons .owl-prev {
   left: 0;

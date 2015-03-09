@@ -67,6 +67,11 @@ $(function () {
         showCaption: false
     });
 
+    $(".rating-5-page-details").rating({
+        showClear: false,
+        showCaption: true
+    });
+
     $("#apps-preview").owlCarousel({
         slideSpeed: 300,
         paginationSpeed: 400,
