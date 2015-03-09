@@ -328,6 +328,36 @@ footer .rights {
 footer .copyright {
   color: white;
 }
+footer h5 {
+  margin-bottom: 0;
+  width: 62px;
+  float: right;
+}
+footer .developers-organism {
+  display: inline;
+}
+footer h1 {
+  margin: 0;
+  display: inline;
+}
+footer .developers-organism a:hover h1 {
+  color: inherit;
+}
+.social-icons-wrapper {
+  font-size: 1.7em;
+  margin: 13px;
+  margin: 1.3rem;
+  margin-right: 0;
+}
+.social-icons-wrapper a {
+  margin-left: 10px;
+}
+.social-icons-wrapper a:hover {
+  color: white;
+}
+.social-icons-wrapper a:first-child {
+  margin-left: 0;
+}
 .app-detail.app-title-wrapper {
   margin: 7px 0px 10px 0px;
   margin: 0.7rem 0 1rem 0;

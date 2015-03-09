@@ -67,7 +67,7 @@ $(function () {
         showCaption: false
     });
 
-    $("#owl-single").owlCarousel({
+    $("#apps-preview").owlCarousel({
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
@@ -79,6 +79,7 @@ $(function () {
         stopOnHover: true,
         navigation: true, // Show next and prev buttons
         pagination: false,
+        autoHeight: true,
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
 
