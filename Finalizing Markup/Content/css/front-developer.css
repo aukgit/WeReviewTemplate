@@ -422,6 +422,9 @@ footer .developers-organism a:hover h1 {
   margin-top: 0;
   margin-bottom: 20px;
 }
+.app-details-page .app-description {
+  text-align: justify;
+}
 .app-details-page .app-published-date .date {
   font-size: 16px;
   font-size: 1em;

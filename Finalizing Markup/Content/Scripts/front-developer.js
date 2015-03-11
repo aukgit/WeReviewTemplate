@@ -104,9 +104,12 @@ $(function () {
         $youtubeVideoContainer.find(".playable-btn:first").click(function () {
             var $iframe = $youtubeVideoContainer.find("iframe:first");
             var $this = $(this);
-            $iframe[0].src += "?rel=0&autoplay=1";
-            $this.hide("slow");
-            $this.unbind("click");//or some other way to make sure that this only happens once
+            if ($iframe.length === 1) {
+                $iframe[0].src += "?rel=0&controls=0&autoplay=1";
+                $this.hide("slow");
+                $this.unbind("click");//or some other way to make sure that this only happens once
+            }
+
         });
     }
 
