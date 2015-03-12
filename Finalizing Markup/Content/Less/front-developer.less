@@ -88,7 +88,6 @@ header {
     color: black;
     .margin(8px 0 0 0);
     .ubuntu-light-font;
-
 }
 
 
@@ -104,12 +103,12 @@ header {
     .ubuntu-font;
 
     .title h1 {
-        .margin(0px,0px,10px,5px);
+        .margin(0px, 0px, 10px, 5px);
         //margin:0;
         color: red;
         .font-size(23px);
         //font-weight: bold;
-        float: left;
+        float: right;
     }
 
     .float-right.btn {
@@ -145,7 +144,6 @@ header {
     display: block;
     .padding-top(10px);
     .margin(5px);
-   
     background-color: #FFFFFF;
     //.rounded(3px);
     text-align: center;
@@ -244,7 +242,6 @@ header {
 
 
 .app-box:hover {
-    background-color: #bcbcbc;
     background-color: #CACACA;
 
     .app-title {
@@ -515,10 +512,35 @@ footer {
     }
 }
 
+.app-suggested-list {
+    margin-top: 9px;
+    .width(193px);
+}
+
+@media (max-width: 992px) {
+    .app-suggested-list-wrapper {
+        width: 100%;
+        .margin-top(9px);
+    }
+
+    .app-suggested-list {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .apps-list-header-row {
+        .title h1 {
+            float: none;
+            text-align: center;
+        }
+    }
+}
+
 .app-details-page {
-    .app-description{
+    .app-description {
         text-align: justify;
     }
+
     .app-published-date .date {
         .font-size(16px);
         background: #ff4d00;
@@ -540,30 +562,205 @@ footer {
             color: inherit;
         }
     }
+
+    .app-box {
+        border: 0;
+        height: inherit;
+        padding-top: 0;
+        margin: 0;
+        .width(193px);
+        margin-bottom: 6px;
+
+        .app-icon {
+            .height(119px);
+            .width(192px);
+            border-bottom: 2px solid red;
+        }
+
+        &:hover {
+            background-color: white;
+        }
+
+        .app-title-container {
+            padding-top: 0;
+        }
+
+        .app-description-wrapper {
+            .height(46px);
+        }
+    }
 }
 
-#blog.blog-pages .b-tittle {
-    .ubuntu-font;
+#apps-preview {
+    .owl-wrapper-outer {
+        max-height: 400px;
+    }
+
+    .youtube-video {
+        position: relative;
+        max-height: 400px;
+
+
+        i.fa {
+            font-size: 10em;
+            color: white;
+            z-index: 1000;
+            position: absolute;
+            left: 45%;
+            top: 34%;
+        }
+
+        img {
+            z-index: 999;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .embed-responsive-16by9 {
+        padding-bottom: 400px;
+    }
+
+    .owl-buttons {
+        .font-size(1.5em);
+
+        div {
+            margin: 0;
+        }
+
+        .owl-prev, .owl-next {
+            color: white;
+            background-color: black;
+            .height(63px);
+            padding: 0;
+            .width(44px);
+            .border-rounded(6px);
+            .top(150px);
+        }
+
+        .owl-prev {
+            left: 0;
+        }
+
+        .owl-next {
+            right: 0;
+        }
+    }
 }
 
-#blog.blog-pages p {
-    .font-size(1em);
-    color: #4C4C4C;
-    text-align: justify;
-    .line-height(19px);
+@media (max-width: 680px) {
+    #apps-preview {
+        .youtube-video {
+            height: auto;
+        }
+
+        .embed-responsive-16by9 {
+            padding-bottom: 56.6%;
+        }
+
+        .owl-buttons {
+            .font-size(1.3em);
+
+            .owl-prev, .owl-next {
+                .height(50px);
+                .border-rounded(4px);
+                .top(93px);
+                .width(40px);
+            }
+        }
+    }
 }
+
+@media (max-width: 570px) {
+    #apps-preview {
+        .youtube-video {
+            i.fa {
+                left: 41%;
+                top: 28%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #apps-preview {
+        .youtube-video {
+            i.fa {
+                left: 38%;
+                top: 22%;
+            }
+        }
+
+        .owl-buttons {
+            .owl-prev, .owl-next {
+                .top(67px);
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #apps-preview {
+        .youtube-video {
+            i.fa {
+                font-size: 8em;
+                left: 38%;
+                top: 22%;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    #apps-preview {
+
+        .owl-buttons {
+            .owl-prev, .owl-next {
+                .top(49px);
+            }
+        }
+    }
+}
+
+
+#blog.blog-pages {
+
+    .b-tittle {
+        .ubuntu-font;
+    }
+
+    p {
+        .font-size(1em);
+        color: #4C4C4C;
+        text-align: justify;
+        .line-height(19px);
+    }
+}
+
+
 
 
 .rating-box-row {
     .margin-top(17px);
     .height(71px);
-    
+
     .rating-container {
         font-size: .7em;
     }
 
     .user {
         .font-size(13px);
+    }
+}
+
+@media (max-width: 768px) {
+    .rating-box-row {
+        .width(274px);
+        margin:0 auto;
+        .margin-top(10px);
     }
 }
 
@@ -585,7 +782,8 @@ footer {
     .margin-top(6px);
     height: auto;
     .ubuntu-font;
-    .width(auto);
+    .width(161px);
+
     h4 {
         margin: 0;
         padding: 0;

@@ -22,9 +22,9 @@ $(function () {
             }
         },
         suggestedAppsList: function (numberOfItems) {
-            var $singleItemhtml = $(".app-suggested-list").html();
+            var $singleItemhtml = $(".app-suggested-list-items").html();
             for (var i = 0; i < numberOfItems; i++) {
-                $(".app-suggested-list").append($singleItemhtml);
+                $(".app-suggested-list-items").append($singleItemhtml);
             }
         },
         gallerySlides: function (numberOfItems) {
