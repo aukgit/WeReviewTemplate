@@ -87,8 +87,8 @@
         }
 
         function showCollapse() {
-            //$(menu).children("li:not(.showhide)").hide(0);
-            //$(menu).children("li.showhide").show(0);
+            $(menu).children("li:not(.showhide)").css('visibility', 'hidden');
+            $(menu).children("li.showhide").show();
             $(menu).children("li.showhide").bind("click", function () {
                 if ($(menu).children("li").is(":hidden")) {
                     $(menu).children("li").slideDown(settings.speed);
@@ -102,7 +102,7 @@
         }
 
         function hideCollapse() {
-            $(menu).children("li").show(0);
+            $(menu).children("li").css('visibility', 'visible');
             $(menu).children("li.showhide").hide(0);
         }
 
