@@ -517,6 +517,14 @@ footer {
     .width(193px);
 }
 
+.app-suggested-list-wrapper {
+    .owl-theme .owl-controls .owl-buttons {
+        .owl-prev, .owl-next {
+            .top(32px);
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .app-suggested-list-wrapper {
         width: 100%;
@@ -590,7 +598,7 @@ footer {
         }
     }
 }
-
+// app details page : app preview gallery
 #apps-preview {
     .owl-wrapper-outer {
         max-height: 400px;
@@ -725,6 +733,17 @@ footer {
     }
 }
 
+@media (max-width: 370px) {
+    #apps-preview {
+        .youtube-video {
+            i.fa {
+                font-size: 6em;
+                top: 26%;
+            }
+        }
+    }
+}
+
 
 #blog.blog-pages {
 
@@ -759,7 +778,7 @@ footer {
 @media (max-width: 768px) {
     .rating-box-row {
         .width(274px);
-        margin:0 auto;
+        margin: 0 auto;
         .margin-top(10px);
     }
 }

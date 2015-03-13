@@ -426,6 +426,11 @@ footer .developers-organism a:hover h1 {
   width: 193px;
   width: 19.3rem;
 }
+.app-suggested-list-wrapper .owl-theme .owl-controls .owl-buttons .owl-prev,
+.app-suggested-list-wrapper .owl-theme .owl-controls .owl-buttons .owl-next {
+  top: 32px;
+  top: 3.2rem;
+}
 @media (max-width: 992px) {
   .app-suggested-list-wrapper {
     width: 100%;
@@ -599,6 +604,12 @@ footer .developers-organism a:hover h1 {
   #apps-preview .owl-buttons .owl-next {
     top: 49px;
     top: 4.9rem;
+  }
+}
+@media (max-width: 370px) {
+  #apps-preview .youtube-video i.fa {
+    font-size: 6em;
+    top: 26%;
   }
 }
 #blog.blog-pages .b-tittle {
