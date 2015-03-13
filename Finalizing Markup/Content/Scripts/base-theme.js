@@ -87,8 +87,8 @@
         }
 
         function showCollapse() {
-            $(menu).children("li:not(.showhide)").hide(0);
-            $(menu).children("li.showhide").show(0);
+            //$(menu).children("li:not(.showhide)").hide(0);
+            //$(menu).children("li.showhide").show(0);
             $(menu).children("li.showhide").bind("click", function () {
                 if ($(menu).children("li").is(":hidden")) {
                     $(menu).children("li").slideDown(settings.speed);
