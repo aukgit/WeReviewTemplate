@@ -46,8 +46,8 @@ header {
 }
 .header-2 .jetmenu > li > .megamenu,
 .jetmenu ul.dropdown {
-  top: 47px;
-  top: 4.7rem;
+  top: 40px;
+  top: 4rem;
 }
 .h1-no-gap {
   margin: 0;
@@ -82,7 +82,7 @@ header {
   color: red;
   font-size: 23px;
   font-size: 1.4375em;
-  float: right;
+  /*float: right;*/
 }
 .apps-list-header-row .float-right.btn {
   margin: 0px 5px 0px 0px;
