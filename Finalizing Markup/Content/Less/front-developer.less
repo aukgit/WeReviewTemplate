@@ -527,8 +527,10 @@ footer {
 
 @media (max-width: 992px) {
     .app-suggested-list-wrapper {
-        width: 100%;
-        .margin-top(9px);
+        //width: 100%;
+        .margin-top(10px);
+        float: left;
+        .margin-left(120px);
     }
 
     .app-suggested-list {
@@ -541,6 +543,15 @@ footer {
             float: none;
             text-align: center;
         }
+    }
+}
+
+
+@media (max-width: 680px) {
+    .app-suggested-list-wrapper {
+        width: 100%;
+        .margin-left(0px);
+        float: none;
     }
 }
 

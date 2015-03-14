@@ -27,6 +27,12 @@ $(function () {
                 $(".app-suggested-list-items").append($singleItemhtml);
             }
         },
+        addOwlItems: function (itemsContainerjQuerySelector,numberOfItems) {
+            var $singleItemhtml = $(itemsContainerjQuerySelector).html();
+            for (var i = 0; i < numberOfItems; i++) {
+                $(itemsContainerjQuerySelector).append($singleItemhtml);
+            }
+        },
         gallerySlides: function (numberOfItems) {
             var listOfAnimations = ["zoomout", "fade"];
             var $singleItemhtml = $(".tp-banner ul").html();
@@ -37,8 +43,10 @@ $(function () {
     }
 
     sampleItemsCreate.appList(20);
+    sampleItemsCreate.addOwlItems(".app-suggested-list-items", 5);
+    //sampleItemsCreate.addOwlItems(".app-suggested-list-items-mobile", 5);
     sampleItemsCreate.gallerySlides(5);
-    sampleItemsCreate.suggestedAppsList(5);
+    //sampleItemsCreate.suggestedAppsList(5);
 
 
 });

@@ -111,7 +111,7 @@ $(function () {
     });
 
     
-    $(".app-suggested-list-items-mobile").owlCarousel({
+    $("div.app-suggested-list-items-mobile:first,div.featured-apps-list-items:first").owlCarousel({
         navigation: true,
         navigationText: [
           "<i class='fa fa-chevron-circle-left'></i>",
