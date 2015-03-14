@@ -8,12 +8,12 @@
 (function ($) {
     jQuery.fn.jetmenu = function (options) {
         var settings = {
-            indicator: true     		// indicator that indicates a submenu
-            , speed: 100     			// submenu speed
-            , delay: 0					// submenu show delay
-            , hideClickOut: true     	// hide submenus when click outside menu
-            , align: "left"				// menu alignment (left/right)
-            , submenuTrigger: "hover"	// defines if submenu appears after hover/click
+            indicator: true     			// indicator that indicates a submenu
+        , speed: 100     			// submenu speed
+        , delay: 0					// submenu show delay
+        , hideClickOut: true     			// hide submenus when click outside menu
+        , align: "left"				// menu alignment (left/right)
+        , submenuTrigger: "hover"			// defines if submenu appears after hover/click
         }
         $.extend(settings, options);
         var menu = $(".jetmenu");
@@ -79,7 +79,7 @@
                         }
                         else {
                             $(this).siblings(".dropdown, .megamenu").slideUp(settings.speed).focus();
-                            var firstItemClick = 1;
+                            firstItemClick = 1;
                         }
                     });
                 }
@@ -87,16 +87,14 @@
         }
 
         function showCollapse() {
-            //$(menu).children("li:not(.showhide)").hide(0); //commented out by alim
-            $(menu).children("li:not(.showhide)").css('visibility', 'hidden');
+            $(menu).children("li:not(.showhide)").hide(0);
             $(menu).children("li.showhide").show(0);
             $(menu).children("li.showhide").bind("click", function () {
                 if ($(menu).children("li").is(":hidden")) {
-                    //$(menu).children("li").slideDown(settings.speed); // menu alim
-                    $(menu).children("li").css('visibility', 'visible');
-                } else {
-                    // $(menu).children("li:not(.showhide)").slideUp(settings.speed); // menu alim
-                    $(menu).children("li:not(.showhide)").css('visibility', 'hidden');
+                    $(menu).children("li").slideDown(settings.speed);
+                }
+                else {
+                    $(menu).children("li:not(.showhide)").slideUp(settings.speed);
                     $(menu).children("li.showhide").show(0);
                     $(menu).find(".dropdown, .megamenu").hide(settings.speed);
                 }
@@ -104,8 +102,7 @@
         }
 
         function hideCollapse() {
-            //$(menu).children("li").show(0);
-            $(menu).children("li").css('visibility', 'visible');
+            $(menu).children("li").show(0);
             $(menu).children("li.showhide").hide(0);
         }
 
