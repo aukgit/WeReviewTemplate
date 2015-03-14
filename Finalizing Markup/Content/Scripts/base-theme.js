@@ -92,10 +92,12 @@
             $(menu).children("li.showhide").show(0);
             $(menu).children("li.showhide").bind("click", function () {
                 if ($(menu).children("li").is(":hidden")) {
-                    $(menu).children("li").slideDown(settings.speed);
+                    //$(menu).children("li").slideDown(settings.speed); // menu alim
+                    $(menu).children("li").css('visibility', 'visible');
                 }
                 else {
-                    $(menu).children("li:not(.showhide)").slideUp(settings.speed);
+                    // $(menu).children("li:not(.showhide)").slideUp(settings.speed); // menu alim
+                    $(menu).children("li:not(.showhide)").css('visibility', 'hidden');
                     $(menu).children("li.showhide").show(0);
                     $(menu).find(".dropdown, .megamenu").hide(settings.speed);
                 }
