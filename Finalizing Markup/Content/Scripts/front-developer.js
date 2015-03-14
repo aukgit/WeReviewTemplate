@@ -118,10 +118,10 @@ $(function () {
           "<i class='fa fa-chevron-circle-right'></i>"
         ],
         items: 1, //10 items above 1000px browser width
-        itemsDesktop: [1152, 6], //5 items between 1000px and 901px
-        itemsDesktopSmall: [900, 4], // betweem 900px and 601px
-        itemsTablet: [600, 3], //2 items between 600 and 0
-        itemsMobile: [450, 2],
+        //itemsDesktop: [1152, 6], //5 items between 1000px and 901px
+        //itemsDesktopSmall: [900, 4], // betweem 900px and 601px
+        //itemsTablet: [600, 3], //2 items between 600 and 0
+        //itemsMobile: [450, 2],
         itemsCustom:[370,1]
     });
 
@@ -139,6 +139,8 @@ $(function () {
 
         });
     }
+
+
 
 
     function showHide(shID) {
@@ -189,7 +191,7 @@ $(function () {
         e.preventDefault();
         var $this = $(this);
         var id = $this.attr("data-sequence");
-        showHideForReview(id);
+        //showHideForReview(id);
     }
 
     var $appDescription = $("body.app-details-page:first .app-description:first");

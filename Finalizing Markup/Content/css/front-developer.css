@@ -1,4 +1,4 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -164,7 +164,7 @@ header {
   color: #909090;
 }
 .app-box .rating-stars {
-  color: #F39C12;
+  color: #FFB800;
 }
 .app-box .app-title {
   min-width: 108px;
@@ -706,3 +706,19 @@ footer .developers-organism a:hover h1 {
   display: inline;
   text-align: right;
 }
+.share-btn {
+  float: right;
+  margin-top: 19px;
+  margin-top: 1.9rem;
+}
+.facebook span:first-child {
+  width: 110px !important;
+}
+@media (max-width: 768px) {
+  .share-btn {
+    float: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=front-developer.css.map */

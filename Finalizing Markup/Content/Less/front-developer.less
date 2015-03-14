@@ -139,7 +139,7 @@ header {
     max-height: 100%;
     position: absolute;
 }
-
+//app-box config
 .app-box {
     display: block;
     .padding-top(10px);
@@ -198,7 +198,7 @@ header {
 
 
     .rating-stars {
-        color: #F39C12;
+        color: #FFB800;
     }
 
     .app-title {
@@ -240,7 +240,7 @@ header {
     }
 }
 
-
+//app-box hover
 .app-box:hover {
     background-color: #CACACA;
 
@@ -554,7 +554,7 @@ footer {
         float: none;
     }
 }
-
+// app-details-page start
 .app-details-page {
     .app-description {
         text-align: justify;
@@ -610,6 +610,7 @@ footer {
     }
 }
 // app details page : app preview gallery
+// app-details-page app-preview
 #apps-preview {
     .owl-wrapper-outer {
         max-height: 400px;
@@ -735,7 +736,6 @@ footer {
 
 @media (max-width: 370px) {
     #apps-preview {
-
         .owl-buttons {
             .owl-prev, .owl-next {
                 .top(49px);
@@ -841,5 +841,25 @@ footer {
         font-size: inherit;
         display: inline;
         text-align: right;
+    }
+}
+
+//share-buttons
+.share-btn {
+    float: right;
+    .margin-top(19px);
+}
+
+.facebook {
+    span:first-child {
+        width: 110px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .share-btn {
+        float: none;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 }
