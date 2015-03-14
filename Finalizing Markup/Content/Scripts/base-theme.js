@@ -94,8 +94,7 @@
                 if ($(menu).children("li").is(":hidden")) {
                     //$(menu).children("li").slideDown(settings.speed); // menu alim
                     $(menu).children("li").css('visibility', 'visible');
-                }
-                else {
+                } else {
                     // $(menu).children("li:not(.showhide)").slideUp(settings.speed); // menu alim
                     $(menu).children("li:not(.showhide)").css('visibility', 'hidden');
                     $(menu).children("li.showhide").show(0);
