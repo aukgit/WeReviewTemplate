@@ -33,8 +33,7 @@ body #wrap .app-details-page {
 
 
 .seo-optimize {
-    h1 {
-        color: inherit;
+    h1 {        
         display: inline;
     }
 }
@@ -252,10 +251,6 @@ header {
 
         strong {
             font-weight: normal;
-        }
-
-        em {
-            font-style: normal;
         }
     }
 
@@ -530,6 +525,10 @@ footer {
     strong {
         font-weight: normal;
     }
+
+    em {
+        font-style: normal;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -538,6 +537,29 @@ footer {
             .margin-top(4px);
             .font-size(1.2em);
         }
+    }
+}
+
+// see more btn and less btn
+.show-more-btns-container {
+    .see-more-btn {
+        cursor: pointer;
+    }
+
+    &:hover {
+        color: deepskyblue;
+
+        .see-more-btn, .elipse-dot {
+            color: inherit;
+        }
+    }
+}
+
+.less-btn {
+    cursor: pointer;
+
+    &:hover {
+        color: deepskyblue;
     }
 }
 
@@ -606,6 +628,14 @@ footer {
 .app-details-page {
     .app-description {
         text-align: justify;
+        /*float:left;*/
+
+        h1{
+            color:inherit;
+        }
+    }
+    .more{
+        display:inline;
     }
 
     .app-published-date .date {
@@ -673,6 +703,11 @@ footer {
 h1.review-title {
     margin: 0;
     font-size: 1.2em;
+}
+
+.review-contents{
+    h1{
+    }
 }
 
 .reviewed-by-wrapper {

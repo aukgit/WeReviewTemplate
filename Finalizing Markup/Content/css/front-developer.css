@@ -16,7 +16,6 @@ body #wrap .app-details-page {
   font-family: Helvetica, Arial, sans-serif !important;
 }
 .seo-optimize h1 {
-  color: inherit;
   display: inline;
 }
 .rating-disabled {
@@ -208,9 +207,6 @@ header {
 }
 .app-box .app-title strong {
   font-weight: normal;
-}
-.app-box .app-title strong em {
-  font-style: normal;
 }
 .app-box .fa {
   font-size: 1.2em;
@@ -432,6 +428,9 @@ footer .developers-organism a:hover h1 {
 .app-detail.app-title-wrapper strong {
   font-weight: normal;
 }
+.app-detail.app-title-wrapper em {
+  font-style: normal;
+}
 @media screen and (max-width: 768px) {
   .app-detail.app-title-wrapper .app-title-row,
   .app-detail.app-title-wrapper a {
@@ -439,6 +438,22 @@ footer .developers-organism a:hover h1 {
     margin-top: 0.4rem;
     font-size: 1.2em;
   }
+}
+.show-more-btns-container .see-more-btn {
+  cursor: pointer;
+}
+.show-more-btns-container:hover {
+  color: deepskyblue;
+}
+.show-more-btns-container:hover .see-more-btn,
+.show-more-btns-container:hover .elipse-dot {
+  color: inherit;
+}
+.less-btn {
+  cursor: pointer;
+}
+.less-btn:hover {
+  color: deepskyblue;
 }
 .post-info {
   margin-top: 0;
@@ -491,6 +506,13 @@ footer .developers-organism a:hover h1 {
 }
 .app-details-page .app-description {
   text-align: justify;
+  /*float:left;*/
+}
+.app-details-page .app-description h1 {
+  color: inherit;
+}
+.app-details-page .more {
+  display: inline;
 }
 .app-details-page .app-published-date .date {
   font-size: 16px;

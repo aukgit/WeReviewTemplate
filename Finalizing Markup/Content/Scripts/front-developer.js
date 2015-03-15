@@ -62,7 +62,7 @@ $(function () {
         itemsTabletSmall: [730, 4],
         itemsTablet: [600, 3], //2 items between 600 and 0
         //itemsCustom: [[0, 2], [435, 3], [450, 2], [600, 3], [730, 4], [900, 5],  [950, 6]], // [[740, 6], [1000, 8], [1200, 10], [1600, 16]]
-        itemsMobile: [450, 2],
+        itemsMobile: [450, 2]
         //itemsScaleUp: false
 
     });
@@ -157,16 +157,16 @@ $(function () {
                 var moreReference = $this.attr('data-ref');
                 var dataId = $this.attr('data-id');
                 var dataRefSelector;
-                var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id=" + dataId + "]" : "";
+                var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id='" + dataId + "']" : "";
                 if (_.isUndefined(moreReference) === false) {
-                    dataRefSelector =  "[data-ref=" + moreReference + "]" + dataIdSelector + ":first";
+                    dataRefSelector =  "[data-ref='" + moreReference + "']" + dataIdSelector + ":first";
 
                     var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
-                    if ($specificMoreExcertFound.length > 1) {
+                    if ($specificMoreExcertFound.length > 0) {
                         $specificMoreExcertFound.show('slow');
                     }
                     var $moreBtnContainer = $.frontEndAppDetailsPage.$showMoreBtnContainer.filter(dataRefSelector);
-                    if ($moreBtnContainer.length > 1) {
+                    if ($moreBtnContainer.length > 0) {
                         $moreBtnContainer.hide('slow');
                     }
                 }
@@ -177,16 +177,16 @@ $(function () {
                 var moreReference = $this.attr('data-ref');
                 var dataId = $this.attr('data-id');
                 var dataRefSelector;
-                var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id=" + dataId + "]" : "";
+                var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id='" + dataId + "']" : "";
                 if (_.isUndefined(moreReference) === false) {
-                    dataRefSelector = "[data-ref=" + moreReference + "]" + dataIdSelector + ":first";
+                    dataRefSelector = "[data-ref='" + moreReference + "']" + dataIdSelector + ":first";
 
                     var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
-                    if ($specificMoreExcertFound.length > 1) {
+                    if ($specificMoreExcertFound.length > 0) {
                         $specificMoreExcertFound.hide('slow');
                     }
                     var $moreBtnContainer = $.frontEndAppDetailsPage.$showMoreBtnContainer.filter(dataRefSelector);
-                    if ($moreBtnContainer.length > 1) {
+                    if ($moreBtnContainer.length > 0) {
                         $moreBtnContainer.show('slow');
                     }
                 }
@@ -194,6 +194,7 @@ $(function () {
         }
     };
 
+    $.frontEndAppDetailsPage.execute();
 
 
 });
