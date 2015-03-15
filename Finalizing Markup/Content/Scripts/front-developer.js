@@ -144,70 +144,20 @@ $(function () {
         });
     }
 
-
-
-
-    function showHide(shID) {
-        if (document.getElementById(shID)) {
-            if (document.getElementById(shID + '-show').style.display != 'none') {
-                // already hidden
-                document.getElementById(shID + '-show').style.display = 'none';
-                document.getElementById(shID).style.display = 'inline';
-                $("span#elipse-dot").hide();
-            } else {
-                document.getElementById(shID + '-show').style.display = 'inline';
-                document.getElementById(shID).style.display = 'none';
-                $("span#elipse-dot").show();
-            }
+    $.frontEndAppDetailsPage = {
+        $appDetailPage: $("body.app-details-page:first .app-description:first"),
+        $showMoreBtnContainer: this.$appDescription.find(".show-more-btns-container"),
+        $showMoreBtns: this.$showMoreBtnContainer.find(".see-more-btn"),
+        $showLessBtns: this.$appDetailPage.find(".less-btn"),
+        $moreExcert: this.$appDetailPage.find(".more"),
+        execute : function() {
+            this.$moreExcert.hide();
+            this.$showMoreBtns.click(function() {
+                $.frontEndAppDetailsPage.$appDetailPage.find("more");
+            });
         }
-    }
-    function showHideForReview(i) {
+    };
 
-        if (document.getElementById('show_review' + i).style.display != 'none') {
-            document.getElementById('show_review' + i).style.display = 'none';
-            document.getElementById('less_review' + i).style.display = 'inline';
-        }
-        else {
-            document.getElementById('show_review' + i).style.display = 'inline';
-            document.getElementById('less_review' + i).style.display = 'none';
-        }
-    }
-
-    function showAppsInfoMore(i) {
-
-        if (document.getElementById('show_hide_id_more' + i).style.display != 'none') {
-            document.getElementById('show_hide_id_more' + i).style.display = 'none';
-            document.getElementById('show_hide_id_less' + i).style.display = 'inline';
-        }
-        else {
-            document.getElementById('show_hide_id_more' + i).style.display = 'inline';
-            document.getElementById('show_hide_id_less' + i).style.display = 'none';
-        }
-    }
-
-    $("#app-description-see-more-btn,#app-description-see-less-btn").click(function () {
-        showHide("example");
-    }).css({
-        'cursor': 'pointer'
-    });;
-
-    function doProcessMoreNLessBtns(e) {
-        e.preventDefault();
-        var $this = $(this);
-        var id = $this.attr("data-sequence");
-        //showHideForReview(id);
-    }
-
-    var $appDescription = $("body.app-details-page:first .app-description:first");
-
-    var $showBtns = $appDescription.find("a.hideLink");
-    var $hideBtns = $appDescription.find("a.showLink");
-    $showBtns.click(doProcessMoreNLessBtns).css({
-        'cursor': 'pointer'
-    });
-    $hideBtns.click(doProcessMoreNLessBtns).css({
-        'cursor': 'pointer'
-
-    }).trigger("click");
+   
 
 });

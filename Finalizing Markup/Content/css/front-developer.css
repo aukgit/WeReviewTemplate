@@ -15,6 +15,10 @@ body #wrap .app-details-page {
 .helvetica-font {
   font-family: Helvetica, Arial, sans-serif !important;
 }
+.seo-optimize h1 {
+  color: inherit;
+  display: inline;
+}
 .rating-disabled {
   cursor: default;
 }
@@ -409,6 +413,7 @@ footer .developers-organism a:hover h1 {
   display: inherit;
   font: inherit;
   text-align: inherit;
+  text-transform: capitalize;
 }
 .app-detail.app-title-wrapper h2 {
   color: #1d7ec9;
@@ -533,6 +538,27 @@ footer .developers-organism a:hover h1 {
 .app-details-page .app-box .app-description-wrapper {
   height: 46px;
   height: 4.6rem;
+}
+.review-collection-box {
+  margin-top: 12px;
+  margin-top: 1.2rem;
+  position: relative;
+}
+.review-writer-wrapper,
+h1.review-title {
+  display: block;
+  position: relative;
+}
+h1.review-title {
+  margin: 0;
+  font-size: 1.2em;
+}
+.reviewed-by-wrapper {
+  margin: 5px 0px 10px 0px;
+  margin: 0.5rem 0 1rem 0;
+}
+.reviewed-by-wrapper li {
+  display: inline-block;
 }
 #apps-preview .owl-wrapper-outer {
   max-height: 400px;
