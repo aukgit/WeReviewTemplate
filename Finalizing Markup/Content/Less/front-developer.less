@@ -50,6 +50,14 @@ body #wrap .app-details-page {
 
 .header-2 header nav li a {
     .padding(10px);
+    //.height(40px);
+}
+
+//menu fix
+@media (min-width: 769px) {
+    .jetmenu.menu li:not(.showhide) {
+        display: inline-block !important;
+    }
 }
 
 
@@ -86,10 +94,21 @@ header {
     font-size: 1.5em;
     font-weight: normal;
     color: black;
-    .margin(8px 0 0 0);
+    .margin(8px, 0px,0px, 0px);
     .ubuntu-light-font;
 }
 
+@media (min-width: 768px) and (max-width: 990px) {
+    .h1-no-gap-title {
+        .margin(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .h1-no-gap-title {
+        .margin(26px, 0px,0px, 0px);
+    }
+}
 
 .orange-color {
     color: orange;
@@ -102,13 +121,16 @@ header {
 .apps-list-header-row {
     .ubuntu-font;
 
-    .title h1 {
-        .margin(0px, 0px, 10px, 5px);
-        //margin:0;
-        color: red;
-        .font-size(23px);
-        //font-weight: bold;
-        /*float: right;*/
+    .title {
+        h1 {
+            .margin(0px, 0px, 10px, 5px);
+            color: red;
+            .font-size(23px);
+        }
+
+        strong {
+            font-weight: normal;
+        }
     }
 
     .float-right.btn {
@@ -216,6 +238,10 @@ header {
         white-space: nowrap;
         position: relative;
         .height(14px);
+
+        strong {
+            font-weight: normal;
+        }
     }
 
     .fa {
@@ -362,9 +388,15 @@ header {
     }
 }
 
-.is-sticky .search-bar {
-    position: relative;
-    top: -20px;
+.is-sticky {
+    nav li a {
+        padding: 30px 13px !important;
+    }
+
+    .search-bar {
+        position: relative;
+        top: -20px;
+    }
 }
 
 @media screen and (max-width: 768px) {

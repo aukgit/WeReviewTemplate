@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -34,6 +34,11 @@ body #wrap .app-details-page {
   padding: 10px;
   padding: 1rem;
 }
+@media (min-width: 769px) {
+  .jetmenu.menu li:not(.showhide) {
+    display: inline-block !important;
+  }
+}
 header {
   height: 47px;
   height: 4.7rem;
@@ -63,8 +68,20 @@ header {
   font-size: 1.5em;
   font-weight: normal;
   color: black;
-  margin: 8px 0 0 0;
+  margin: 8px 0px 0px 0px;
+  margin: 0.8rem 0 0 0;
   font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .h1-no-gap-title {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .h1-no-gap-title {
+    margin: 26px 0px 0px 0px;
+    margin: 2.6rem 0 0 0;
+  }
 }
 .orange-color {
   color: orange;
@@ -82,7 +99,9 @@ header {
   color: red;
   font-size: 23px;
   font-size: 1.4375em;
-  /*float: right;*/
+}
+.apps-list-header-row .title strong {
+  font-weight: normal;
 }
 .apps-list-header-row .float-right.btn {
   margin: 0px 5px 0px 0px;
@@ -182,6 +201,9 @@ header {
   position: relative;
   height: 14px;
   height: 1.4rem;
+}
+.app-box .app-title strong {
+  font-weight: normal;
 }
 .app-box .fa {
   font-size: 1.2em;
@@ -298,6 +320,9 @@ header {
 .menu .btn:hover {
   color: white;
   background-color: red;
+}
+.is-sticky nav li a {
+  padding: 30px 13px !important;
 }
 .is-sticky .search-bar {
   position: relative;
@@ -721,4 +746,3 @@ footer .developers-organism a:hover h1 {
     margin-bottom: 20px;
   }
 }
-/*# sourceMappingURL=front-developer.css.map */
