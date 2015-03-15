@@ -125,7 +125,7 @@
         <div class="content">
             <!--======= Body Content Apps =========-->
             <div class="container">
-                <div class="row">
+                <div class="row" itemscope itemtype="http://schema.org/Product">
                     <div class="col-md-12 app-detail app-title-wrapper">
 
                         <div class="app-title-row float-left">
@@ -134,7 +134,7 @@
                             </a>
                             <a href="#" class="app-title">
                                 <h1>
-                                    <strong><em>Application Name</em></strong>
+                                    <strong><em itemprop="name">Application Name</em></strong>
                                 </h1>
                             </a>
 
@@ -227,19 +227,27 @@
                                 </div>
                                 <div class="review-collection-box seo-optimize">
                                     <div class="review-wrapper">
-                                        <section class="single-review row review@id is-recommend" data-sequence="@id">
+                                        <section class="single-review row review@id is-recommend" data-sequence="@id" itemprop="review" itemscope itemtype="http://schema.org/Review">
                                             <div class="col-sm-10">
                                                 <header class="review-writer-wrapper">
                                                     <a class="review-title-anchor" href="#">
-                                                        <h1 class="review-title" title="Plant VS Zombies , Review : Take a Look">Take a Look</h1>
+                                                        <h1 itemprop="name" class="review-title" title="Plant VS Zombies , Review : Take a Look">Take a Look</h1>
                                                     </a>
                                                     <ul class="reviewed-by-wrapper">
-                                                        <li class="posted-by-wrapper">Posted by <a href="#"><h1>developer</h1></a> |</li>
-                                                        <li class="date">01-Jan-01</li>
+                                                        <li class="posted-by-wrapper">
+                                                            Posted by
+                                                            <a href="#">
+                                                                <h1 itemprop="author">developer</h1>
+                                                            </a> |
+                                                        </li>
+                                                        <li class="date">
+                                                            01-Jan-01
+                                                            <meta itemprop="datePublished" content="2011-04-01">
+                                                        </li>
                                                     </ul>
                                                 </header>
                                                 <article title="reiview contents" class="review-contents">
-                                                    v Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look
+                                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
                                                     <span class="show-more-btns-container" data-ref="app-review" data-id="@id">
                                                         <span class="elipse-dot">...</span>
                                                         <a class="see-more-btn" data-ref="app-review" data-id="@id">see more</a>
@@ -261,9 +269,13 @@
                                                 </div>
                                                 <a id="review-thumbs-up-click-0" data-sequence="0" data-review-like-btn="true" href="/Reviews/Like/4"><i class="fa fa-thumbs-up"></i></a>
                                                 <a id="review-thumbs-down-click-0" data-sequence="0" data-review-dislike-btn="true" href="/Reviews/Dislike/4"><i class="fa fa-thumbs-down"></i></a>
+                                                <div class="seo-hide seo-rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                                                    <meta itemprop="worstRating" content="1">
+                                                    <span itemprop="ratingValue">1</span>/
+                                                    <span itemprop="bestRating">5</span>stars
+                                                </div>
                                             </div>
                                         </section>
-
                                     </div>
                                 </div>
                                 <!--<a class="read-more" href="#.">Reed More</a>-->
