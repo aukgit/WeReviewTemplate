@@ -139,7 +139,7 @@
                 <div id="tp-slider" class="slider-bg-static">
                     <div class="tp-banner-container">
                         <div class="tp-banner gallery-home">
-                            <ul>
+                            <ul itemprop="itemListElement" itemscope itemtype="http://schema.org/Book">
                                 <!-- SLIDE 1 -->
                                 <!-- LAYER NR. 1 -->
 
@@ -163,7 +163,7 @@
                                              data-endspeed="500"
                                              data-endeasing="Power4.easeIn"
                                              style="z-index: 3">
-                                            <img src="images/fixed/woman.png" alt="">
+                                            <img itemprop="image" src="images/fixed/woman.png" alt="">
                                         </div>
 
                                         <!-- LAYER NR. 3 -->
@@ -178,7 +178,7 @@
                                              data-endeasing="Power4.easeIn"
                                              data-captionhidden="on"
                                              style="z-index: 4">
-                                            <h1 class="inline">Appliction Name</h1> <span class="app-category inline">Games</span>
+                                            <h1 class="inline" itemprop="name"><strong>Appliction Name</strong></h1> <span class="app-category inline">Games</span>
                                         </div>
 
 
@@ -233,6 +233,10 @@
                                              data-captionhidden="on"
                                              style="z-index: 15">
                                             3.5<span style="font-weight: 300;">/5 Stars</span>
+                                            <div class="seo-rating seo-hide" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                                <span itemprop="ratingValue">3.9</span> stars based on
+                                                <span itemprop="reviewCount">25</span> reviews
+                                            </div>
                                         </div>
 
 
@@ -269,28 +273,32 @@
             <div class="container apps-list">
                 <div class="apps-list-header-row">
                     <a class="title" href="#" title="Latest Mobile Apps">
-                        <h1 title="" class="float-left">Latest Apps</h1>
+                        <h1 title="" class="float-left"><strong title="latest-apps">Latest Apps</strong></h1>
                     </a>
                     <a class="float-right btn btn-primary" href="#">
                         More
                     </a>
                     <div class="clear"></div>
                 </div>
-                <div class="owl-carousel owl-theme owl-list">
+                <div class="owl-carousel owl-theme owl-list" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book">
                     <a class="app-box" href="#">
-                        <img class="app-icon" src="images/b-avatar-1.jpg" />
+                        <img class="app-icon" itemprop="image" src="images/b-avatar-1.jpg" />
                         <div class="app-description-wrapper">
                             <div class="app-title-container">
                                 <div class="app-title-row">
                                     <h1 itemprop="name" class="app-title ubuntu-font">
                                         <i class="fa fa-apple"></i>
-                                        Application Name
+                                        <strong>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</strong>
                                     </h1>
                                     <span class="paragraph-end"></span>
                                 </div>
-                                <div class="published-by">
-                                    user-name
+                                <div class="published-by" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                                    <span itemprop="name">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</span>
                                     <span class="paragraph-end"></span>
+                                </div>
+                                <div class="seo-rating seo-hide" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                    <span itemprop="ratingValue">3.9</span> stars based on
+                                    <span itemprop="reviewCount">25</span> reviews
                                 </div>
                                 <input class="rating-5-front" value="3.5" min="0" max="5" step="0.5" data-readonly="true" data-size="xs">
                             </div>
@@ -301,28 +309,32 @@
             <div class="container apps-list">
                 <div class="apps-list-header-row">
                     <a class="title" href="#" title="Latest Mobile Apps">
-                        <h1 title="">Top Rated Apps</h1>
+                        <h1 title="" class="float-left"><strong>Top Rated</strong></h1>
                     </a>
                     <a class="float-right btn btn-primary" href="#">
                         More
                     </a>
                     <div class="clear"></div>
                 </div>
-                <div class="owl-carousel owl-theme owl-list">
+                <div class="owl-carousel owl-theme owl-list" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book">
                     <a class="app-box" href="#">
-                        <img class="app-icon" src="images/b-avatar-1.jpg" />
+                        <img class="app-icon" itemprop="image" src="images/b-avatar-1.jpg" />
                         <div class="app-description-wrapper">
                             <div class="app-title-container">
                                 <div class="app-title-row">
                                     <h1 itemprop="name" class="app-title ubuntu-font">
                                         <i class="fa fa-apple"></i>
-                                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                                        <strong>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</strong>
                                     </h1>
                                     <span class="paragraph-end"></span>
                                 </div>
-                                <div class="published-by">
-                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                                <div class="published-by" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                                    <span itemprop="name">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</span>
                                     <span class="paragraph-end"></span>
+                                </div>
+                                <div class="seo-rating seo-hide" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                    <span itemprop="ratingValue">3.9</span> stars based on
+                                    <span itemprop="reviewCount">25</span> reviews
                                 </div>
                                 <input class="rating-5-front" value="3.5" min="0" max="5" step="0.5" data-readonly="true" data-size="xs">
                             </div>

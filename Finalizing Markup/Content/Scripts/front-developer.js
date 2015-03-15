@@ -13,6 +13,7 @@
 
 $(function () {
 
+    $(".seo-hide").hide();
 
 
     //$('.tp-banner').show().revolution({
@@ -205,4 +206,5 @@ $(function () {
         'cursor': 'pointer'
 
     }).trigger("click");
+
 });
