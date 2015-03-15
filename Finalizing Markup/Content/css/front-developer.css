@@ -209,6 +209,9 @@ header {
 .app-box .app-title strong {
   font-weight: normal;
 }
+.app-box .app-title strong em {
+  font-style: normal;
+}
 .app-box .fa {
   font-size: 1.2em;
 }

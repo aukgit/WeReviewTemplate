@@ -10,6 +10,7 @@
 /// <reference path="jquery.lightSlider.min.js" />
 /// <reference path="../../rs-plugin/js/jquery.themepunch.revolution.min.js" />
 /// <reference path="bootstrap-rating.min.js" />
+/// <reference path="underscore-min.js" />
 
 $(function () {
 
@@ -114,7 +115,7 @@ $(function () {
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
 
-    
+
     $("div.app-suggested-list-items-mobile:first,div.featured-apps-list-items:first").owlCarousel({
         navigation: true,
         navigationText: [
@@ -126,7 +127,7 @@ $(function () {
         //itemsDesktopSmall: [900, 4], // betweem 900px and 601px
         //itemsTablet: [600, 3], //2 items between 600 and 0
         //itemsMobile: [450, 2],
-        itemsCustom:[370,1]
+        itemsCustom: [370, 1]
     });
 
     var selectForYoutubeVideoOnDetailsPage = "body.app-details-page:first .youtube-video:first";
@@ -145,19 +146,54 @@ $(function () {
     }
 
     $.frontEndAppDetailsPage = {
-        $appDetailPage: $("body.app-details-page:first .app-description:first"),
-        $showMoreBtnContainer: this.$appDescription.find(".show-more-btns-container"),
-        $showMoreBtns: this.$showMoreBtnContainer.find(".see-more-btn"),
-        $showLessBtns: this.$appDetailPage.find(".less-btn"),
-        $moreExcert: this.$appDetailPage.find(".more"),
-        execute : function() {
+        $showMoreBtnContainer: $(".show-more-btns-container"),
+        $showMoreBtns: $(".see-more-btn"),
+        $showLessBtns: $(".less-btn"),
+        $moreExcert: $(".more"),
+        execute: function () {
             this.$moreExcert.hide();
-            this.$showMoreBtns.click(function() {
-                $.frontEndAppDetailsPage.$appDetailPage.find("more");
+            this.$showMoreBtns.click(function () {
+                var $this = $(this);
+                var moreReference = $this.attr('data-ref');
+                var dataId = $this.attr('data-id');
+                var dataRefSelector;
+                var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id=" + dataId + "]" : "";
+                if (_.isUndefined(moreReference) === false) {
+                    dataRefSelector =  "[data-ref=" + moreReference + "]" + dataIdSelector + ":first";
+
+                    var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
+                    if ($specificMoreExcertFound.length > 1) {
+                        $specificMoreExcertFound.show('slow');
+                    }
+                    var $moreBtnContainer = $.frontEndAppDetailsPage.$showMoreBtnContainer.filter(dataRefSelector);
+                    if ($moreBtnContainer.length > 1) {
+                        $moreBtnContainer.hide('slow');
+                    }
+                }
+            });
+
+            this.$showLessBtns.click(function () {
+                var $this = $(this);
+                var moreReference = $this.attr('data-ref');
+                var dataId = $this.attr('data-id');
+                var dataRefSelector;
+                var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id=" + dataId + "]" : "";
+                if (_.isUndefined(moreReference) === false) {
+                    dataRefSelector = "[data-ref=" + moreReference + "]" + dataIdSelector + ":first";
+
+                    var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
+                    if ($specificMoreExcertFound.length > 1) {
+                        $specificMoreExcertFound.hide('slow');
+                    }
+                    var $moreBtnContainer = $.frontEndAppDetailsPage.$showMoreBtnContainer.filter(dataRefSelector);
+                    if ($moreBtnContainer.length > 1) {
+                        $moreBtnContainer.show('slow');
+                    }
+                }
             });
         }
     };
 
-   
+
 
 });

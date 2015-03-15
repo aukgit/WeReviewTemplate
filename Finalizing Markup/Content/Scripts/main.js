@@ -27,11 +27,11 @@ $(document).ready(function ($) {
             charts.push(new EasyPieChart(el, options));
         });
     });
-    jQuery('.skillbar').each(function () {
-        jQuery(this).find('.skillbar-bar').animate({
-            width: jQuery(this).attr('data-percent')
-        }, 4000);
-    });
+    //jQuery('.skillbar').each(function () {
+    //    jQuery(this).find('.skillbar-bar').animate({
+    //        width: jQuery(this).attr('data-percent')
+    //    }, 4000);
+    //});
 
 
 
@@ -64,15 +64,15 @@ $(document).ready(function ($) {
     /*    PRODUCTS IMAGE SLIDES
     /*-----------------------------------------------------------------------------------*/
 
-    $('#imageGallery').lightSlider({
-        gallery: true,
-        auto: true,
-        item: 1,
-        thumbItem: 9,
-        slideMargin: 0,
-        loop: true,
-        mode: "slide"
-    });
+    //$('#imageGallery').lightSlider({
+    //    gallery: true,
+    //    auto: true,
+    //    item: 1,
+    //    thumbItem: 9,
+    //    slideMargin: 0,
+    //    loop: true,
+    //    mode: "slide"
+    //});
 
 
 
@@ -97,13 +97,13 @@ $(document).ready(function ($) {
     /*  ISOTOPE PORTFOLIO
     /*-----------------------------------------------------------------------------------*/
 
-    var $container = $('.portfolio-wrapper .items');
-    $container.imagesLoaded(function () {
-        $container.isotope({
-            itemSelector: '.item',
-            layoutMode: 'fitRows'
-        });
-    });
+    //var $container = $('.portfolio-wrapper .items');
+    //$container.imagesLoaded(function () {
+    //    $container.isotope({
+    //        itemSelector: '.item',
+    //        layoutMode: 'fitRows'
+    //    });
+    //});
     $('.filter li a').click(function () {
         $('.filter li a').removeClass('active');
         $(this).addClass('active');

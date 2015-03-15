@@ -12,7 +12,6 @@
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
 
     <!-- FONTS ONLINE -->
-    <!--<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic,400italic' rel='stylesheet' type='text/css'>-->
     <!--MAIN STYLE-->
     <link href="Content/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="Content/css/base-theme-styles.css" rel="stylesheet" type="text/css">
@@ -133,7 +132,7 @@
                             </a>
                             <a href="#" class="app-title">
                                 <h1>
-                                    <strong>Application Name</strong>
+                                    <strong><em>Application Name</em></strong>
                                 </h1>
                             </a>
 
@@ -206,11 +205,11 @@
                                 </ul>
                                 <div class="app-description seo-optimize">
                                     A mob of fun-loving zombies is about to invade your home, and your only defense is an arsenal of 49 zombie-zapping plants. Use Peashooters, Wall-nuts, Cherry Bombs and more to slow down, confuse, weak
-                                    <span class="show-more-btns-container">
+                                    <span class="show-more-btns-container" data-ref="app-description">
                                         <span class="elipse-dot">...</span>
-                                        <a class="see-more-btn">see more</a>
+                                        <a class="see-more-btn" data-ref="app-description">see more</a>
                                     </span>
-                                    <div class="more">
+                                    <div class="more" data-ref="app-description">
                                         en and mulchify 26 types of zombies before they can reach your front door. Each zombie has its own special skills, so be careful how you use your limited supply of greens and seeds… as you battle the fun-dead, obstacles like a setting sun, creeping fog and a swimming pool add to the challenge.
                                         <a class="less-btn">less</a>
                                         <div class="tagbox">
@@ -236,17 +235,17 @@
                                                 </header>
                                                 <article title="reiview contents" class="review-contents">
                                                     v Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look
-                                                    <span class="show-more-btns-container">
+                                                    <span class="show-more-btns-container" data-ref="app-review" data-id="@id">
                                                         <span class="elipse-dot">...</span>
-                                                        <a class="see-more-btn">see more</a>
+                                                        <a class="see-more-btn" data-ref="app-review" data-id="@id">see more</a>
                                                     </span>
-                                                    <div id="app-review-less-wrapper-@id" class="more">
+                                                    <div class="more" data-ref="app-review" data-id="@id">
                                                         Take a Look Take a Look
                                                         <a><h1 title="pros of Plant VS Zombies" class="h5 green">Pros:</h1></a>
                                                         <p title="pros of Plant VS Zombies">Take a Lookvv Take a LookTake a LookTake a LookTake a LookTake a LookTake a Look</p>
                                                         <a><h1 title="cons of Plant VS Zombies" class="h5 red">Cons:</h1></a>
                                                         <q title="cons of Plant VS Zombies">Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look Take a Look</q>
-                                                        <a id="hide-review-btn-@id" class="hide-review" data-sequence="@id">less</a>
+                                                        <a class="less-btn" data-ref="app-review" data-id="@id">less</a>
                                                     </div>
                                                 </article>
                                             </div>
@@ -452,6 +451,7 @@
         </div>
     </div>
     <script defer="defer" src="Content/Scripts/jquery-2.1.1.js" type="text/javascript"></script>
+    <script defer="defer" src="Content/Scripts/underscore-min.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/bootstrap.min.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/CreateSampleElements.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/wow.min.js" type="text/javascript"></script>
@@ -462,10 +462,10 @@
 
     <script defer="defer" src="Content/Scripts/counter.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/base-theme.js" type="text/javascript"></script>
-    <script defer="defer" src="Content/Scripts/pei-chart.js" type="text/javascript"></script>
+    <!--<script defer="defer" src="Content/Scripts/pei-chart.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/jquery.isotope.min.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/jquery.nouislider.min.js" type="text/javascript"></script>
-    <script defer="defer" src="Content/Scripts/jquery.lightSlider.min.js" type="text/javascript"></script>
+    <script defer="defer" src="Content/Scripts/jquery.lightSlider.min.js" type="text/javascript"></script>-->
     <script defer="defer" src="Content/Scripts/owl.carousel.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/jquery.number.js" type="text/javascript"></script>
     <script defer="defer" src="Content/Scripts/main.js" type="text/javascript"></script>
