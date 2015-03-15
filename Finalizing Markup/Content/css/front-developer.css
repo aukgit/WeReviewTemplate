@@ -30,6 +30,9 @@ body #wrap .app-details-page {
 .float-right {
   float: right;
 }
+.center-margin {
+  margin: 0 auto;
+}
 .clear {
   clear: both;
 }
@@ -578,12 +581,63 @@ h1.review-title {
   margin: 0;
   font-size: 1.2em;
 }
+.single-review {
+  height: auto;
+  border: 2px solid #ededed;
+  padding: 7px;
+  padding: 0.7rem;
+  padding-top: 13px;
+  padding-top: 1.3rem;
+  margin: 5px 0px 0px 0px;
+  margin: 0.5rem 0 0 0;
+}
+.single-review header {
+  border-bottom: 2px solid red;
+}
+.single-review header h1 {
+  color: inherit;
+}
+.single-review.is-recommended {
+  background-color: #efffef;
+}
+.review-contents {
+  padding-top: 5px;
+  padding-top: 0.5rem;
+  font-size: .9em;
+}
+.review-contents h1 {
+  display: block;
+}
 .reviewed-by-wrapper {
   margin: 5px 0px 10px 0px;
   margin: 0.5rem 0 1rem 0;
+  font-size: .9em;
 }
 .reviewed-by-wrapper li {
   display: inline-block;
+  font-size: .9em;
+}
+.review-thumbs-up-wrappper {
+  height: inherit;
+}
+.review-thumbs-up-wrappper a {
+  height: 34px;
+  height: 3.4rem;
+  display: inline-block;
+}
+.review-thumbs-up-wrappper .fa {
+  font-size: 1.8em;
+  padding: 5px;
+  padding: 0.5rem;
+}
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
 }
 #apps-preview .owl-wrapper-outer {
   max-height: 400px;

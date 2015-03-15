@@ -43,7 +43,7 @@ $(function () {
     }
 
     sampleItemsCreate.appList(20);
-    sampleItemsCreate.addOwlItems(".app-suggested-list-items", 5);
+    sampleItemsCreate.addOwlItems(".app-suggested-list-items", 3);
     //sampleItemsCreate.addOwlItems(".app-suggested-list-items-mobile", 5);
     sampleItemsCreate.gallerySlides(5);
     //sampleItemsCreate.suggestedAppsList(5);
