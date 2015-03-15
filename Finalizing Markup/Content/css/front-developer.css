@@ -458,6 +458,36 @@ footer .developers-organism a:hover h1 {
 .less-btn:hover {
   color: deepskyblue;
 }
+@media (max-width: 730px) {
+  .less-btn,
+  .show-more-btns-container .see-more-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: orange;
+  }
+  .less-btn:hover,
+  .show-more-btns-container .see-more-btn:hover {
+    color: white;
+  }
+}
 .post-info {
   margin-top: 0;
   padding-bottom: 0;
@@ -597,8 +627,16 @@ h1.review-title {
 .single-review header h1 {
   color: inherit;
 }
+.single-review header .fa {
+  display: none;
+  font-size: 1.1em;
+  color: green;
+}
 .single-review.is-recommended {
   background-color: #efffef;
+}
+.single-review.is-recommended header .fa {
+  display: inline;
 }
 .review-contents {
   padding-top: 5px;

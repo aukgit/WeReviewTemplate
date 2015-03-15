@@ -8,6 +8,9 @@
 .red {
     color: Red;
 }
+.red-important {
+    color: Red !important;
+}
 
 .brownish-red {
     color: #B31010;

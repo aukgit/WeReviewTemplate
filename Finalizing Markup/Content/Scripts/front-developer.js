@@ -152,6 +152,8 @@ $(function () {
         $moreExcert: $(".more"),
         execute: function () {
             this.$moreExcert.hide();
+            $(".app-viewed-numbers:first").number(true);
+
             this.$showMoreBtns.click(function () {
                 var $this = $(this);
                 var moreReference = $this.attr('data-ref');
@@ -159,7 +161,7 @@ $(function () {
                 var dataRefSelector;
                 var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id='" + dataId + "']" : "";
                 if (_.isUndefined(moreReference) === false) {
-                    dataRefSelector =  "[data-ref='" + moreReference + "']" + dataIdSelector + ":first";
+                    dataRefSelector = "[data-ref='" + moreReference + "']" + dataIdSelector + ":first";
 
                     var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
                     if ($specificMoreExcertFound.length > 0) {
@@ -195,6 +197,8 @@ $(function () {
     };
 
     $.frontEndAppDetailsPage.execute();
+
+
 
 
 });
