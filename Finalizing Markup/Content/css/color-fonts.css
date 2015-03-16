@@ -1,105 +1,75 @@
-﻿
-/* Colors and Fonts */
-
+﻿/* Colors and Fonts */
 .Blackish-Red {
-    color: #330707;
+  color: #330707;
 }
-
 .red {
-    color: Red;
+  color: Red;
 }
 .red-important {
-    color: Red !important;
+  color: Red !important;
 }
-
 .brownish-red {
-    color: #B31010;
+  color: #B31010;
 }
-
 .bold {
-    font-weight: bolder;
+  font-weight: bolder;
 }
-
 .green {
-    color: #008000;
+  color: #008000;
 }
-
 .brown {
-    color: #5E1F1F;
+  color: #5E1F1F;
 }
-
 .black {
-    color: Black;
+  color: Black;
 }
-
 .lightcolor {
-    color: Gray;
+  color: Gray;
 }
-
 .white {
-    color: White;
+  color: White;
 }
-
 .blue {
-    color: Blue;
+  color: Blue;
 }
-
 .blue-like {
-    color: #459EC9;
+  color: #459EC9;
 }
-
 .regular-font {
-    font-size: 13px;
+  font-size: 13px;
 }
-
 .medium-font {
-    font-size: 122%;
+  font-size: 122%;
 }
-
 .bigger-font {
-    font-size: 200%;
+  font-size: 200%;
 }
-
-h1, h2, h3, h4, h5 {
-    font-size: 13px;
-    font-weight: normal;
-
-}
-
 .font-size-22 {
-    font-size: 22px;
+  font-size: 22px;
 }
-
-
-.bangla, .bangla li {
-    font-family: Bangla,Kalpurush;
-    font-size: 16px;
-    font-weight: normal;
+.bangla,
+.bangla li {
+  font-family: Bangla,Kalpurush;
+  font-size: 16px;
+  font-weight: normal;
 }
-
-
-
-.almost-white{
-    color:rgb(189, 189, 189);
+.almost-white {
+  color: #bdbdbd;
 }
-
-.mid-error-color{
-     background-color:#DF3B69;
+.mid-error-color {
+  background-color: #DF3B69;
 }
-
-.low-error-color{
-    background-color:#EF3ECC;
+.low-error-color {
+  background-color: #EF3ECC;
 }
-
-.error-solution-link-color{
-    background-color:#2382CC;
+.error-solution-link-color {
+  background-color: #2382CC;
 }
-
-a.error-solution-link:hover{
-    text-decoration:none;
-    background-color:#3196E4;
+a.error-solution-link:hover {
+  text-decoration: none;
+  background-color: #3196E4;
 }
-a.error-solution-link span:hover{
-    text-decoration:none;
-    background-color:#3196E4;
+a.error-solution-link span:hover {
+  text-decoration: none;
+  background-color: #3196E4;
 }

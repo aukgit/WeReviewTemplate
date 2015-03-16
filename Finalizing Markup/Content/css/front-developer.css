@@ -15,8 +15,26 @@ body #wrap .app-details-page {
 .helvetica-font {
   font-family: Helvetica, Arial, sans-serif !important;
 }
-.seo-optimize h1 {
+.seo-optimize h1,
+.seo-optimize h2,
+.seo-optimize h3,
+.seo-optimize h4,
+.seo-optimize h5 {
   display: inline;
+  font-size: 1em;
+  font-weight: normal;
+}
+.seo-optimize strong {
+  font-weight: normal;
+}
+.seo-optimize em {
+  font-style: normal;
+}
+.seo-optimize a:hover {
+  color: #ff7200;
+}
+.seo-optimize a:hover h1 {
+  color: inherit;
 }
 .rating-disabled {
   cursor: default;
@@ -59,6 +77,12 @@ header {
 .jetmenu ul.dropdown {
   top: 40px;
   top: 4rem;
+}
+.jetmenu h1 {
+  color: #647383;
+}
+.jetmenu strong {
+  font-weight: normal;
 }
 .h1-no-gap {
   margin: 0;
@@ -210,6 +234,9 @@ header {
 }
 .app-box .app-title strong {
   font-weight: normal;
+}
+.app-box .app-title em {
+  font-style: normal;
 }
 .app-box .fa {
   font-size: 1.2em;
@@ -491,6 +518,18 @@ footer .developers-organism a:hover h1 {
 .post-info {
   margin-top: 0;
   padding-bottom: 0;
+}
+.post-info li {
+  color: #647383;
+}
+.post-info h1 {
+  color: #ff4d00;
+}
+.report-app h1 {
+  color: red;
+}
+.report-app h1 em {
+  font-weight: bold;
 }
 #blog {
   font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -850,6 +889,8 @@ q:after {
 .user-rating-box h4 {
   margin: 0;
   padding: 0;
+  font-size: 1em;
+  font-weight: 500;
 }
 .user-rating-box .rating-display {
   height: 29px;
