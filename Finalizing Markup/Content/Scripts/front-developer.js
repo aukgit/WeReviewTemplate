@@ -37,7 +37,7 @@ $(function () {
     //    stopLoop: "off"
     //});
 
-    $('.tp-banner').show().revolution({
+    $(".tp-banner").show().revolution({
         dottedOverlay: "none",
         delay: 5000,
         startwidth: 960,
@@ -156,8 +156,8 @@ $(function () {
 
             this.$showMoreBtns.click(function () {
                 var $this = $(this);
-                var moreReference = $this.attr('data-ref');
-                var dataId = $this.attr('data-id');
+                var moreReference = $this.attr("data-ref");
+                var dataId = $this.attr("data-id");
                 var dataRefSelector;
                 var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id='" + dataId + "']" : "";
                 if (_.isUndefined(moreReference) === false) {
@@ -165,19 +165,20 @@ $(function () {
 
                     var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
                     if ($specificMoreExcertFound.length > 0) {
-                        $specificMoreExcertFound.show('slow');
+                        $specificMoreExcertFound.show("slow");
+                        $specificMoreExcertFound.css("display","inline");
                     }
                     var $moreBtnContainer = $.frontEndAppDetailsPage.$showMoreBtnContainer.filter(dataRefSelector);
                     if ($moreBtnContainer.length > 0) {
-                        $moreBtnContainer.hide('slow');
+                        $moreBtnContainer.hide("slow");
                     }
                 }
             });
 
             this.$showLessBtns.click(function () {
                 var $this = $(this);
-                var moreReference = $this.attr('data-ref');
-                var dataId = $this.attr('data-id');
+                var moreReference = $this.attr("data-ref");
+                var dataId = $this.attr("data-id");
                 var dataRefSelector;
                 var dataIdSelector = _.isUndefined(dataId) === false ? "[data-id='" + dataId + "']" : "";
                 if (_.isUndefined(moreReference) === false) {
@@ -185,11 +186,11 @@ $(function () {
 
                     var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
                     if ($specificMoreExcertFound.length > 0) {
-                        $specificMoreExcertFound.hide('slow');
+                        $specificMoreExcertFound.hide("slow");
                     }
                     var $moreBtnContainer = $.frontEndAppDetailsPage.$showMoreBtnContainer.filter(dataRefSelector);
                     if ($moreBtnContainer.length > 0) {
-                        $moreBtnContainer.show('slow');
+                        $moreBtnContainer.show("slow");
                     }
                 }
             });

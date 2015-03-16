@@ -563,9 +563,26 @@ footer .developers-organism a:hover h1 {
     margin: 0 auto;
     float: none;
   }
+}
+@media (max-width: 770px) {
+  .apps-list-header-row {
+    position: relative;
+  }
   .apps-list-header-row .title h1 {
     float: none;
     text-align: center;
+    display: inline-block;
+  }
+  .apps-list-header-row .btn-more {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: -4px;
+    top: -0.4rem;
+  }
+  .apps-list-header-row .btn {
+    padding: 5px 12px;
   }
 }
 @media (max-width: 680px) {
