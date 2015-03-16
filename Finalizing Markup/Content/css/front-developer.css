@@ -137,6 +137,12 @@ header {
   margin: 0px 5px 0px 0px;
   margin: 0 0.5rem 0 0;
 }
+@media (max-width: 966px) {
+  .apps-list-header-row .title h1 {
+    float: none;
+    text-align: center;
+  }
+}
 /*.owl-list {
     .owl-item {
         min-width: 157px;
