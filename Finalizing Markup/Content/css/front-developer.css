@@ -994,8 +994,8 @@ q:after {
   color: #647383;
   height: 54px;
   height: 5.4rem;
-  width: 230px;
-  width: 23rem;
+  width: 224px;
+  width: 22.4rem;
   font-size: 0.8em;
   margin-bottom: 5px;
   margin-bottom: 0.5rem;
@@ -1076,6 +1076,15 @@ q:after {
   .slim-app-view span,
   .slim-app-view i.fa {
     text-align: inherit;
+  }
+}
+@media (max-width: 735px) {
+  .slim-app-view {
+    width: 335px;
+    width: 33.5rem;
+  }
+  .slim-app-view .app-content {
+    width: 77%;
   }
 }
 @media (max-width: 510px) {
