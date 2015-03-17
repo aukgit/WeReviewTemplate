@@ -44,6 +44,9 @@ $(function () {
 
     sampleItemsCreate.appList(20);
     sampleItemsCreate.addOwlItems(".app-suggested-list-items", 3);
+    //archive-app-collection-list
+    sampleItemsCreate.addOwlItems(".archive-app-collection-list", 10);
+
     //sampleItemsCreate.addOwlItems(".app-suggested-list-items-mobile", 5);
     sampleItemsCreate.gallerySlides(5);
     //sampleItemsCreate.suggestedAppsList(5);

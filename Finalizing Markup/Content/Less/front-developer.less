@@ -57,6 +57,26 @@ body #wrap .app-details-page {
     }
 }
 
+.regular-color {
+    color: @regular-font-color;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.semi-bold-important {
+    font-weight: 600 !important;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bold-important {
+    font-weight: 700 !important;
+}
+
 .rating-disabled {
     cursor: default;
 }
@@ -533,9 +553,12 @@ footer {
 }
 
 // app-details page
+.app-title-margin {
+    .margin(7px,0px,10px,0px);
+}
 
 .app-detail.app-title-wrapper {
-    .margin(7px,0px,10px,0px);
+    .app-title-margin();
     .height(42px);
 
     .app-title-row {
@@ -572,6 +595,14 @@ footer {
 
     .fa-apple {
         color: grey;
+    }
+
+    .fa-android {
+        color: green;
+    }
+
+    .fa-windows {
+        color: deepskyblue;
     }
 
     strong {
@@ -1149,5 +1180,118 @@ q:after {
         float: none;
         margin-top: 0;
         margin-bottom: 20px;
+    }
+}
+
+
+//category page
+.category-page {
+}
+
+.archive-app-collection-list {
+    .margin(5px,0px,4px,11px);
+    width: 100%;
+    //height: 517px;
+    .padding-right(25px);
+
+    li {
+        float: left;
+        margin-left: 5px;
+        display: block;
+    }
+}
+
+
+
+.slim-app-view {
+    color: @regular-font-color;
+    .height(54px);
+    .width(230px);
+    .font-size(0.8em);
+    .margin-bottom(5px);
+    display: block;
+    .ubuntu-font;
+
+    .app-url:hover {
+        color: @regular-font-color;
+    }
+
+    &:hover {
+        border-bottom: 2px solid red;
+        cursor: pointer;
+    }
+
+    .app-content {
+        float: left;
+        .margin-left(10px);
+        width: 66%;
+    }
+
+    h1, h2, h3 {
+        color: inherit;
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        min-width: 108px;
+        position: relative;
+    }
+
+    h3 {
+        .margin-top(5px);
+    }
+
+    .app-title {
+        .font-size(1.2em);
+    }
+
+    .app-icon img {
+        .height(50px);
+        .width(66px);
+        float: left;
+        border: 1.5px solid rgb(97, 97, 97);
+        .box-shadow(~'1px 1px 2px rgba(105, 105, 105, 0.55)');
+    }
+
+    .rating {
+        .margin-top(5px);
+    }
+
+    .fa-star {
+        color: #ff9b00;
+        text-shadow: .5px .5px .5px black;
+    }
+}
+
+.app-date-seperation {
+    border-bottom: 2px solid red;
+    .app-title-margin();
+
+    .col-md-2 {
+        text-align: right;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .slim-app-view {
+        text-align: left;
+
+        h1, h2, h3, span, i.fa {
+            text-align: inherit;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .slim-app-view {
+        .width(100%);
+
+        .app-content {
+            width: 79%;
+        }
     }
 }
