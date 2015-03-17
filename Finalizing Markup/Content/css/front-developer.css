@@ -1067,6 +1067,8 @@ q:after {
 @media (max-width: 768px) {
   .slim-app-view {
     text-align: left;
+    width: 227px;
+    width: 22.7rem;
   }
   .slim-app-view h1,
   .slim-app-view h2,
@@ -1082,5 +1084,15 @@ q:after {
   }
   .slim-app-view .app-content {
     width: 79%;
+  }
+}
+@media (max-width: 400px) {
+  .slim-app-view .app-content {
+    width: 75%;
+  }
+}
+@media (max-width: 350px) {
+  .slim-app-view .app-content {
+    width: 68%;
   }
 }

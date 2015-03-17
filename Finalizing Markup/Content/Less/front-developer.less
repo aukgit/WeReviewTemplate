@@ -1279,7 +1279,7 @@ q:after {
 @media (max-width: 768px) {
     .slim-app-view {
         text-align: left;
-
+        .width(227px);
         h1, h2, h3, span, i.fa {
             text-align: inherit;
         }
@@ -1295,3 +1295,20 @@ q:after {
         }
     }
 }
+
+@media (max-width: 400px) {
+    .slim-app-view {
+        .app-content {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .slim-app-view {
+        .app-content {
+            width: 68%;
+        }
+    }
+}
+

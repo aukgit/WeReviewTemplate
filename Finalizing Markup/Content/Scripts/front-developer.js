@@ -56,9 +56,9 @@ $(function () {
           "<i class='fa fa-chevron-circle-left'></i>",
           "<i class='fa fa-chevron-circle-right'></i>"
         ],
-        items: 8, //10 items above 1000px browser width
+        items: 7, //10 items above 1000px browser width
         itemsDesktop: [1152, 6], //5 items between 1000px and 901px
-        itemsDesktopSmall: [900, 5], // betweem 900px and 601px
+        itemsDesktopSmall: [966, 5], // betweem 900px and 601px
         itemsTabletSmall: [730, 4],
         itemsTablet: [600, 3], //2 items between 600 and 0
         //itemsCustom: [[0, 2], [435, 3], [450, 2], [600, 3], [730, 4], [900, 5],  [950, 6]], // [[740, 6], [1000, 8], [1200, 10], [1600, 16]]
