@@ -863,6 +863,8 @@ h1.review-title {
             font-size: 1.1em;
             color: green;
         }
+
+        //height: auto;
     }
 
     height: auto;
@@ -882,6 +884,14 @@ h1.review-title {
     }
 }
 
+@media (max-width: 450px) {
+    .single-review {
+        header {            
+            height: auto;
+        }
+    }
+}
+
 .review-contents {
     h1 {
         display: block;
@@ -889,6 +899,30 @@ h1.review-title {
 
     .padding-top(5px);
     font-size: .9em;
+
+    blockquote {
+        .padding(4px, 13px);
+        .margin(0px, 0px, 20px, 0px);
+        font-size: 1em;
+        border-left: 0;
+        text-align: justify;
+
+        &:before, &:after {
+            //font-size: 100px;
+            left: 0;
+            line-height: 0.9;
+            //position: absolute;
+            top: 0;
+        }
+
+        &:before {
+            content: "“";
+        }
+
+        &:after {
+            content: "”";
+        }
+    }
 }
 
 .reviewed-by-wrapper {
@@ -899,7 +933,13 @@ h1.review-title {
         display: inline-block;
         font-size: .9em;
     }
+
+    a h1 {
+        font-weight: 600;
+    }
 }
+
+
 
 .review-thumbs-up-wrappper {
     a {
@@ -1281,6 +1321,7 @@ q:after {
     .slim-app-view {
         text-align: left;
         .width(227px);
+
         h1, h2, h3, span, i.fa {
             text-align: inherit;
         }
@@ -1290,6 +1331,7 @@ q:after {
 @media (max-width: 735px) {
     .slim-app-view {
         .width(335px);
+
         .app-content {
             width: 77%;
         }
@@ -1300,6 +1342,7 @@ q:after {
 @media (max-width: 510px) {
     .slim-app-view {
         .width(100%);
+
         .app-content {
             width: 79%;
         }
@@ -1321,4 +1364,3 @@ q:after {
         }
     }
 }
-

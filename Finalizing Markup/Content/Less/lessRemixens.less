@@ -138,7 +138,7 @@
 .padding(@vertical, @horizontal) when (ispixel(@vertical)) {
     @rem-value: ~`pxtorem('@{vertical}')`;
     padding: @vertical @horizontal;
-    .padding(@rem-value, @horizontal);
+    padding: @rem-value @horizontal;
 }
 
 .padding(@vertical, @horizontal) when (ispixel(@horizontal)) {
