@@ -152,7 +152,10 @@ $(function () {
         $moreExcert: $(".more"),
         execute: function () {
             this.$moreExcert.hide();
-            $(".app-viewed-numbers:first").number(true);
+            var $numberElement = $(".app-viewed-numbers:first");
+            if ($numberElement.length > 0) {
+                $numberElement.number(true);
+            }
 
             this.$showMoreBtns.click(function () {
                 var $this = $(this);
