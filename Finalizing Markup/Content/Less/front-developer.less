@@ -12,22 +12,12 @@ body {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.ubuntu-font {
-    font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-
-.ubuntu-light-font {
-    font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
 
 
 body #wrap .app-details-page {
     .ubuntu-font;
 }
 
-.helvetica-font {
-    font-family: Helvetica, Arial, sans-serif !important;
-}
 
 
 //seo seo-optimize
@@ -42,10 +32,12 @@ body #wrap .app-details-page {
 
     strong {
         font-weight: normal;
+        //.font-size(1em);
     }
 
     em {
         font-style: normal;
+        //.font-size(1em);
     }
 
     a:hover {
@@ -55,6 +47,10 @@ body #wrap .app-details-page {
             color: inherit;
         }
     }
+}
+
+.font-normal {
+    font-size: 1em;
 }
 
 .regular-color {
@@ -500,57 +496,6 @@ header {
     }
 }
 
-footer {
-    padding: 16px 0;
-
-    .rights {
-        padding: 20px 0;
-        margin-top: 15px;
-    }
-
-    .copyright {
-        color: white;
-    }
-
-    h5 {
-        margin-bottom: 0;
-        width: 62px;
-        float: right;
-    }
-
-    .developers-organism {
-        display: inline;
-    }
-
-    h1 {
-        margin: 0;
-        display: inline;
-    }
-
-    .developers-organism a:hover {
-        h1 {
-            color: inherit;
-        }
-    }
-}
-
-.social-icons-wrapper {
-    .font-size(1.7em);
-    .margin(13px);
-    margin-right: 0;
-
-    a {
-        margin-left: 10px;
-    }
-
-    a:hover {
-        color: white;
-    }
-
-    a:first-child {
-        margin-left: 0;
-    }
-}
 
 // app-details page
 .app-title-margin {
@@ -863,7 +808,6 @@ h1.review-title {
             font-size: 1.1em;
             color: green;
         }
-
         //height: auto;
     }
 
@@ -886,7 +830,7 @@ h1.review-title {
 
 @media (max-width: 450px) {
     .single-review {
-        header {            
+        header {
             height: auto;
         }
     }
@@ -1362,5 +1306,16 @@ q:after {
         .app-content {
             width: 68%;
         }
+    }
+}
+
+
+// seo application name every where
+// search engine optimize
+
+.seo-app-name {
+    h1:hover, em:hover, strong:hover {
+        .default-hyperlink-hover-color;
+        
     }
 }

@@ -1,6 +1,27 @@
 ﻿//@import "Global.less";
+@default-hyper-link-color: #ffa500;
 
+.center-margin() {
+    margin: 0 auto;
+}
 
+.default-hyperlink-hover-color(){
+    color:@default-hyper-link-color;
+}
+.color-inherit(){
+    color:inherit;
+}
+
+.ubuntu-font() {
+    font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.ubuntu-light-font() {
+    font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.helvetica-font() {
+    font-family: Helvetica, Arial, sans-serif !important;
+}
 // ===== FONT MIXINS =====
 .font-size(@value) {
     font-size: @value;

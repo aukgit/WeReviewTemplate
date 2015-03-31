@@ -3,17 +3,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
 }
-.ubuntu-font {
-  font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-.ubuntu-light-font {
-  font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
 body #wrap .app-details-page {
   font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-.helvetica-font {
-  font-family: Helvetica, Arial, sans-serif !important;
 }
 .seo-optimize h1,
 .seo-optimize h2,
@@ -35,6 +26,9 @@ body #wrap .app-details-page {
 }
 .seo-optimize a:hover h1 {
   color: inherit;
+}
+.font-normal {
+  font-size: 1em;
 }
 .regular-color {
   color: #647383;
@@ -397,46 +391,6 @@ header {
 }
 .about .more-btn {
   margin: 0;
-}
-footer {
-  padding: 16px 0;
-}
-footer .rights {
-  padding: 20px 0;
-  margin-top: 15px;
-}
-footer .copyright {
-  color: white;
-}
-footer h5 {
-  margin-bottom: 0;
-  width: 62px;
-  float: right;
-}
-footer .developers-organism {
-  display: inline;
-}
-footer h1 {
-  margin: 0;
-  display: inline;
-}
-footer .developers-organism a:hover h1 {
-  color: inherit;
-}
-.social-icons-wrapper {
-  font-size: 1.7em;
-  margin: 13px;
-  margin: 1.3rem;
-  margin-right: 0;
-}
-.social-icons-wrapper a {
-  margin-left: 10px;
-}
-.social-icons-wrapper a:hover {
-  color: white;
-}
-.social-icons-wrapper a:first-child {
-  margin-left: 0;
 }
 .app-title-margin {
   margin: 7px 0px 10px 0px;
@@ -1135,4 +1089,9 @@ q:after {
   .slim-app-view .app-content {
     width: 68%;
   }
+}
+.seo-app-name h1:hover,
+.seo-app-name em:hover,
+.seo-app-name strong:hover {
+  color: #ffa500;
 }
