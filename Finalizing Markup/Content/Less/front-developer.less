@@ -159,6 +159,10 @@ header {
     color: black;
     .margin(8px, 0px,0px, 0px);
     .ubuntu-light-font;
+
+    strong {
+        font-weight: normal;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -464,7 +468,14 @@ header {
         color: white;
         background-color: red;
     }
+    //post an app button
+    .post-app-btn {
+        .height(33px);
+        .padding(1px, 12px);
+        //line-height: 0;
+    }
 }
+
 
 .is-sticky {
     nav li a {
@@ -474,6 +485,14 @@ header {
     .search-bar {
         position: relative;
         top: -20px;
+    }
+
+    .post-app-btn {
+        line-height: 0;
+        padding: 17px 14px !important;
+        /* margin-top: 0; */
+        position: relative;
+        .top(-20px);
     }
 }
 

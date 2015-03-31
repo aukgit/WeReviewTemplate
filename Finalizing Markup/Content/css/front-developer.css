@@ -111,6 +111,9 @@ header {
   margin: 0.8rem 0 0 0;
   font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+.h1-no-gap-title strong {
+  font-weight: normal;
+}
 @media (min-width: 768px) and (max-width: 990px) {
   .h1-no-gap-title {
     margin: 0;
@@ -369,12 +372,28 @@ header {
   color: white;
   background-color: red;
 }
+.menu .post-app-btn {
+  height: 33px;
+  height: 3.3rem;
+  padding: 1px 12px;
+  padding: 0.1rem 12px;
+  padding: 1px 1.2rem;
+  padding: 0.1rem 1.2rem;
+}
 .is-sticky nav li a {
   padding: 30px 13px !important;
 }
 .is-sticky .search-bar {
   position: relative;
   top: -20px;
+}
+.is-sticky .post-app-btn {
+  line-height: 0;
+  padding: 17px 14px !important;
+  /* margin-top: 0; */
+  position: relative;
+  top: -20px;
+  top: -2rem;
 }
 @media screen and (max-width: 768px) {
   .search-bar,
