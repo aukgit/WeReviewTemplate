@@ -541,8 +541,12 @@ header {
     margin-top: 10px;
     margin-top: 1rem;
     float: left;
-    margin-left: 120px;
-    margin-left: 12rem;
+    margin-left: 52px;
+    margin-left: 5.2rem;
+  }
+  .app-suggested-list-wrapper:first-child {
+    margin-left: 5px;
+    margin-left: 0.5rem;
   }
   .app-suggested-list {
     margin: 0 auto;
