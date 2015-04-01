@@ -152,6 +152,14 @@ $(function () {
         $moreExcert: $(".more"),
         execute: function () {
             this.$moreExcert.hide();
+            var $paginationRequiredElements = $('.pagination-required');
+            if ($paginationRequiredElements.length > 0) {
+                $paginationRequiredElements.twbsPagination({
+                    totalPages: 35,
+                    visiblePages: 8,
+                    //href: '?page={{number}}'
+                });
+            }
             var $numberElement = $(".app-viewed-numbers:first");
             if ($numberElement.length > 0) {
                 $numberElement.number(true);
@@ -169,7 +177,7 @@ $(function () {
                     var $specificMoreExcertFound = $.frontEndAppDetailsPage.$moreExcert.filter(dataRefSelector);
                     if ($specificMoreExcertFound.length > 0) {
                         $specificMoreExcertFound.show("slow");
-                        $specificMoreExcertFound.css("display","inline");
+                        $specificMoreExcertFound.css("display", "inline");
                     }
                     var $moreBtnContainer = $.frontEndAppDetailsPage.$showMoreBtnContainer.filter(dataRefSelector);
                     if ($moreBtnContainer.length > 0) {
