@@ -14,6 +14,9 @@
 .bold {
   font-weight: bolder;
 }
+.bold-important {
+  font-weight: bolder !important;
+}
 .green {
   color: #008000;
 }
@@ -36,7 +39,8 @@
   color: #459EC9;
 }
 .regular-font {
-  font-size: 13px;
+  font-size: 16px;
+  font-size: 1em;
 }
 .medium-font {
   font-size: 122%;
@@ -44,32 +48,40 @@
 .bigger-font {
   font-size: 200%;
 }
+.deepskyblue {
+  color: deepskyblue;
+}
+.bg-deepskyblue {
+  background-color: deepskyblue;
+}
 .font-size-22 {
   font-size: 22px;
+  font-size: 1.375em;
 }
 .bangla,
 .bangla li {
   font-family: Bangla,Kalpurush;
   font-size: 16px;
+  font-size: 1em;
   font-weight: normal;
 }
 .almost-white {
   color: #bdbdbd;
 }
 .mid-error-color {
-  background-color: #DF3B69;
+  background-color: #df3b69;
 }
 .low-error-color {
-  background-color: #EF3ECC;
+  background-color: #ef3ecc;
 }
 .error-solution-link-color {
-  background-color: #2382CC;
+  background-color: #2382cc;
 }
 a.error-solution-link:hover {
   text-decoration: none;
-  background-color: #3196E4;
+  background-color: #3196e4;
 }
 a.error-solution-link span:hover {
   text-decoration: none;
-  background-color: #3196E4;
+  background-color: #3196e4;
 }

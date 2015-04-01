@@ -63,15 +63,6 @@ body #wrap .app-details-page {
 .clear {
   clear: both;
 }
-.header-2 header nav li a {
-  padding: 10px;
-  padding: 1rem;
-}
-@media (min-width: 769px) {
-  .jetmenu.menu li:not(.showhide) {
-    display: inline-block !important;
-  }
-}
 header {
   height: 47px;
   height: 4.7rem;
@@ -81,17 +72,6 @@ header {
 }
 .header-2 .logo {
   margin-top: 0;
-}
-.header-2 .jetmenu > li > .megamenu,
-.jetmenu ul.dropdown {
-  top: 40px;
-  top: 4rem;
-}
-.jetmenu h1 {
-  color: #647383;
-}
-.jetmenu strong {
-  font-weight: normal;
 }
 .h1-no-gap {
   margin: 0;
@@ -231,7 +211,7 @@ header {
   color: #909090;
 }
 .app-box .rating-stars {
-  color: #FFB800;
+  color: #f39c12;
 }
 .app-box .app-title {
   min-width: 108px;
@@ -320,12 +300,12 @@ header {
   cursor: default;
 }
 .gallery-home .rating-stars {
-  color: #F39C12;
+  color: #f39c12;
 }
 .gallery-home .rating-value-display {
   font-size: 20px;
   font-size: 1.25em;
-  color: #F39C12;
+  color: #f39c12;
 }
 .gallery-home .rating-value-display,
 .gallery-home .app-description {
@@ -349,6 +329,26 @@ header {
   color: red;
   font-size: 15px;
   font-size: 0.9375em;
+}
+.header-2 header nav li a {
+  padding: 10px;
+  padding: 1rem;
+}
+@media (min-width: 769px) {
+  .jetmenu.menu li:not(.showhide) {
+    display: inline-block !important;
+  }
+}
+.header-2 .jetmenu > li > .megamenu,
+.jetmenu ul.dropdown {
+  top: 40px;
+  top: 4rem;
+}
+.jetmenu h1 {
+  color: #647383;
+}
+.jetmenu strong {
+  font-weight: normal;
 }
 .menu .navbar-form {
   margin: 0;
@@ -379,6 +379,7 @@ header {
   padding: 0.1rem 12px;
   padding: 1px 1.2rem;
   padding: 0.1rem 1.2rem;
+  background-color: #ff7200;
 }
 .is-sticky nav li a {
   padding: 30px 13px !important;
@@ -396,11 +397,38 @@ header {
   top: -2rem;
 }
 @media screen and (max-width: 768px) {
+  .search-bar {
+    top: -7px;
+    top: -0.7rem;
+  }
+  .search-bar input {
+    width: 100%;
+    max-width: 100%;
+  }
   .search-bar,
   .is-sticky .search-bar {
     position: relative;
-    top: -2px;
     clear: both;
+  }
+  .is-sticky .search-bar {
+    top: 0;
+  }
+  .jetmenu .fa.fa-angle-right {
+    font-size: 2em;
+  }
+  .is-sticky nav li a {
+    padding: 10px !important;
+  }
+  .is-sticky .post-app-btn-wrapper {
+    margin-top: 10px;
+  }
+  .is-sticky .post-app-btn {
+    top: 0;
+    bottom: 0;
+  }
+  .menu .post-app-btn {
+    bottom: 8px;
+    bottom: 0.8rem;
   }
 }
 .tp-leftarrow.preview2:after,
@@ -512,7 +540,7 @@ header {
     border: 1px solid transparent;
     border-radius: 4px;
     color: #333;
-    background-color: orange;
+    background-color: #ff7200;
   }
   .less-btn:hover,
   .show-more-btns-container .see-more-btn:hover {

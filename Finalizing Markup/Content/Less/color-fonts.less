@@ -1,5 +1,10 @@
 ﻿@import "lesshat.less";
 /* Colors and Fonts */
+@almost-white-color: #bdbdbd;
+@bg-mid-error-color: #DF3B69;
+@bg-low-error-color: #EF3ECC;
+@bg-error-solution-color: #2382CC;
+@bg-error-solution-color-hover: #3196E4;
 
 .Blackish-Red {
     color: #330707;
@@ -8,6 +13,7 @@
 .red {
     color: Red;
 }
+
 .red-important {
     color: Red !important;
 }
@@ -20,6 +26,9 @@
     font-weight: bolder;
 }
 
+.bold-important {
+    font-weight: bolder !important;
+}
 .green {
     color: #008000;
 }
@@ -49,7 +58,7 @@
 }
 
 .regular-font {
-    font-size: 13px;
+    .font-size(16px);
 }
 
 .medium-font {
@@ -60,42 +69,55 @@
     font-size: 200%;
 }
 
-
+.deepskyblue {
+    color: deepskyblue;
+}
+.bg-deepskyblue {
+    background-color: deepskyblue;
+}
 
 .font-size-22 {
-    font-size: 22px;
+    .font-size(22px);
 }
 
 
 .bangla, .bangla li {
     font-family: Bangla,Kalpurush;
-    font-size: 16px;
+    .regular-font;
     font-weight: normal;
 }
 
 
 
-.almost-white{
-    color:rgb(189, 189, 189);
+
+.almost-white {
+    color: @almost-white-color;
 }
 
-.mid-error-color{
-     background-color:#DF3B69;
+
+.mid-error-color {
+    background-color: @bg-mid-error-color;
 }
 
-.low-error-color{
-    background-color:#EF3ECC;
+
+
+.low-error-color {
+    background-color: @bg-low-error-color ;
 }
 
-.error-solution-link-color{
-    background-color:#2382CC;
+
+
+.error-solution-link-color {
+    background-color: @bg-error-solution-color ;
 }
 
-a.error-solution-link:hover{
-    text-decoration:none;
-    background-color:#3196E4;
+
+a.error-solution-link:hover {
+    text-decoration: none;
+    background-color: @bg-error-solution-color-hover ;
 }
-a.error-solution-link span:hover{
-    text-decoration:none;
-    background-color:#3196E4;
+
+a.error-solution-link span:hover {
+    text-decoration: none;
+    background-color: @bg-error-solution-color-hover ;
 }
