@@ -129,12 +129,16 @@ header {
   margin: 0px 5px 0px 0px;
   margin: 0 0.5rem 0 0;
 }
-@media (max-width: 966px) {
-  .apps-list-header-row .title h1 {
-    float: none;
-    text-align: center;
-  }
-}
+/*@media (max-width: 966px) {
+    .apps-list-header-row {
+        .title {
+            h1 {
+                //float: none;
+                //text-align: center;
+            }
+        }
+    }
+}*/
 /*.owl-list {
     .owl-item {
         min-width: 157px;
@@ -359,6 +363,9 @@ header {
 .jetmenu strong {
   font-weight: normal;
 }
+.jetmenu ul.dropdown li:hover > a {
+  background-color: #90d8f7;
+}
 .menu .navbar-form {
   margin: 0;
   padding: 0;
@@ -373,21 +380,27 @@ header {
   min-width: 42px;
   min-width: 4.2rem;
   padding: 0;
-  color: #fff;
+  color: #ffffff;
   height: 34.2px;
   height: 3.4rem;
 }
 .menu .btn:hover {
-  color: white;
-  background-color: red;
+  color: #ffffff;
+  background-color: #19c234;
 }
 .menu .post-app-btn {
   height: 33px;
   height: 3.3rem;
   background-color: #ff7200;
 }
+.header-2 nav li.btn-type a:after {
+  background-color: transparent;
+}
+.jetmenu ul.dropdown span:nth-child(2) {
+  display: inline-block;
+}
 @media screen and (max-width: 800px) {
-  .menu .navbar-form input {
+  .search-bar input {
     max-width: 134px;
     max-width: 13.4rem;
   }
@@ -442,8 +455,8 @@ header {
     bottom: 0;
   }
   .menu .post-app-btn {
-    bottom: 8px;
-    bottom: 0.8rem;
+    bottom: 7px;
+    bottom: 0.7rem;
   }
   .header-2 header nav li.btn-type {
     position: relative;
@@ -624,15 +637,11 @@ header {
     position: relative;
   }
   .apps-list-header-row .title h1 {
-    float: none;
-    text-align: center;
     display: inline-block;
   }
   .apps-list-header-row .btn-more {
-    float: none;
     display: inline-block;
     text-align: center;
-    position: absolute;
     top: -4px;
     top: -0.4rem;
   }

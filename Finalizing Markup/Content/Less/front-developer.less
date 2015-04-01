@@ -8,6 +8,9 @@
 @regular-font-color: #647383;
 @primary-color: #ff7200;
 @rating-color: #F39C12;
+@bg-menu-li-hover-color: #90D8F7;
+@menu-btn-hover-color: #fff;
+@bg-menu-btn-hover-color: #19c234;
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -178,16 +181,16 @@ header {
     }
 }
 //nexus 7 fix
-@media (max-width: 966px) {
+/*@media (max-width: 966px) {
     .apps-list-header-row {
         .title {
             h1 {
-                float: none;
-                text-align: center;
+                //float: none;
+                //text-align: center;
             }
         }
     }
-}
+}*/
 
 /*.owl-list {
     .owl-item {
@@ -444,7 +447,6 @@ header {
     .top(42px);
 }
 
-
 .jetmenu {
     //background-color: white;
     h1 {
@@ -453,6 +455,10 @@ header {
 
     strong {
         font-weight: normal;
+    }
+
+    ul.dropdown li:hover > a {
+        background-color: @bg-menu-li-hover-color;
     }
 }
 
@@ -471,14 +477,15 @@ header {
         .line-height(32.5px);
         .min-width(42px);
         padding: 0;
-        color: #fff;
+        color: @menu-btn-hover-color;
         //.line-height(3);
         .height(34.2px);
     }
-
+    // menu button hover
     .btn:hover {
-        color: white;
-        background-color: red;
+        color: @menu-btn-hover-color;
+        background-color: @bg-menu-btn-hover-color;
+        //font-weight: bold;
     }
     //post an app button
     .post-app-btn {
@@ -487,22 +494,26 @@ header {
         background-color: @primary-color;
     }
 }
+// fix the overlay from btns
+.header-2 nav li.btn-type a:after {
+    background-color: transparent;
+}
+
+.jetmenu ul.dropdown span:nth-child(2) {
+    display: inline-block;
+}
 //bigger than tab
 @media screen and (max-width: 800px) {
-    .menu {
-        .navbar-form {          
-            input {
-                .max-width(134px);
-            }
+    .search-bar {
+        input {
+            .max-width(134px);
         }
     }
 }
-
 .is-sticky {
     nav li a {
         padding: 30px 13px !important;
     }
-
     .search-bar {
         position: relative;
         top: -20px;
@@ -541,9 +552,6 @@ header {
         top: 0;
     }
 
-
-
-
     .jetmenu {
         //background-color: white;
         .fa.fa-angle-right {
@@ -569,7 +577,7 @@ header {
 
     .menu {
         .post-app-btn {
-            .bottom(8px);
+            .bottom(7px);
         }
     }
 
@@ -789,16 +797,16 @@ header {
         position: relative;
 
         .title h1 {
-            float: none;
-            text-align: center;
+            //float: none;
+            //text-align: center;
             display: inline-block;
         }
 
         .btn-more {
-            float: none;
+            //float: none;
             display: inline-block;
             text-align: center;
-            position: absolute;
+            //position: absolute;
             .top(-4px);
         }
 
