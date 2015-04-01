@@ -18,19 +18,30 @@ $(function () {
         appList: function (numberOfItems) {
             var $singleItemhtml = $(".owl-list").html();
             for (var i = 0; i < numberOfItems; i++) {
-                $(".owl-list").append($singleItemhtml);
+                $singleItemhtml += $singleItemhtml;
             }
+            $(".owl-list").append($singleItemhtml);
+
         },
         suggestedAppsList: function (numberOfItems) {
             var $singleItemhtml = $(".app-suggested-list-items").html();
             for (var i = 0; i < numberOfItems; i++) {
-                $(".app-suggested-list-items").append($singleItemhtml);
+                $singleItemhtml += $singleItemhtml;
             }
+            $(".app-suggested-list-items").append($singleItemhtml);
+
         },
-        addOwlItems: function (itemsContainerjQuerySelector,numberOfItems) {
-            var $singleItemhtml = $(itemsContainerjQuerySelector).html();
-            for (var i = 0; i < numberOfItems; i++) {
-                $(itemsContainerjQuerySelector).append($singleItemhtml);
+        addOwlItems: function (itemsContainerjQuerySelector, numberOfItems) {
+            var $container = $(itemsContainerjQuerySelector);
+            if ($container.length > 0) {
+                var $singleItemhtml = $container.html();
+                var combinner = new Array(numberOfItems + 5);
+                for (var i = 0; i < numberOfItems; i++) {
+                    combinner[i] = $singleItemhtml;
+                }
+                var totalCombinedStringHtml = combinner.join("");
+
+                $container.append(totalCombinedStringHtml);
             }
         },
         gallerySlides: function (numberOfItems) {
@@ -42,13 +53,18 @@ $(function () {
         }
     }
 
-    sampleItemsCreate.appList(20);
+    sampleItemsCreate.addOwlItems(".owl-list", 20);
+
     sampleItemsCreate.addOwlItems(".app-suggested-list-items", 3);
     //archive-app-collection-list
-    sampleItemsCreate.addOwlItems(".archive-app-collection-list", 10);
+
+    sampleItemsCreate.addOwlItems(".archive-app-collection-list", 30);
+
+    //sampleItemsCreate.addOwlItems(".search-page .archive-app-collection-list", 5);
+
 
     //sampleItemsCreate.addOwlItems(".app-suggested-list-items-mobile", 5);
-    sampleItemsCreate.gallerySlides(5);
+    //sampleItemsCreate.gallerySlides(5);
     //sampleItemsCreate.suggestedAppsList(5);
 
 

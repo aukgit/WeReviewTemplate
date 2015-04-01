@@ -54,6 +54,16 @@ body #wrap .app-details-page {
     }
 }
 
+
+// seo application name every where
+// search engine optimize
+
+.seo-app-name {
+    h1:hover, em:hover, strong:hover {
+        .default-hyperlink-hover-color;
+    }
+}
+
 .font-normal {
     font-size: 1em;
 }
@@ -510,10 +520,12 @@ header {
         }
     }
 }
+
 .is-sticky {
     nav li a {
         padding: 30px 13px !important;
     }
+
     .search-bar {
         position: relative;
         top: -20px;
@@ -1418,12 +1430,53 @@ q:after {
     }
 }
 
+//search page
+.filter {
+    margin-bottom: 0;
+    text-align: center;
+    border: 1px solid #E4E4E4;
+    .padding(10px);
+    background-color: #D0D7DA;
+    .border-rounded(5px);
 
-// seo application name every where
-// search engine optimize
+    li {
+        .margin(3px, 0);
+        a {
+            .padding(5px,15px);
+            color: #6E7073;
+            .margin-right(10px);
 
-.seo-app-name {
-    h1:hover, em:hover, strong:hover {
-        .default-hyperlink-hover-color;
+            &.active {
+                color: #FFFFFF;
+                //background-color: rgb(83, 146, 199);
+                background-color: #83919D;
+            }
+
+            &:hover {
+                color: #275780;
+
+                &.active {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.search-box-wrapper {
+    .margin-bottom(7px);
+
+    input {
+        max-width: 100%;
+    }
+
+    .btn {
+        margin-left: 0;
+        .height(34px);
+        color:white;
+        &:hover{
+            color:black;
+            background-color:#19c234;
+        }
     }
 }
