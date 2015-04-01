@@ -350,8 +350,8 @@ header {
 }
 .header-2 .jetmenu > li > .megamenu,
 .jetmenu ul.dropdown {
-  top: 40px;
-  top: 4rem;
+  top: 42px;
+  top: 4.2rem;
 }
 .jetmenu h1 {
   color: #647383;
@@ -386,6 +386,12 @@ header {
   height: 3.3rem;
   background-color: #ff7200;
 }
+@media screen and (max-width: 800px) {
+  .menu .navbar-form input {
+    max-width: 134px;
+    max-width: 13.4rem;
+  }
+}
 .is-sticky nav li a {
   padding: 30px 13px !important;
 }
@@ -400,6 +406,10 @@ header {
   position: relative;
   top: -20px;
   top: -2rem;
+}
+.is-sticky .navbar-form {
+  position: relative;
+  bottom: inherit;
 }
 @media screen and (max-width: 768px) {
   .search-bar {

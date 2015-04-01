@@ -441,7 +441,7 @@ header {
 }
 
 .header-2 .jetmenu > li > .megamenu, .jetmenu ul.dropdown {
-    .top(40px);
+    .top(42px);
 }
 
 
@@ -487,8 +487,16 @@ header {
         background-color: @primary-color;
     }
 }
-
-
+//bigger than tab
+@media screen and (max-width: 800px) {
+    .menu {
+        .navbar-form {          
+            input {
+                .max-width(134px);
+            }
+        }
+    }
+}
 
 .is-sticky {
     nav li a {
@@ -506,6 +514,11 @@ header {
         /* margin-top: 0; */
         position: relative;
         .top(-20px);
+    }
+
+    .navbar-form {
+        position: relative;
+        bottom: inherit;
     }
 }
 
@@ -560,10 +573,10 @@ header {
         }
     }
 
-    .header-2 header nav li {      
+    .header-2 header nav li {
         &.btn-type {
             position: relative;
-            bottom:0;
+            bottom: 0;
         }
     }
 }
