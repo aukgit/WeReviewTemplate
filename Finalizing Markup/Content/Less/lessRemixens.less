@@ -93,7 +93,6 @@
     @left-rem: ~`pxtorem('@{left}')`;
     margin : @top @right @bottom @left;
     margin : @top-rem @right-rem @bottom-rem @left-rem;
-
 }
 
 
@@ -136,16 +135,10 @@
 
 
 // ===== PADDING MIXINS =====
-.padding(@value) {
-    padding: @value;
-}
-
-.padding(@vvalue, @hvalue) {
-    padding: @arguments;
-}
 
 .padding(@value) when (ispixel(@value)) {
     @rem-value: ~`pxtorem('@{value}')`;
+    padding: @value;
     padding: @rem-value;
 }
 
@@ -156,16 +149,7 @@
     padding: @rem-vvalue @rem-hvalue;
 }
 
-.padding(@vertical, @horizontal) when (ispixel(@vertical)) {
-    @rem-value: ~`pxtorem('@{vertical}')`;
-    padding: @vertical @horizontal;
-    padding: @rem-value @horizontal;
-}
 
-.padding(@vertical, @horizontal) when (ispixel(@horizontal)) {
-    @rem-value: ~`pxtorem('@{horizontal}')`;
-    .padding(@vertical, @rem-value);
-}
 
 .padding(@top, @right, @bottom, @left) when (ispixel(@top)) and (ispixel(@right)) and (ispixel(@bottom)) and (ispixel(@left)) {
     @top-rem: ~`pxtorem('@{top}')`;
@@ -174,7 +158,6 @@
     @left-rem: ~`pxtorem('@{left}')`;
     padding : @top @right @bottom @left;
     padding : @top-rem @right-rem @bottom-rem @left-rem;
-
 }
 
 .padding-top(@value) {
@@ -183,6 +166,7 @@
 
 .padding-top(@value) when (ispixel(@value)) {
     @rem-value: ~`pxtorem('@{value}')`;
+    padding-top: @value;
     padding-top: @rem-value;
 }
 
@@ -192,6 +176,7 @@
 
 .padding-right(@value) when (ispixel(@value)) {
     @rem-value: ~`pxtorem('@{value}')`;
+    padding-right: @value;
     padding-right: @rem-value;
 }
 
@@ -201,6 +186,7 @@
 
 .padding-bottom(@value) when (ispixel(@value)) {
     @rem-value: ~`pxtorem('@{value}')`;
+    padding-bottom: @value;
     padding-bottom: @rem-value;
 }
 
@@ -210,6 +196,7 @@
 
 .padding-left(@value) when (ispixel(@value)) {
     @rem-value: ~`pxtorem('@{value}')`;
+    padding-left: @value;
     padding-left: @rem-value;
 }
 
