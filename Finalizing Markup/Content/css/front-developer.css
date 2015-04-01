@@ -399,7 +399,7 @@ header {
 .jetmenu ul.dropdown span:nth-child(2) {
   display: inline-block;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 990px) {
   .search-bar input {
     max-width: 134px;
     max-width: 13.4rem;
