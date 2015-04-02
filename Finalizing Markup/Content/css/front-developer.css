@@ -460,8 +460,7 @@ header {
     bottom: 0;
   }
   .menu .post-app-btn {
-    bottom: 7px;
-    bottom: 0.7rem;
+    bottom: 0;
   }
   .header-2 header nav li.btn-type {
     position: relative;
@@ -1057,6 +1056,15 @@ q:after {
   margin-left: 5px;
   display: block;
 }
+.archive-app-collection-list .fa-apple {
+  color: gray;
+}
+.archive-app-collection-list .fa-android {
+  color: green;
+}
+.archive-app-collection-list .fa-windows {
+  color: deepskyblue;
+}
 .slim-app-view {
   color: #647383;
   height: 54px;
@@ -1172,6 +1180,10 @@ q:after {
     width: 68%;
   }
 }
+.search-quote:before,
+.search-quote:after {
+  color: black;
+}
 .filter {
   margin-bottom: 0;
   text-align: center;
@@ -1220,4 +1232,20 @@ q:after {
 .search-box-wrapper .btn:hover {
   color: black;
   background-color: #19c234;
+}
+.same-line {
+  color: inherit;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  min-width: 108px;
+  position: relative;
+  top: -38px;
+}
+.relative-position {
+  position: relative;
 }

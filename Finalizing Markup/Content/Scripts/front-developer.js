@@ -152,14 +152,21 @@ $(function () {
         $moreExcert: $(".more"),
         execute: function () {
             this.$moreExcert.hide();
-            var $paginationRequiredElements = $('.pagination-required');
-            if ($paginationRequiredElements.length > 0) {
-                $paginationRequiredElements.twbsPagination({
-                    totalPages: 35,
-                    visiblePages: 8,
-                    //href: '?page={{number}}'
+
+            //filtering through isotop
+            var $isotopContainer = $("ul.search-page-apps-list:first");
+
+            $('.filter li a').click(function () {
+                $('.filter li a').removeClass('active');
+                $(this).addClass('active');
+                var selector = $(this).attr('data-filter');
+
+                $isotopContainer.isotope({
+                    filter: selector
                 });
-            }
+                return false;
+            });
+
             var $numberElement = $(".app-viewed-numbers:first");
             if ($numberElement.length > 0) {
                 $numberElement.number(true);

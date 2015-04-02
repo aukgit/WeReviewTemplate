@@ -58,7 +58,7 @@ $(function () {
     sampleItemsCreate.addOwlItems(".app-suggested-list-items", 3);
     //archive-app-collection-list
 
-    sampleItemsCreate.addOwlItems(".archive-app-collection-list", 30);
+    sampleItemsCreate.addOwlItems(".archive-app-collection-list", 15);
 
     //sampleItemsCreate.addOwlItems(".search-page .archive-app-collection-list", 5);
 

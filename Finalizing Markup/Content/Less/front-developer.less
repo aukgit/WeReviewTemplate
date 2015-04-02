@@ -589,7 +589,8 @@ header {
 
     .menu {
         .post-app-btn {
-            .bottom(7px);
+            //.bottom(7px);
+            bottom: 0;
         }
     }
 
@@ -1293,6 +1294,7 @@ q:after {
 .category-page {
 }
 
+
 .archive-app-collection-list {
     .margin(5px,0px,4px,11px);
     width: 100%;
@@ -1303,6 +1305,18 @@ q:after {
         float: left;
         margin-left: 5px;
         display: block;
+    }
+    // apps icon color fa-apple
+    .fa-apple {
+        color: gray;
+    }
+
+    .fa-android {
+        color: green;
+    }
+
+    .fa-windows {
+        color: deepskyblue;
     }
 }
 
@@ -1431,6 +1445,10 @@ q:after {
 }
 
 //search page
+.search-quote:before, .search-quote:after {
+    color: black;
+}
+
 .filter {
     margin-bottom: 0;
     text-align: center;
@@ -1441,6 +1459,7 @@ q:after {
 
     li {
         .margin(3px, 0);
+
         a {
             .padding(5px,15px);
             color: #6E7073;
@@ -1473,10 +1492,29 @@ q:after {
     .btn {
         margin-left: 0;
         .height(34px);
-        color:white;
-        &:hover{
-            color:black;
-            background-color:#19c234;
+        color: white;
+
+        &:hover {
+            color: black;
+            background-color: #19c234;
         }
     }
+}
+
+.same-line {
+    color: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    min-width: 108px;
+    position: relative;
+    top: -38px;
+}
+
+.relative-position {
+    position: relative;
 }
