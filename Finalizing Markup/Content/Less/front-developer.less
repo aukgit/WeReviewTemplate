@@ -796,7 +796,7 @@ header {
     }
 
     .app-suggested-list-wrapper:first-child {
-        .margin-left(5px);
+        .margin-left(19px);
     }
 
     .app-suggested-list {
@@ -827,6 +827,8 @@ header {
             padding: 5px 12px;
         }
     }
+
+    
 }
 
 @media (max-width: 680px) {
@@ -899,7 +901,33 @@ header {
         }
     }
 }
+@media (max-width:992px){
+    .app-details-page {
+        .apps-list-header-row {
+            .title h1 {
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+}
 
+//related to app suggested list
+@media (max-width:750px){
+    .app-details-page {
+        .app-suggested-list-wrapper {
+            .margin-left(52px);
+        }
+    }
+}
+
+@media (max-width:680px){
+    .app-details-page {
+        .app-suggested-list-wrapper {
+            margin-left:0;
+        }
+    }
+}
 //review-collection
 
 .review-collection-box {
@@ -1517,4 +1545,13 @@ q:after {
 
 .relative-position {
     position: relative;
+}
+
+.write-review-btn {
+    border-bottom: 3px solid red;
+    .margin-left(10px);
+
+    &:hover {
+        border-bottom-color: orange;
+    }
 }

@@ -628,8 +628,8 @@ header {
     margin-left: 5.2rem;
   }
   .app-suggested-list-wrapper:first-child {
-    margin-left: 5px;
-    margin-left: 0.5rem;
+    margin-left: 19px;
+    margin-left: 1.9rem;
   }
   .app-suggested-list {
     margin: 0 auto;
@@ -720,6 +720,23 @@ header {
 .app-details-page .app-box .app-description-wrapper {
   height: 46px;
   height: 4.6rem;
+}
+@media (max-width: 992px) {
+  .app-details-page .apps-list-header-row .title h1 {
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .app-details-page .app-suggested-list-wrapper {
+    margin-left: 52px;
+    margin-left: 5.2rem;
+  }
+}
+@media (max-width: 680px) {
+  .app-details-page .app-suggested-list-wrapper {
+    margin-left: 0;
+  }
 }
 .review-collection-box {
   margin-top: 12px;
@@ -1248,4 +1265,12 @@ q:after {
 }
 .relative-position {
   position: relative;
+}
+.write-review-btn {
+  border-bottom: 3px solid red;
+  margin-left: 10px;
+  margin-left: 1rem;
+}
+.write-review-btn:hover {
+  border-bottom-color: orange;
 }
