@@ -5,14 +5,19 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
-} 
+}
+
 body #wrap .app-details-page {
     .ubuntu-font;
 }
-    
-  
+
+
 .regular-color {
     color: @regular-font-color;
+}
+
+.primary-color {
+    color: @primary-color;
 }
 
 @import "seo-optimize.less";
@@ -41,19 +46,19 @@ body #wrap .app-details-page {
 
 .clear {
     clear: both;
-} 
- 
+}
+
 
 .orange-color {
     color: orange;
-} 
- 
+}
 
- 
+
+
 .apps-list {
     .margin-top(10px);
-} 
- 
+}
+
 .apps-list-header-row {
     .ubuntu-font;
 
@@ -522,8 +527,6 @@ body #wrap .app-details-page {
             padding: 5px 12px;
         }
     }
-
-    
 }
 
 @media (max-width: 680px) {
@@ -596,7 +599,8 @@ body #wrap .app-details-page {
         }
     }
 }
-@media (max-width:992px){
+
+@media (max-width:992px) {
     .app-details-page {
         .apps-list-header-row {
             .title h1 {
@@ -606,9 +610,9 @@ body #wrap .app-details-page {
         }
     }
 }
- 
+
 //related to app suggested list
-@media (max-width:750px){
+@media (max-width:750px) {
     .app-details-page {
         .app-suggested-list-wrapper {
             .margin-left(52px);
@@ -616,10 +620,10 @@ body #wrap .app-details-page {
     }
 }
 
-@media (max-width:680px){
+@media (max-width:680px) {
     .app-details-page {
         .app-suggested-list-wrapper {
-            margin-left:0;
+            margin-left: 0;
         }
     }
 }

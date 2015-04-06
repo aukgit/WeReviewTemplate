@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "seo-optimize.css",
+  "sources": [
+    "../Less/seo-optimize.less",
+    "../Less/lessRemixens.less"
+  ],
+  "names": [],
+  "mappings": "AAKA,aACI;AADJ,aACQ;AADR,aACY;AADZ,aACgB;AADhB,aACoB;EACZ,eAAA;ECmBJ,cAAA;EDjBI,mBAAA;;AAJR,aAOI;EACI,mBAAA;;AARR,aAYI;EACI,kBAAA;;AAbR,aAiBI,EAAC;EACG,cAAA;;AAlBR,aAiBI,EAAC,MAGG;EACI,cAAA;;AASZ,aACI,GAAE;AADN,aACc,GAAE;AADhB,aACwB,OAAM;EC5B1B,cAAA;;ADgCJ;EACI,gBAAA;;AAGJ;EACI,2BAAA;;AAEJ;EACI,cAAA;;AAEJ;EACI,gBAAA;;AAGJ;EACI,2BAAA;;AAIJ;ECkJI,YAAA;EAKA,cAAA;;ADnJJ;EACI,cAAA"
+}

@@ -9,6 +9,9 @@ body #wrap .app-details-page {
 .regular-color {
   color: #647383;
 }
+.primary-color {
+  color: #ff7200;
+}
 .seo-optimize h1,
 .seo-optimize h2,
 .seo-optimize h3,
@@ -1282,3 +1285,4 @@ q:after {
 .write-review-btn:hover {
   border-bottom-color: orange;
 }
+/*# sourceMappingURL=front-developer.css.map */
