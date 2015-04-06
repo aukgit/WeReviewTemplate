@@ -50,6 +50,13 @@ body #wrap .app-details-page {
 .bold-important {
   font-weight: 700 !important;
 }
+header {
+  height: 47px;
+  height: 4.7rem;
+}
+.almost-black {
+  color: #494646;
+}
 .rating-disabled {
   cursor: default;
 }
@@ -67,48 +74,6 @@ body #wrap .app-details-page {
 }
 .clear {
   clear: both;
-}
-header {
-  height: 47px;
-  height: 4.7rem;
-}
-.almost-black {
-  color: #494646;
-}
-.header-2 .logo {
-  margin-top: 0;
-}
-.h1-no-gap {
-  margin: 0;
-  padding: 0;
-}
-.h1-no-gap-small {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-}
-.h1-no-gap-title {
-  padding: 0;
-  font-size: 1.5em;
-  font-weight: normal;
-  color: black;
-  margin: 8px 0px 0px 0px;
-  margin: 0.8rem 0 0 0;
-  font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-.h1-no-gap-title strong {
-  font-weight: normal;
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .h1-no-gap-title {
-    margin: 0;
-  }
-}
-@media (max-width: 768px) {
-  .h1-no-gap-title {
-    margin: 26px 0px 0px 0px;
-    margin: 2.6rem 0 0 0;
-  }
 }
 .orange-color {
   color: orange;
@@ -339,6 +304,41 @@ header {
   font-size: 15px;
   font-size: 0.9375em;
 }
+.header-2 .logo {
+  margin-top: 0;
+}
+.h1-no-gap {
+  margin: 0;
+  padding: 0;
+}
+.h1-no-gap-small {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+.h1-no-gap-title {
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: black;
+  margin: 8px 0px 0px 0px;
+  margin: 0.8rem 0 0 0;
+  font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.h1-no-gap-title strong {
+  font-weight: normal;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .h1-no-gap-title {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .h1-no-gap-title {
+    margin: 26px 0px 0px 0px;
+    margin: 2.6rem 0 0 0;
+  }
+}
 .header-2 header nav li a {
   padding: 16px 10px 10px 10px;
   padding: 1.6rem 1rem 1rem 1rem;
@@ -415,6 +415,9 @@ header {
     max-width: 134px;
     max-width: 13.4rem;
   }
+}
+.header-2 .is-sticky .logo {
+  margin-top: 0;
 }
 .is-sticky nav li a {
   padding: 30px 13px !important;

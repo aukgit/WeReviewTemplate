@@ -39,3 +39,10 @@
 .bold-important {
   font-weight: 700 !important;
 }
+header {
+  height: 47px;
+  height: 4.7rem;
+}
+.almost-black {
+  color: #494646;
+}
