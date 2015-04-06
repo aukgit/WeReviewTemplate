@@ -1,92 +1,23 @@
 ﻿@import "lesshat.less";
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
-@app-box-background-color: #d0d0d0;
-@app-description-color: #626262;
-@published-by-color: #9d9d9d;
-@app-container-width: 124px;
-@app-title-width: 108px;
-@regular-font-color: #647383;
-@primary-color: #ff7200;
-@rating-color: #F39C12;
-@bg-menu-li-hover-color: #90D8F7;
-@menu-btn-hover-color: #fff;
-@bg-menu-btn-hover-color: #19c234;
+@import "variables.less";
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
-}
-
-
-
+} 
 body #wrap .app-details-page {
     .ubuntu-font;
 }
-
-
-
-//seo seo-optimize
-
-
-.seo-optimize {
-    h1, h2, h3, h4, h5 {
-        display: inline;
-        .font-size(1em);
-        font-weight: normal;
-    }
-
-    strong {
-        font-weight: normal;
-        //.font-size(1em);
-    }
-
-    em {
-        font-style: normal;
-        //.font-size(1em);
-    }
-
-    a:hover {
-        color: @primary-color;
-
-        h1 {
-            color: inherit;
-        }
-    }
-}
-
-
-// seo application name every where
-// search engine optimize
-
-.seo-app-name {
-    h1:hover, em:hover, strong:hover {
-        .default-hyperlink-hover-color;
-    }
-}
-
-.font-normal {
-    font-size: 1em;
-}
-
+    
+  
 .regular-color {
     color: @regular-font-color;
 }
 
-.semi-bold {
-    font-weight: 600;
-}
+@import "seo-optimize.less";
 
-.semi-bold-important {
-    font-weight: 600 !important;
-}
 
-.bold {
-    font-weight: 700;
-}
-
-.bold-important {
-    font-weight: 700 !important;
-}
 
 .rating-disabled {
     cursor: default;
@@ -114,10 +45,10 @@ body #wrap .app-details-page {
 
 
 header {
-    .height(47px);
+    .height(47px); 
 }
 
-.almost-black {
+.almost-black {  
     color: #494646;
 }
 
@@ -429,180 +360,10 @@ header {
         .font-size(15px);
     }
 }
-//menu start
-.header-2 header nav li {
-    a {
-        //.padding(16px,10px,10px,10px);
-        .padding(16px,10px,10px,10px);
-    }
-    //.height(40px);
-    &.btn-type {
-        a {
-            .padding(1px, 12px);
-        }
+//menu
+@import "menu-fix.less";
 
-        position: relative;
-        .bottom(5px);
-    }
-}
 
-//menu fix
-@media (min-width: 769px) {
-    .jetmenu.menu li:not(.showhide) {
-        display: inline-block !important;
-    }
-}
-
-.header-2 .jetmenu > li > .megamenu, .jetmenu ul.dropdown {
-    .top(42px);
-}
-
-.jetmenu {
-    //background-color: white;
-    h1 {
-        color: @regular-font-color;
-    }
-
-    strong {
-        font-weight: normal;
-    }
-
-    ul.dropdown li:hover > a {
-        background-color: @bg-menu-li-hover-color;
-    }
-}
-
-.menu {
-    .navbar-form {
-        margin: 0;
-        padding: 0;
-
-        .input-group {
-            display: table;
-        }
-    }
-
-    .btn {
-        font-size: 14px;
-        .line-height(32.5px);
-        .min-width(42px);
-        padding: 0;
-        color: @menu-btn-hover-color;
-        //.line-height(3);
-        .height(34.2px);
-    }
-    // menu button hover
-    .btn:hover {
-        color: @menu-btn-hover-color;
-        background-color: @bg-menu-btn-hover-color;
-        //font-weight: bold;
-    }
-    //post an app button
-    .post-app-btn {
-        .height(33px);
-        //line-height: 0;
-        background-color: @primary-color;
-    }
-}
-// fix the overlay from btns
-.header-2 nav li.btn-type a:after {
-    background-color: transparent;
-}
-
-.jetmenu ul.dropdown span:nth-child(2) {
-    display: inline-block;
-}
-//bigger than tab
-@media screen and (max-width: 990px) {
-    .search-bar {
-        input {
-            .max-width(134px);
-        }
-    }
-}
-
-.is-sticky {
-    nav li a {
-        padding: 30px 13px !important;
-    }
-
-    .search-bar {
-        position: relative;
-        top: -20px;
-    }
-
-    .post-app-btn {
-        line-height: 0;
-        padding: 17px 14px !important;
-        /* margin-top: 0; */
-        position: relative;
-        .top(-20px);
-    }
-
-    .navbar-form {
-        position: relative;
-        bottom: inherit;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .search-bar {
-        input {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .top(-7px);
-    }
-
-    .search-bar, .is-sticky .search-bar {
-        position: relative;
-        clear: both;
-    }
-
-    .is-sticky .search-bar {
-        top: 0;
-    }
-
-    .jetmenu {
-        //background-color: white;
-        .fa.fa-angle-right {
-            font-size: 2em;
-        }
-    }
-
-    .is-sticky {
-        nav li a {
-            padding: 10px !important;
-        }
-
-        .post-app-btn-wrapper {
-            margin-top: 10px;
-        }
-
-        .post-app-btn {
-            //.top(-7px);
-            top: 0;
-            bottom: 0;
-        }
-    }
-
-    .menu {
-        .post-app-btn {
-            //.bottom(7px);
-            bottom: 0;
-        }
-    }
-
-    .header-2 header nav li {
-        &.btn-type {
-            position: relative;
-            bottom: 0;
-        }
-    }
-}
-
-//menu end
 .tp-leftarrow.preview2:after, .tp-rightarrow.preview2:after {
     .top(23px);
 }
@@ -911,7 +672,7 @@ header {
         }
     }
 }
-
+ 
 //related to app suggested list
 @media (max-width:750px){
     .app-details-page {
@@ -1317,217 +1078,8 @@ q:after {
     }
 }
 
-
-//category page
-.category-page {
-}
-
-
-.archive-app-collection-list {
-    .margin(5px,0px,4px,11px);
-    width: 100%;
-    //height: 517px;
-    .padding-right(25px);
-
-    li {
-        float: left;
-        margin-left: 5px;
-        display: block;
-    }
-    // apps icon color fa-apple
-    .fa-apple {
-        color: gray;
-    }
-
-    .fa-android {
-        color: green;
-    }
-
-    .fa-windows {
-        color: deepskyblue;
-    }
-}
-
-
-
-.slim-app-view {
-    color: @regular-font-color;
-    .height(54px);
-    .width(224px);
-    .font-size(0.8em);
-    .margin-bottom(5px);
-    display: block;
-    .ubuntu-font;
-
-    .app-url:hover {
-        color: @regular-font-color;
-    }
-
-    &:hover {
-        border-bottom: 2px solid red;
-        cursor: pointer;
-    }
-
-    .app-content {
-        float: left;
-        .margin-left(10px);
-        width: 66%;
-    }
-
-    h1, h2, h3 {
-        color: inherit;
-        display: block;
-        margin: 0;
-        padding: 0;
-        font-size: inherit;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 100%;
-        min-width: 108px;
-        position: relative;
-    }
-
-    h3 {
-        .margin-top(5px);
-    }
-
-    .app-title {
-        .font-size(1.2em);
-    }
-
-    .app-icon img {
-        .height(50px);
-        .width(66px);
-        float: left;
-        border: 1.5px solid rgb(97, 97, 97);
-        .box-shadow(~'1px 1px 2px rgba(105, 105, 105, 0.55)');
-    }
-
-    .rating {
-        .margin-top(5px);
-    }
-
-    .fa-star {
-        color: #ff9b00;
-        text-shadow: .5px .5px .5px black;
-    }
-}
-
-.app-date-seperation {
-    border-bottom: 2px solid red;
-    .app-title-margin();
-
-    .col-md-2 {
-        text-align: right;
-        padding: 0;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .slim-app-view {
-        text-align: left;
-        .width(227px);
-
-        h1, h2, h3, span, i.fa {
-            text-align: inherit;
-        }
-    }
-}
-
-@media (max-width: 735px) {
-    .slim-app-view {
-        .width(335px);
-
-        .app-content {
-            width: 77%;
-        }
-    }
-}
-
-
-@media (max-width: 510px) {
-    .slim-app-view {
-        .width(100%);
-
-        .app-content {
-            width: 79%;
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    .slim-app-view {
-        .app-content {
-            width: 75%;
-        }
-    }
-}
-
-@media (max-width: 350px) {
-    .slim-app-view {
-        .app-content {
-            width: 68%;
-        }
-    }
-}
-
-//search page
-.search-quote:before, .search-quote:after {
-    color: black;
-}
-
-.filter {
-    margin-bottom: 0;
-    text-align: center;
-    border: 1px solid #E4E4E4;
-    .padding(10px);
-    background-color: #D0D7DA;
-    .border-rounded(5px);
-
-    li {
-        .margin(3px, 0);
-
-        a {
-            .padding(5px,15px);
-            color: #6E7073;
-            .margin-right(10px);
-
-            &.active {
-                color: #FFFFFF;
-                //background-color: rgb(83, 146, 199);
-                background-color: #83919D;
-            }
-
-            &:hover {
-                color: #275780;
-
-                &.active {
-                    color: #FFFFFF;
-                }
-            }
-        }
-    }
-}
-
-.search-box-wrapper {
-    .margin-bottom(7px);
-
-    input {
-        max-width: 100%;
-    }
-
-    .btn {
-        margin-left: 0;
-        .height(34px);
-        color: white;
-
-        &:hover {
-            color: black;
-            background-color: #19c234;
-        }
-    }
-}
+@import "category-page.less";
+@import "search-page.less";
 
 .same-line {
     color: inherit;

@@ -1,0 +1,196 @@
+﻿@import "lesshat.less";
+@import "variables.less";
+//menu start
+.header-2 header nav li {
+    a {
+        //.padding(16px,10px,10px,10px);
+        .padding(16px,10px,10px,10px);
+    }
+
+    @media (max-width:@screen-sm) {
+        a {
+            //.padding(16px,10px,10px,10px);
+            .padding(7px,10px,7px,10px);
+        }
+    }
+    //.height(40px);
+    &.btn-type {
+        a {
+            .padding(1px, 12px);
+        }
+
+        position: relative;
+        .bottom(5px); //7 apr
+    }
+}
+
+//menu fix
+@media (min-width: 769px) {
+    .jetmenu.menu li:not(.showhide) {
+        display: inline-block !important;
+    }
+}
+
+.header-2 .jetmenu > li > .megamenu, .jetmenu ul.dropdown {
+    .top(42px);
+}
+
+.jetmenu {
+    //background-color: white;
+    h1 {
+        color: @regular-font-color;
+    }
+
+    strong {
+        font-weight: normal;
+    }
+
+    ul.dropdown li:hover > a {
+        background-color: @bg-menu-li-hover-color;
+    }
+}
+
+.menu {
+    .navbar-form {
+        margin: 0;
+        padding: 0;
+
+        .input-group {
+            display: table;
+        }
+    }
+
+    .btn {
+        font-size: 14px;
+        .line-height(32.5px);
+        .min-width(42px);
+        padding: 0;
+        color: @menu-btn-hover-color;
+        //.line-height(3);
+        .height(34.2px);
+    }
+    // menu button hover
+    .btn:hover {
+        color: @menu-btn-hover-color;
+        background-color: @bg-menu-btn-hover-color;
+        //font-weight: bold;
+    }
+    //post an app button
+    .post-app-btn {
+        .height(33px);
+        //line-height: 0;
+        background-color: @primary-color;
+    }
+}
+// fix the overlay from btns
+.header-2 nav li.btn-type a:after {
+    background-color: transparent;
+}
+
+.jetmenu ul.dropdown span:nth-child(2) {
+    display: inline-block;
+}
+//bigger than tab
+@media screen and (max-width: 990px) {
+    .search-bar {
+        input {
+            .max-width(134px);
+        }
+    }
+}
+
+.is-sticky {
+    nav li a {
+        padding: 30px 13px !important;
+    }
+
+    .search-bar {
+        position: relative;
+        top: -20px;
+    }
+
+    .post-app-btn {
+        line-height: 0;
+        padding: 17px 14px !important;
+        /* margin-top: 0; */
+        position: relative;
+        .top(-20px);
+    }
+
+    .navbar-form {
+        position: relative;
+        bottom: inherit;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-bar {
+        input {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .top(-7px);
+    }
+
+    .search-bar, .is-sticky .search-bar {
+        position: relative;
+        clear: both;
+    }
+
+    .is-sticky .search-bar {
+        top: 0;
+    }
+
+    .jetmenu {
+        //background-color: white;
+        .fa.fa-angle-right {
+            font-size: 2em;
+        }
+    }
+
+    .is-sticky {
+        nav li a {
+            padding: 10px !important;
+        }
+
+        .post-app-btn-wrapper {
+            margin-top: 10px;
+        }
+
+        .post-app-btn {
+            //.top(-7px);
+            top: 0;
+            bottom: 0;
+        }
+    }
+
+    .menu {
+        .post-app-btn {
+            //.bottom(7px);
+            bottom: 0;
+        }
+    }
+
+    .header-2 header nav li {
+        &.btn-type {
+            position: relative;
+            //bottom: 0;
+            top: 0;
+        }
+    }
+}
+
+//overriding
+@media (min-width: 768px) {
+    .jetmenu ul.dropdown li a {
+        .height(34px);
+        line-height: .75;
+
+        .badge {
+            .bottom(4px);
+            position: relative;
+        }
+    }
+}
+//menu end

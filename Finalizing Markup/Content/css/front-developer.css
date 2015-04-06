@@ -6,6 +6,9 @@ body {
 body #wrap .app-details-page {
   font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+.regular-color {
+  color: #647383;
+}
 .seo-optimize h1,
 .seo-optimize h2,
 .seo-optimize h3,
@@ -32,17 +35,14 @@ body #wrap .app-details-page {
 .seo-app-name strong:hover {
   color: #ffa500;
 }
-.font-normal {
-  font-size: 1em;
-}
-.regular-color {
-  color: #647383;
-}
 .semi-bold {
   font-weight: 600;
 }
 .semi-bold-important {
   font-weight: 600 !important;
+}
+.font-normal {
+  font-size: 1em;
 }
 .bold {
   font-weight: 700;
@@ -343,6 +343,12 @@ header {
   padding: 16px 10px 10px 10px;
   padding: 1.6rem 1rem 1rem 1rem;
 }
+@media (max-width: 768px) {
+  .header-2 header nav li a {
+    padding: 7px 10px 7px 10px;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+  }
+}
 .header-2 header nav li.btn-type {
   position: relative;
   bottom: 5px;
@@ -464,7 +470,19 @@ header {
   }
   .header-2 header nav li.btn-type {
     position: relative;
-    bottom: 0;
+    top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .jetmenu ul.dropdown li a {
+    height: 34px;
+    height: 3.4rem;
+    line-height: .75;
+  }
+  .jetmenu ul.dropdown li a .badge {
+    bottom: 4px;
+    bottom: 0.4rem;
+    position: relative;
   }
 }
 .tp-leftarrow.preview2:after,
