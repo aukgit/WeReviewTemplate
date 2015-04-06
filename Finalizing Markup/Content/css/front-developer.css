@@ -1208,6 +1208,31 @@ q:after {
     width: 68%;
   }
 }
+.app-detail.app-title-wrapper.category-title .app-title-row,
+.app-detail.app-title-wrapper a {
+  color: inherit;
+  font-size: inherit;
+}
+.category-title {
+  font-size: 1.2em;
+  color: #505454;
+}
+.category-title.app-detail.app-title-wrapper {
+  margin: 0px 0px 5px 0px;
+  margin: 0 0 0.5rem 0;
+  height: auto;
+  border-bottom: 2px solid red;
+  cursor: pointer;
+}
+.category-title.app-detail.app-title-wrapper .app-category {
+  font-size: 1em;
+}
+.category-title .app-title:hover {
+  color: #ff7200;
+}
+.category-title .app-title:hover .app-category {
+  color: inherit;
+}
 .search-quote:before,
 .search-quote:after {
   color: black;

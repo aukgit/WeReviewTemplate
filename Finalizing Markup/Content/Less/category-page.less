@@ -4,6 +4,9 @@
 .category-page {
 }
 
+.app-title-margin() {
+    .margin(7px,0px,10px,0px);
+}
 
 .archive-app-collection-list {
     .margin(5px,0px,4px,11px);
@@ -150,6 +153,35 @@
     .slim-app-view {
         .app-content {
             width: 68%;
+        }
+    }
+}
+
+.app-detail.app-title-wrapper.category-title .app-title-row, .app-detail.app-title-wrapper a {
+    color: inherit;
+    font-size: inherit;
+}
+
+.category-title {
+    font-size: 1.2em;
+    color: #505454;
+
+    &.app-detail.app-title-wrapper {
+        .margin(0px, 0px,5px, 0px);
+        height: auto;
+        border-bottom: 2px solid red;
+        cursor: pointer;
+
+        .app-category {
+            font-size: 1em;
+        }
+    }
+
+    .app-title:hover {
+        color: @primary-color;
+
+        .app-category {
+            color: inherit;
         }
     }
 }
