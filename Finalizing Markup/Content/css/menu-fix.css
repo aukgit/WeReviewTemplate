@@ -1,46 +1,7 @@
-﻿.header-2 .logo {
-  margin-top: 0;
-}
-.h1-no-gap {
-  margin: 0;
-  padding: 0;
-}
-.h1-no-gap-small {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-}
-.website-head-title {
-  padding: 0;
-  font-size: 1.5em;
-  font-weight: normal;
-  color: black;
-  margin: 8px 0px 0px 0px;
-  margin: 0.8rem 0 0 0;
-  font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-.website-head-title strong {
-  font-weight: normal;
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .website-head-title {
-    margin: 0;
-  }
-}
-@media (max-width: 768px) {
-  .website-head-title {
-    margin: 26px 0px 0px 0px;
-    margin: 2.6rem 0 0 0;
-  }
-}
-.header-2 header nav li a {
-  padding: 16px 10px 10px 10px;
-  padding: 1.6rem 1rem 1rem 1rem;
-}
-@media (max-width: 768px) {
+﻿@media (min-width: 768) {
   .header-2 header nav li a {
-    padding: 7px 10px 7px 10px;
-    padding: 0.7rem 1rem 0.7rem 1rem;
+    padding: 16px 10px 10px 10px;
+    padding: 1.6rem 1rem 1rem 1rem;
   }
 }
 .header-2 header nav li.btn-type {
@@ -110,9 +71,6 @@
     max-width: 13.4rem;
   }
 }
-.header-2 .is-sticky .logo {
-  margin-top: 0;
-}
 .is-sticky nav li a {
   padding: 30px 13px !important;
 }
@@ -131,9 +89,6 @@
 .is-sticky .navbar-form {
   position: relative;
   bottom: inherit;
-}
-.is-sticky .website-head-title {
-  margin: 16% 0 0 0;
 }
 @media screen and (max-width: 768px) {
   .search-bar {
@@ -170,7 +125,7 @@
   }
   .header-2 header nav li.btn-type {
     position: relative;
-    top: 0;
+    bottom: 0;
   }
 }
 @media (min-width: 768px) {
@@ -185,3 +140,4 @@
     position: relative;
   }
 }
+/*# sourceMappingURL=C:\Users\Alim.Alim-PC\AppData\Local\Temp\menu-fix.css.map */
