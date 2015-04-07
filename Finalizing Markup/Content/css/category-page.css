@@ -150,8 +150,8 @@
   text-align: right;
   padding: 0;
 }
-.app-detail.app-title-wrapper.category-title .app-title-row,
-.app-detail.app-title-wrapper a {
+.category-listing-page .app-detail.app-title-wrapper.category-title .app-title-row,
+.category-listing-page .app-detail.app-title-wrapper a {
   color: inherit;
   font-size: inherit;
 }

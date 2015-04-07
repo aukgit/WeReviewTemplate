@@ -1230,8 +1230,8 @@ q:after {
   text-align: right;
   padding: 0;
 }
-.app-detail.app-title-wrapper.category-title .app-title-row,
-.app-detail.app-title-wrapper a {
+.category-listing-page .app-detail.app-title-wrapper.category-title .app-title-row,
+.category-listing-page .app-detail.app-title-wrapper a {
   color: inherit;
   font-size: inherit;
 }
@@ -1353,6 +1353,10 @@ q:after {
 .write-review-btn:hover {
   border-bottom-color: orange;
 }
+.pagination-wrapper {
+  margin: 0 20px;
+  margin: 0 2rem;
+}
 .bottom-gap {
   margin-bottom: 8px;
   margin-bottom: 0.8rem;
@@ -1440,6 +1444,9 @@ q:after {
 }
 .no-padding {
   padding: 0;
+}
+.no-border {
+  border: 0;
 }
 .regular-show-more-btn {
   clear: both;
