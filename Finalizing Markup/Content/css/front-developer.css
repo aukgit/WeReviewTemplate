@@ -331,6 +331,12 @@ header {
   padding: 1.6rem 1rem 1rem 1rem;
 }
 @media (max-width: 768px) {
+  .header-2 header nav li {
+    /*height: 32px;
+        position: relative;
+        top: 0;
+        background-color:white;*/
+  }
   .header-2 header nav li a {
     padding: 7px 10px 7px 10px;
     padding: 0.7rem 1rem 0.7rem 1rem;
@@ -1158,15 +1164,6 @@ q:after {
   color: #ff9b00;
   text-shadow: .5px .5px .5px black;
 }
-.app-date-seperation {
-  border-bottom: 2px solid red;
-  margin: 7px 0px 10px 0px;
-  margin: 0.7rem 0 1rem 0;
-}
-.app-date-seperation .col-md-2 {
-  text-align: right;
-  padding: 0;
-}
 @media (max-width: 768px) {
   .slim-app-view {
     text-align: left;
@@ -1190,6 +1187,22 @@ q:after {
     width: 77%;
   }
 }
+@media (max-width: 726px) {
+  .slim-app-view {
+    width: 49%;
+  }
+  .slim-app-view .app-content {
+    width: 68%;
+  }
+}
+@media (max-width: 545px) {
+  .slim-app-view {
+    width: 48%;
+  }
+  .slim-app-view .app-content {
+    width: 65%;
+  }
+}
 @media (max-width: 510px) {
   .slim-app-view {
     width: 100%;
@@ -1207,6 +1220,15 @@ q:after {
   .slim-app-view .app-content {
     width: 68%;
   }
+}
+.app-date-seperation {
+  border-bottom: 2px solid red;
+  margin: 7px 0px 10px 0px;
+  margin: 0.7rem 0 1rem 0;
+}
+.app-date-seperation .col-md-2 {
+  text-align: right;
+  padding: 0;
 }
 .app-detail.app-title-wrapper.category-title .app-title-row,
 .app-detail.app-title-wrapper a {
@@ -1418,5 +1440,25 @@ q:after {
 }
 .no-padding {
   padding: 0;
+}
+.regular-show-more-btn {
+  clear: both;
+}
+.regular-show-more-btn .more-btn {
+  color: white;
+  background-color: #ff7200;
+}
+.regular-show-more-btn .more-btn:hover {
+  background-color: #19c234;
+}
+@media (max-width: 480px) {
+  .regular-show-more-btn .more-btn {
+    width: 100%;
+    height: 40px;
+    height: 4rem;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
+  }
 }
 /*# sourceMappingURL=front-developer.css.map */

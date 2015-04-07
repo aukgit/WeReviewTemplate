@@ -38,6 +38,12 @@
   padding: 1.6rem 1rem 1rem 1rem;
 }
 @media (max-width: 768px) {
+  .header-2 header nav li {
+    /*height: 32px;
+        position: relative;
+        top: 0;
+        background-color:white;*/
+  }
   .header-2 header nav li a {
     padding: 7px 10px 7px 10px;
     padding: 0.7rem 1rem 0.7rem 1rem;
