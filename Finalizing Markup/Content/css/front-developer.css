@@ -503,7 +503,7 @@ header {
   height: 4.2rem;
 }
 .app-detail.app-title-wrapper .app-title-row {
-  width: 84%;
+  width: 100%;
 }
 .app-detail.app-title-wrapper .app-title-row,
 .app-detail.app-title-wrapper a {
@@ -512,6 +512,36 @@ header {
   color: #ff4d00;
   font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.app-detail.app-title-wrapper .paragraph-end {
+  height: 100%;
+  width: 202px;
+  width: 20.2rem;
+  right: 14px;
+  right: 1.4rem;
+}
+.app-detail.app-title-wrapper a.app-platform {
+  position: relative;
+}
+.app-detail.app-title-wrapper a.app-title {
+  width: 89%;
+  position: relative;
+}
+.app-detail.app-title-wrapper a.app-title .paragraph-end {
+  right: 0;
+  width: 100px;
+  width: 10rem;
+}
+@media (max-width: 992px) {
+  .app-detail.app-title-wrapper a.app-title {
+    width: 84%;
+  }
+}
+.app-detail.app-title-wrapper a.app-category {
+  position: absolute;
+  bottom: 0;
 }
 .app-detail.app-title-wrapper h1,
 .app-detail.app-title-wrapper h2 {
@@ -522,6 +552,7 @@ header {
   font: inherit;
   text-align: inherit;
   text-transform: capitalize;
+  width: 100%;
 }
 .app-detail.app-title-wrapper h2 {
   color: #1d7ec9;
@@ -540,11 +571,43 @@ header {
 .app-detail.app-title-wrapper .fa-windows {
   color: deepskyblue;
 }
-.app-detail.app-title-wrapper strong {
-  font-weight: normal;
-}
+.app-detail.app-title-wrapper strong,
 .app-detail.app-title-wrapper em {
+  font-weight: normal;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .app-detail.app-title-wrapper .paragraph-end {
+    width: 50px;
+    width: 5rem;
+  }
+  .app-detail.app-title-wrapper a.app-title {
+    width: 87%;
+    margin-right: 12px;
+    margin-right: 1.2rem;
+  }
+  .app-detail.app-title-wrapper a.app-category {
+    bottom: 8px;
+    bottom: 0.8rem;
+  }
+}
+@media (max-width: 604px) {
+  .app-detail.app-title-wrapper .paragraph-end {
+    width: 100px;
+    width: 10rem;
+  }
+  .app-detail.app-title-wrapper a.app-title {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .app-detail.app-title-wrapper .paragraph-end {
+    width: 75px;
+    width: 7.5rem;
+  }
+  .app-detail.app-title-wrapper a.app-title {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 768px) {
   .app-detail.app-title-wrapper .app-title-row,

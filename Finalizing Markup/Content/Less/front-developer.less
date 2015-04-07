@@ -324,7 +324,7 @@ body #wrap .app-details-page {
     .height(42px);
 
     .app-title-row {
-        width: 84%;
+        width: 100%;
     }
 
     .app-title-row, a {
@@ -333,7 +333,44 @@ body #wrap .app-details-page {
         color: rgb(255, 77, 0);
         .ubuntu-font;
         text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
     }
+
+    .paragraph-end {
+        height: 100%;
+        .width(202px);
+        .right(14px);
+    }
+
+    a.app-platform {
+        position: relative;
+    }
+
+    a.app-title {
+        width: 89%;
+        position: relative;
+
+        .paragraph-end {
+            right: 0;
+            .width(100px);
+        }
+
+        @media(max-width:992px) {
+            width: 84%;
+        }
+    }
+
+    a.app-title, a.app-category {
+        //overflow: hidden;
+    }
+
+    a.app-category {
+        position: absolute;
+        bottom: 0;
+    }
+
+
 
     h1, h2 {
         margin: 0;
@@ -343,6 +380,7 @@ body #wrap .app-details-page {
         font: inherit;
         text-align: inherit;
         text-transform: capitalize;
+        width: 100%;
     }
 
     h2 {
@@ -367,12 +405,41 @@ body #wrap .app-details-page {
         color: deepskyblue;
     }
 
-    strong {
+    strong, em {
         font-weight: normal;
+        font-style: normal;
     }
 
-    em {
-        font-style: normal;
+    @media (max-width:@screen-sm) {
+        .paragraph-end {
+            .width(50px);
+        }
+
+        a.app-title {
+            width: 87%;
+            .margin-right(12px);
+        }
+
+        a.app-category {
+            .bottom(8px);
+        }
+    }
+
+    @media (max-width:604px) {
+        .paragraph-end {
+            .width(100px);
+        }
+        a.app-title {
+            width: 80%;
+        }
+    }
+     @media (max-width:@screen-xs) {
+        .paragraph-end {
+            .width(75px);
+        }
+        a.app-title {
+            width: 70%;
+        }
     }
 }
 
@@ -1014,11 +1081,11 @@ q:after {
         margin-top: 0;
         margin-bottom: 20px;
     }
-} 
- 
+}
+
 @import "category-page.less";
 @import "search-page.less";
-  
+
 .same-line {
     color: inherit;
     display: block;
@@ -1046,7 +1113,7 @@ q:after {
     }
 }
 //pagination
-.pagination-wrapper{
+.pagination-wrapper {
     .margin(0,20px);
 }
 
