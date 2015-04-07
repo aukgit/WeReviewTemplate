@@ -451,6 +451,10 @@ header {
   .is-sticky .search-bar {
     top: 0;
   }
+  .jetmenu {
+    /*overflow: overlay;
+        height: 310px;*/
+  }
   .jetmenu .fa.fa-angle-right {
     font-size: 2em;
   }
@@ -1304,7 +1308,7 @@ q:after {
   font-size: inherit;
 }
 .category-listing-page .category-title {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #505454;
 }
 .category-listing-page .category-title.app-detail.app-title-wrapper {

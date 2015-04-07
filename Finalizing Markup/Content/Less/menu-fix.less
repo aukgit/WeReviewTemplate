@@ -33,7 +33,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 990px) {
+@media (min-width: @screen-sm) and (max-width: 990px) {
     .website-head-title {
         margin: 0;
     }
@@ -41,7 +41,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: @screen-sm) {
     .website-head-title {
         .margin(26px, 0px,0px, 0px);
     }
@@ -60,12 +60,10 @@
             .padding(7px,10px,7px,10px);
             //margin:0;
         }
-
         /*height: 32px;
         position: relative;
         top: 0;
         background-color:white;*/
-
     }
     //.height(40px);
     &.btn-type {
@@ -189,7 +187,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: @screen-sm) {
     .search-bar {
         input {
             width: 100%;
@@ -213,6 +211,9 @@
         .fa.fa-angle-right {
             font-size: 2em;
         }
+
+        /*overflow: overlay;
+        height: 310px;*/
     }
 
     .is-sticky {
@@ -248,7 +249,7 @@
 }
 
 //overriding
-@media (min-width: 768px) {
+@media (min-width: @screen-sm) {
     .jetmenu ul.dropdown li a {
         .height(34px);
         line-height: .75;

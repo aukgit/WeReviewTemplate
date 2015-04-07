@@ -158,6 +158,10 @@
   .is-sticky .search-bar {
     top: 0;
   }
+  .jetmenu {
+    /*overflow: overlay;
+        height: 310px;*/
+  }
   .jetmenu .fa.fa-angle-right {
     font-size: 2em;
   }
