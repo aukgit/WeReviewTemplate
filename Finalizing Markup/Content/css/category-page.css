@@ -150,16 +150,23 @@
   text-align: right;
   padding: 0;
 }
-.category-listing-page .app-detail.app-title-wrapper.category-title .app-title-row,
-.category-listing-page .app-detail.app-title-wrapper a {
-  color: inherit;
-  font-size: inherit;
-}
 .category-listing-page .app-detail.app-title-wrapper {
   margin: 7px 0px 0px 0px;
   margin: 0.7rem 0 0 0;
   height: 37px;
   height: 3.7rem;
+}
+.category-listing-page .app-detail.app-title-wrapper a.app-title {
+  margin-right: 5px;
+  margin-right: 0.5rem;
+}
+.category-listing-page .app-detail.app-title-wrapper a.app-category {
+  bottom: 8px;
+}
+.category-listing-page .app-detail.app-title-wrapper.category-title .app-title-row,
+.category-listing-page .app-detail.app-title-wrapper a {
+  color: inherit;
+  font-size: inherit;
 }
 .category-listing-page .category-title {
   font-size: 1.2em;

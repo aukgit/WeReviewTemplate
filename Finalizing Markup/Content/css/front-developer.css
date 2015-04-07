@@ -1285,16 +1285,23 @@ q:after {
   text-align: right;
   padding: 0;
 }
-.category-listing-page .app-detail.app-title-wrapper.category-title .app-title-row,
-.category-listing-page .app-detail.app-title-wrapper a {
-  color: inherit;
-  font-size: inherit;
-}
 .category-listing-page .app-detail.app-title-wrapper {
   margin: 7px 0px 0px 0px;
   margin: 0.7rem 0 0 0;
   height: 37px;
   height: 3.7rem;
+}
+.category-listing-page .app-detail.app-title-wrapper a.app-title {
+  margin-right: 5px;
+  margin-right: 0.5rem;
+}
+.category-listing-page .app-detail.app-title-wrapper a.app-category {
+  bottom: 8px;
+}
+.category-listing-page .app-detail.app-title-wrapper.category-title .app-title-row,
+.category-listing-page .app-detail.app-title-wrapper a {
+  color: inherit;
+  font-size: inherit;
 }
 .category-listing-page .category-title {
   font-size: 1.2em;
@@ -1330,6 +1337,9 @@ q:after {
 .category-listing-page .archive-app-collection-list li {
   margin-right: 5px;
   margin-left: 0;
+}
+.search-quote {
+  font-weight: normal;
 }
 .search-quote:before,
 .search-quote:after {
@@ -1383,6 +1393,25 @@ q:after {
 .search-box-wrapper .btn:hover {
   color: black;
   background-color: #19c234;
+}
+.slim-app-view.no-result {
+  text-align: center;
+  padding: 40px;
+  padding: 4rem;
+  height: 110px;
+  height: 11rem;
+  width: 99.5%;
+  border: 2px solid #ff4d00;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.slim-app-view.no-result:hover {
+  border: 2px solid #ff4d00;
+}
+.slim-app-view.no-result:after {
+  content: "No results";
+  font-size: 2em;
 }
 .same-line {
   color: inherit;

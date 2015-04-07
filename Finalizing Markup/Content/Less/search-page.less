@@ -1,9 +1,14 @@
 ﻿@import "lesshat.less";
 @import "variables.less";
 //search page
-.search-quote:before, .search-quote:after {
-    color: black;
+.search-quote {
+    font-weight: normal;
+
+    &:before, &:after {
+        color: black;
+    }
 }
+
 
 .filter {
     margin-bottom: 0;
@@ -54,5 +59,27 @@
             color: black;
             background-color: #19c234;
         }
+    }
+}
+
+@border-color: #ff4d00;
+
+.slim-app-view.no-result {
+    text-align: center;
+    .padding(40px);
+    .height(110px);
+    width: 99.5%;
+    border: 2px solid @border-color;
+    .border-rounded(4px);
+
+    &:hover {
+        border: 2px solid @border-color;
+    }
+
+    &:after {
+        content: "No results";
+        font-size: 2em;
+        //color:@border-color;
+        //font-style:italic;
     }
 }
