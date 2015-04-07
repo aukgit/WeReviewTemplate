@@ -348,22 +348,18 @@ body #wrap .app-details-page {
     }
 
     a.app-title {
-        width: 89%;
+        max-width: 89%;
         position: relative;
 
         .paragraph-end {
             right: 0;
-            .width(100px);
+            .width(30px);
         }
 
-        @media(max-width:992px) {
-            width: 84%;
-        }
+        .margin-right(12px);
     }
 
-    a.app-title, a.app-category {
-        //overflow: hidden;
-    }
+
 
     a.app-category {
         position: absolute;
@@ -410,14 +406,20 @@ body #wrap .app-details-page {
         font-style: normal;
     }
 
+    @media(max-width:992px) {
+        a.app-title {
+            max-width: 84%;
+        }
+    }
+
     @media (max-width:@screen-sm) {
-        .paragraph-end {
-            .width(50px);
+        .app-title-row, a {
+            .margin-top(4px);
+            .font-size(1.2em);
         }
 
         a.app-title {
-            width: 87%;
-            .margin-right(12px);
+            max-width: 87%;
         }
 
         a.app-category {
@@ -426,28 +428,20 @@ body #wrap .app-details-page {
     }
 
     @media (max-width:604px) {
-        .paragraph-end {
-            .width(100px);
-        }
         a.app-title {
-            width: 80%;
+            max-width: 80%;
         }
     }
-     @media (max-width:@screen-xs) {
-        .paragraph-end {
-            .width(75px);
-        }
-        a.app-title {
-            width: 70%;
-        }
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .app-detail.app-title-wrapper {
-        .app-title-row, a {
-            .margin-top(4px);
-            .font-size(1.2em);
+    @media (max-width:@screen-xs) {
+        a.app-title {
+            max-width: 70%;
+        }
+    }
+
+    @media (min-width:@screen-sm) {
+        > .paragraph-end {
+            .width(50px);
         }
     }
 }

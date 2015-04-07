@@ -526,18 +526,15 @@ header {
   position: relative;
 }
 .app-detail.app-title-wrapper a.app-title {
-  width: 89%;
+  max-width: 89%;
   position: relative;
+  margin-right: 12px;
+  margin-right: 1.2rem;
 }
 .app-detail.app-title-wrapper a.app-title .paragraph-end {
   right: 0;
-  width: 100px;
-  width: 10rem;
-}
-@media (max-width: 992px) {
-  .app-detail.app-title-wrapper a.app-title {
-    width: 84%;
-  }
+  width: 30px;
+  width: 3rem;
 }
 .app-detail.app-title-wrapper a.app-category {
   position: absolute;
@@ -576,15 +573,20 @@ header {
   font-weight: normal;
   font-style: normal;
 }
+@media (max-width: 992px) {
+  .app-detail.app-title-wrapper a.app-title {
+    max-width: 84%;
+  }
+}
 @media (max-width: 768px) {
-  .app-detail.app-title-wrapper .paragraph-end {
-    width: 50px;
-    width: 5rem;
+  .app-detail.app-title-wrapper .app-title-row,
+  .app-detail.app-title-wrapper a {
+    margin-top: 4px;
+    margin-top: 0.4rem;
+    font-size: 1.2em;
   }
   .app-detail.app-title-wrapper a.app-title {
-    width: 87%;
-    margin-right: 12px;
-    margin-right: 1.2rem;
+    max-width: 87%;
   }
   .app-detail.app-title-wrapper a.app-category {
     bottom: 8px;
@@ -592,29 +594,19 @@ header {
   }
 }
 @media (max-width: 604px) {
-  .app-detail.app-title-wrapper .paragraph-end {
-    width: 100px;
-    width: 10rem;
-  }
   .app-detail.app-title-wrapper a.app-title {
-    width: 80%;
+    max-width: 80%;
   }
 }
 @media (max-width: 480px) {
-  .app-detail.app-title-wrapper .paragraph-end {
-    width: 75px;
-    width: 7.5rem;
-  }
   .app-detail.app-title-wrapper a.app-title {
-    width: 70%;
+    max-width: 70%;
   }
 }
-@media screen and (max-width: 768px) {
-  .app-detail.app-title-wrapper .app-title-row,
-  .app-detail.app-title-wrapper a {
-    margin-top: 4px;
-    margin-top: 0.4rem;
-    font-size: 1.2em;
+@media (min-width: 768px) {
+  .app-detail.app-title-wrapper > .paragraph-end {
+    width: 50px;
+    width: 5rem;
   }
 }
 .show-more-btns-container .see-more-btn {
