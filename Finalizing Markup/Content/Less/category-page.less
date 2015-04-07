@@ -162,26 +162,49 @@
     font-size: inherit;
 }
 
-.category-title {
-    font-size: 1.2em;
-    color: #505454;
+.category-listing-page {
+    .app-detail.app-title-wrapper {
+        .margin(7px, 0px, 0px, 0px);
+        .height(37px);
+    }
 
-    &.app-detail.app-title-wrapper {
-        .margin(0px, 0px,5px, 0px);
-        height: auto;
-        border-bottom: 2px solid red;
-        cursor: pointer;
+    .category-title {
+        font-size: 1.2em;
+        color: #505454;
 
-        .app-category {
-            font-size: 1em;
+        &.app-detail.app-title-wrapper {
+            .margin(0px, 0px,5px, 0px);
+            .height(28px);
+            border-bottom: 2px solid red;
+            cursor: pointer;
+            //.margin(5px, 15px, 5px, 15px);
+            padding: 0;
+
+            .app-category {
+                font-size: 1em;
+            }
+
+            @media (max-width:@screen-sm) {
+                line-height: 0.8;
+            }
+        }
+
+        .app-title:hover {
+            color: @primary-color;
+
+            .app-category {
+                color: inherit;
+            }
         }
     }
 
-    .app-title:hover {
-        color: @primary-color;
+    .archive-app-collection-list {
+        padding-right: 0;
+        margin: 0;
 
-        .app-category {
-            color: inherit;
+        li {
+            margin-right: 5px;
+            margin-left: 0;
         }
     }
 }

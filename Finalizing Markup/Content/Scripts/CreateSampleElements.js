@@ -58,7 +58,9 @@ $(function () {
     sampleItemsCreate.addOwlItems(".app-suggested-list-items", 3);
     //archive-app-collection-list
 
-    sampleItemsCreate.addOwlItems(".archive-app-collection-list", 15);
+    sampleItemsCreate.addOwlItems(".archive-app-collection-list", 3);
+    sampleItemsCreate.addOwlItems(".search-page-apps-list", 5);
+    sampleItemsCreate.addOwlItems(".category-listing-displays-with-apps-container:first", 5);
 
     //sampleItemsCreate.addOwlItems(".search-page .archive-app-collection-list", 5);
 
