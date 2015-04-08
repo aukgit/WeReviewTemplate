@@ -19,6 +19,9 @@
 .seo-optimize a:hover h1 {
   color: inherit;
 }
+.seo-app-name {
+  color: #FAB37A;
+}
 .seo-app-name h1,
 .seo-app-name em,
 .seo-app-name strong {

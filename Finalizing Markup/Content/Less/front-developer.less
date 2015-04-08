@@ -620,7 +620,7 @@ body #wrap .app-details-page {
         color: white;
         float: left;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: @screen-sm) {
             .margin-bottom(8px);
         }
 
@@ -997,7 +997,7 @@ q:after {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: @screen-sm) {
     .rating-box-row {
         .width(274px);
         margin: 0 auto;
@@ -1069,7 +1069,7 @@ q:after {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: @screen-sm) {
     .share-btn {
         float: none;
         margin-top: 0;
