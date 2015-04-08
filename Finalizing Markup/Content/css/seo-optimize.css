@@ -19,10 +19,16 @@
 .seo-optimize a:hover h1 {
   color: inherit;
 }
-.seo-app-name h1:hover,
-.seo-app-name em:hover,
-.seo-app-name strong:hover {
+.seo-app-name h1,
+.seo-app-name em,
+.seo-app-name strong {
+  color: inherit;
+}
+.seo-app-name:hover {
   color: #ffa500;
+}
+.white-wrapper-background .seo-app-name {
+  color: #757575;
 }
 .semi-bold {
   font-weight: 600;

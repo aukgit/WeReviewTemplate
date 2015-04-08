@@ -33,10 +33,16 @@ body #wrap .app-details-page {
 .seo-optimize a:hover h1 {
   color: inherit;
 }
-.seo-app-name h1:hover,
-.seo-app-name em:hover,
-.seo-app-name strong:hover {
+.seo-app-name h1,
+.seo-app-name em,
+.seo-app-name strong {
+  color: inherit;
+}
+.seo-app-name:hover {
   color: #ffa500;
+}
+.white-wrapper-background .seo-app-name {
+  color: #757575;
 }
 .semi-bold {
   font-weight: 600;
@@ -1444,6 +1450,15 @@ q:after {
 .pagination-wrapper {
   margin: 0 20px;
   margin: 0 2rem;
+}
+.blog-page-private .white-wrapper-background .seo-app-name:hover {
+  color: deepskyblue;
+  text-decoration: underline;
+}
+.blog-page-private .white-wrapper-background .seo-app-name h1,
+.blog-page-private .white-wrapper-background .seo-app-name strong,
+.blog-page-private .white-wrapper-background .seo-app-name em {
+  text-decoration: inherit;
 }
 .bottom-gap {
   margin-bottom: 8px;

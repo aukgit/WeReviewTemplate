@@ -1,15 +1,20 @@
 ﻿//@import "Global.less";
-@default-hyper-link-color: #ffa500;
+//@import "lesshat.less";
+//@import "variables.less";
 
 .center-margin() {
     margin: 0 auto;
+    display: block;
+}
+.default-hyperlink-hover-color() {
+    color: @default-hyperlink-hover-color;
 }
 
-.default-hyperlink-hover-color(){
-    color:@default-hyper-link-color;
+.default-hyperlink-color() {
+    color: @regular-hyperlink-color;
 }
-.color-inherit(){
-    color:inherit;
+.color-inherit() {
+    color: inherit;
 }
 
 .ubuntu-font() {
@@ -19,6 +24,7 @@
 .ubuntu-light-font() {
     font-family: UbuntuLight, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+
 .helvetica-font() {
     font-family: Helvetica, Arial, sans-serif !important;
 }
@@ -31,6 +37,7 @@
     @em-value: ~`pxtoem('@{value}')`;
     font-size: @em-value;
 }
+
 .font-size-em(@value) when (ispixel(@value)) {
     @rem-value: ~`pxtorem('@{value}')`;
     font-size: @rem-value;
@@ -91,8 +98,8 @@
     @right-rem: ~`pxtorem('@{right}')`;
     @bottom-rem: ~`pxtorem('@{bottom}')`;
     @left-rem: ~`pxtorem('@{left}')`;
-    margin : @top @right @bottom @left;
-    margin : @top-rem @right-rem @bottom-rem @left-rem;
+    margin: @top @right @bottom @left;
+    margin: @top-rem @right-rem @bottom-rem @left-rem;
 }
 
 
@@ -156,8 +163,8 @@
     @right-rem: ~`pxtorem('@{right}')`;
     @bottom-rem: ~`pxtorem('@{bottom}')`;
     @left-rem: ~`pxtorem('@{left}')`;
-    padding : @top @right @bottom @left;
-    padding : @top-rem @right-rem @bottom-rem @left-rem;
+    padding: @top @right @bottom @left;
+    padding: @top-rem @right-rem @bottom-rem @left-rem;
 }
 
 .padding-top(@value) {
